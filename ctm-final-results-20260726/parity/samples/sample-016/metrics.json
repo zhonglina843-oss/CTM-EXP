@@ -1,0 +1,17 @@
+{
+  "sample_id": 16,
+  "final_sequence_stable_tick": 69,
+  "full_correct_sustained_tick": 69,
+  "accuracy_99_tick": 69,
+  "mean_token_stable_tick": 53.890625,
+  "final_accuracy": 1.0,
+  "full_sync_cosine_tick": 73,
+  "full_sync_frobenius_tick": 75,
+  "full_sync_step_plateau_tick": 75,
+  "action_cosine_tick": 61,
+  "action_relative_l2_tick": 69,
+  "action_step_plateau_tick": 57,
+  "out_cosine_tick": 74,
+  "out_relative_l2_tick": 75,
+  "out_step_plateau_tick": 75
+}
