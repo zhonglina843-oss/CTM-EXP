@@ -1,0 +1,18 @@
+{
+  "sample_id": 8,
+  "final_route_stable_tick": 7,
+  "exact_route_tick": 7,
+  "navigation_solved_tick": 7,
+  "step_accuracy_99_tick": 7,
+  "final_step_accuracy": 1.0,
+  "final_navigation_solved": 1,
+  "full_sync_cosine_tick": 71,
+  "full_sync_frobenius_tick": 74,
+  "full_sync_step_plateau_tick": 33,
+  "action_cosine_tick": 71,
+  "action_relative_l2_tick": 74,
+  "action_step_plateau_tick": 36,
+  "out_cosine_tick": 55,
+  "out_relative_l2_tick": 72,
+  "out_step_plateau_tick": 47
+}
