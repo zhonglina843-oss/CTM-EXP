@@ -1,0 +1,129 @@
+sample_id,target_label,target_synset,target_name,final_pred_label,final_pred_name,final_correct,correct_sustained_tick,final_certainty,detail_candidate
+val-0000-label091-coucal,91,n01824575,coucal,91,coucal,1,4,0.9999966621398926,True
+val-0001-label171-Italian_greyhound,171,n02091032,Italian greyhound,171,Italian greyhound,1,9,0.9438866376876831,True
+val-0002-label980-volcano,980,n09472597,volcano,975,"lakeside, lakeshore",0,0,0.8582242727279663,True
+val-0003-label218-Welsh_springer_spaniel,218,n02102177,Welsh springer spaniel,218,Welsh springer spaniel,1,5,0.9905576109886169,True
+val-0004-label019-chickadee,19,n01592084,chickadee,19,chickadee,1,6,1.0,True
+val-0005-label658-mitten,658,n03775071,mitten,904,window screen,0,0,0.8645930290222168,True
+val-0006-label549-envelope,549,n03291819,envelope,721,pillow,0,0,0.8572157621383667,True
+val-0007-label808-sombrero,808,n04259630,sombrero,808,sombrero,1,5,0.9999905228614807,True
+val-0008-label305-dung_beetle,305,n02172182,dung beetle,75,"black widow, Latrodectus mactans",0,0,0.9525729417800903,True
+val-0009-label416-balance_beam,416,n02777292,"balance beam, beam",416,"balance beam, beam",1,5,0.9940621852874756,True
+val-0010-label089-sulphur-crested_cockatoo,89,n01819313,"sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita",89,"sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita",1,3,1.0,True
+val-0011-label793-shower_cap,793,n04209133,shower cap,793,shower cap,1,2,0.9999999403953552,True
+val-0012-label712-Petri_dish,712,n03920288,Petri dish,712,Petri dish,1,17,0.8640002608299255,True
+val-0013-label505-coffeepot,505,n03063689,coffeepot,505,coffeepot,1,5,0.9849270582199097,True
+val-0014-label332-Angora,332,n02328150,"Angora, Angora rabbit",332,"Angora, Angora rabbit",1,4,0.9994050860404968,True
+val-0015-label575-golfcart,575,n03445924,"golfcart, golf cart",575,"golfcart, golf cart",1,6,0.9556202292442322,True
+val-0016-label986-yellow_lady_s_slipper,986,n12057211,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",986,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",1,3,1.0,True
+val-0017-label867-trailer_truck,867,n04467665,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",867,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",1,44,0.9622650742530823,True
+val-0018-label116-chiton,116,n01955084,"chiton, coat-of-mail shell, sea cradle, polyplacophore",116,"chiton, coat-of-mail shell, sea cradle, polyplacophore",1,4,0.9999966025352478,True
+val-0019-label817-sports_car,817,n04285008,"sports car, sport car",817,"sports car, sport car",1,46,0.8042460680007935,True
+val-0020-label642-marimba,642,n03721384,"marimba, xylophone",642,"marimba, xylophone",1,3,0.9999961256980896,False
+val-0021-label327-starfish,327,n02317335,"starfish, sea star",327,"starfish, sea star",1,2,0.9999997019767761,False
+val-0022-label995-earthstar,995,n13044778,earthstar,995,earthstar,1,2,1.0,False
+val-0023-label087-African_grey,87,n01817953,"African grey, African gray, Psittacus erithacus",87,"African grey, African gray, Psittacus erithacus",1,5,1.0,False
+val-0024-label965-burrito,965,n07880968,burrito,965,burrito,1,1,0.9999953508377075,False
+val-0025-label267-standard_poodle,267,n02113799,standard poodle,267,standard poodle,1,6,0.8943479657173157,False
+val-0026-label977-sandbar,977,n09421951,"sandbar, sand bar",977,"sandbar, sand bar",1,7,0.9794156551361084,False
+val-0027-label989-hip,989,n12620546,"hip, rose hip, rosehip",989,"hip, rose hip, rosehip",1,2,1.0,False
+val-0028-label120-fiddler_crab,120,n01980166,fiddler crab,119,"rock crab, Cancer irroratus",0,0,0.9361463785171509,False
+val-0029-label800-slot,800,n04243546,"slot, one-armed bandit",494,"chime, bell, gong",0,0,0.6529088020324707,False
+val-0030-label905-window_shade,905,n04590129,window shade,905,window shade,1,5,0.9782969355583191,False
+val-0031-label124-crayfish,124,n01985128,"crayfish, crawfish, crawdad, crawdaddy",124,"crayfish, crawfish, crawdad, crawdaddy",1,5,0.9923804998397827,False
+val-0032-label541-drum,541,n03249569,"drum, membranophone, tympan",541,"drum, membranophone, tympan",1,7,0.9425010681152344,False
+val-0033-label661-Model_T,661,n03777568,Model T,661,Model T,1,3,0.9999943375587463,False
+val-0034-label112-conch,112,n01943899,conch,112,conch,1,19,0.9403482675552368,False
+val-0035-label531-digital_watch,531,n03197337,digital watch,592,"hard disc, hard disk, fixed disk",0,0,0.9062541723251343,False
+val-0036-label251-dalmatian,251,n02110341,"dalmatian, coach dog, carriage dog",251,"dalmatian, coach dog, carriage dog",1,4,1.0,False
+val-0037-label495-china_cabinet,495,n03018349,"china cabinet, china closet",495,"china cabinet, china closet",1,3,0.9987959265708923,False
+val-0038-label313-walking_stick,313,n02231487,"walking stick, walkingstick, stick insect",313,"walking stick, walkingstick, stick insect",1,3,0.99288010597229,False
+val-0039-label784-screwdriver,784,n04154565,screwdriver,845,syringe,0,0,0.840503990650177,False
+val-0040-label261-keeshond,261,n02112350,keeshond,261,keeshond,1,4,1.0,False
+val-0041-label973-coral_reef,973,n09256479,coral reef,973,coral reef,1,4,0.9991627335548401,False
+val-0042-label725-pitcher,725,n03950228,"pitcher, ewer",901,whiskey jug,0,0,0.9747098684310913,False
+val-0043-label535-disk_brake,535,n03208938,"disk brake, disc brake",535,"disk brake, disc brake",1,2,1.0,False
+val-0044-label691-oxygen_mask,691,n03868863,oxygen mask,555,"fire engine, fire truck",0,0,0.9197463989257812,False
+val-0045-label070-harvestman,70,n01770081,"harvestman, daddy longlegs, Phalangium opilio",70,"harvestman, daddy longlegs, Phalangium opilio",1,3,0.9999914169311523,False
+val-0046-label269-timber_wolf,269,n02114367,"timber wolf, grey wolf, gray wolf, Canis lupus",269,"timber wolf, grey wolf, gray wolf, Canis lupus",1,3,0.9877162575721741,False
+val-0047-label438-beaker,438,n02815834,beaker,504,coffee mug,0,0,0.847069263458252,False
+val-0048-label558-flute,558,n03372029,"flute, transverse flute",558,"flute, transverse flute",1,4,0.9999617338180542,False
+val-0049-label830-stretcher,830,n04336792,stretcher,880,"unicycle, monocycle",0,0,0.8829123973846436,False
+val-0050-label569-garbage_truck,569,n03417042,"garbage truck, dustcart",569,"garbage truck, dustcart",1,2,0.999627411365509,False
+val-0051-label129-spoonbill,129,n02006656,spoonbill,129,spoonbill,1,2,1.0,False
+val-0052-label046-green_lizard,46,n01693334,"green lizard, Lacerta viridis",40,"American chameleon, anole, Anolis carolinensis",0,0,0.9708686470985413,False
+val-0053-label060-night_snake,60,n01740131,"night snake, Hypsiglena torquata",56,"king snake, kingsnake",0,0,0.9968942999839783,False
+val-0054-label766-rotisserie,766,n04111531,rotisserie,766,rotisserie,1,3,1.0,False
+val-0055-label191-Airedale,191,n02096051,"Airedale, Airedale terrier",186,Norwich terrier,0,0,0.8707965612411499,False
+val-0056-label553-file,553,n03337140,"file, file cabinet, filing cabinet",553,"file, file cabinet, filing cabinet",1,3,0.9999984502792358,False
+val-0057-label586-half_track,586,n03478589,half track,586,half track,1,2,0.9999994039535522,False
+val-0058-label119-rock_crab,119,n01978455,"rock crab, Cancer irroratus",118,"Dungeness crab, Cancer magister",0,0,0.9730880856513977,False
+val-0059-label422-barbell,422,n02790996,barbell,422,barbell,1,3,0.9999982714653015,False
+val-0060-label334-porcupine,334,n02346627,"porcupine, hedgehog",334,"porcupine, hedgehog",1,6,0.9467301368713379,False
+val-0061-label013-junco,13,n01534433,"junco, snowbird",13,"junco, snowbird",1,5,0.9998008608818054,False
+val-0062-label542-drumstick,542,n03250847,drumstick,542,drumstick,1,2,0.9999999403953552,False
+val-0063-label190-Sealyham_terrier,190,n02095889,"Sealyham terrier, Sealyham",190,"Sealyham terrier, Sealyham",1,4,0.9994706511497498,False
+val-0064-label290-jaguar,290,n02128925,"jaguar, panther, Panthera onca, Felis onca",290,"jaguar, panther, Panthera onca, Felis onca",1,5,0.9996045231819153,False
+val-0065-label826-stopwatch,826,n04328186,"stopwatch, stop watch",530,digital clock,0,0,0.9004331231117249,False
+val-0066-label556-fire_screen,556,n03347037,"fire screen, fireguard",905,window shade,0,0,0.9994045495986938,False
+val-0067-label664-monitor,664,n03782006,monitor,664,monitor,1,28,0.926055908203125,False
+val-0068-label584-hair_slide,584,n03476684,hair slide,451,"bolo tie, bolo, bola tie, bola",0,0,0.9338604807853699,False
+val-0069-label521-Crock_Pot,521,n03133878,Crock Pot,521,Crock Pot,1,5,0.999018132686615,False
+val-0070-label828-strainer,828,n04332243,strainer,695,padlock,0,0,0.917341411113739,False
+val-0071-label593-harmonica,593,n03494278,"harmonica, mouth organ, harp, mouth harp",593,"harmonica, mouth organ, harp, mouth harp",1,4,0.9999999403953552,False
+val-0072-label373-macaque,373,n02487347,macaque,377,marmoset,0,0,0.99583899974823,False
+val-0073-label409-analog_clock,409,n02708093,analog clock,892,wall clock,0,0,0.9419369101524353,False
+val-0074-label692-packet,692,n03871628,packet,692,packet,1,2,0.9999746680259705,False
+val-0075-label825-stone_wall,825,n04326547,stone wall,42,agama,0,0,0.7779407501220703,False
+val-0076-label990-buckeye,990,n12768682,"buckeye, horse chestnut, conker",990,"buckeye, horse chestnut, conker",1,2,1.0,False
+val-0077-label718-pier,718,n03933933,pier,718,pier,1,24,0.9885143637657166,False
+val-0078-label717-pickup,717,n03930630,"pickup, pickup truck",717,"pickup, pickup truck",1,2,0.9998266100883484,False
+val-0079-label195-Boston_bull,195,n02096585,"Boston bull, Boston terrier",195,"Boston bull, Boston terrier",1,49,0.786649227142334,False
+val-0080-label340-zebra,340,n02391049,zebra,340,zebra,1,4,0.9999659657478333,False
+val-0081-label627-limousine,627,n03670208,"limousine, limo",627,"limousine, limo",1,4,0.9998839497566223,False
+val-0082-label138-bustard,138,n02018795,bustard,138,bustard,1,3,1.0,False
+val-0083-label835-sundial,835,n04355338,sundial,835,sundial,1,3,0.9997515678405762,False
+val-0084-label743-prison,743,n04005630,"prison, prison house",743,"prison, prison house",1,2,0.9998993873596191,False
+val-0085-label623-letter_opener,623,n03658185,"letter opener, paper knife, paperknife",777,scabbard,0,0,0.7679234743118286,False
+val-0086-label998-ear,998,n13133613,"ear, spike, capitulum",987,corn,0,0,0.9831501245498657,False
+val-0087-label322-ringlet,322,n02277742,"ringlet, ringlet butterfly",322,"ringlet, ringlet butterfly",1,3,1.0,False
+val-0088-label564-four-poster,564,n03388549,four-poster,564,four-poster,1,2,0.9997513294219971,False
+val-0089-label570-gasmask,570,n03424325,"gasmask, respirator, gas helmet",570,"gasmask, respirator, gas helmet",1,6,0.9993075132369995,False
+val-0090-label875-trombone,875,n04487394,trombone,875,trombone,1,2,0.9999383687973022,False
+val-0091-label415-bakery,415,n02776631,"bakery, bakeshop, bakehouse",961,dough,0,0,0.7853896617889404,False
+val-0092-label764-rifle,764,n04090263,rifle,642,"marimba, xylophone",0,0,0.674934446811676,False
+val-0093-label811-space_heater,811,n04265275,space heater,811,space heater,1,3,0.9999727010726929,False
+val-0094-label730-plow,730,n03967562,"plow, plough",866,tractor,0,0,0.8476759195327759,False
+val-0095-label238-Greater_Swiss_Mountain_dog,238,n02107574,Greater Swiss Mountain dog,238,Greater Swiss Mountain dog,1,3,0.9324555397033691,False
+val-0096-label943-cucumber,943,n07718472,"cucumber, cuke",943,"cucumber, cuke",1,3,0.9996322393417358,False
+val-0097-label083-prairie_chicken,83,n01798484,"prairie chicken, prairie grouse, prairie fowl",83,"prairie chicken, prairie grouse, prairie fowl",1,2,0.9999949336051941,False
+val-0098-label226-briard,226,n02105251,briard,226,briard,1,3,1.0,False
+val-0099-label806-sock,806,n04254777,sock,806,sock,1,5,0.9999188780784607,False
+val-0100-label356-weasel,356,n02441942,weasel,356,weasel,1,4,0.9989619851112366,False
+val-0101-label040-American_chameleon,40,n01682714,"American chameleon, anole, Anolis carolinensis",40,"American chameleon, anole, Anolis carolinensis",1,5,0.9991815686225891,False
+val-0102-label543-dumbbell,543,n03255030,dumbbell,422,barbell,0,0,0.9618401527404785,False
+val-0103-label993-gyromitra,993,n13037406,gyromitra,993,gyromitra,1,3,0.9978399872779846,False
+val-0104-label883-vase,883,n04522168,vase,429,baseball,0,0,0.8074270486831665,False
+val-0105-label633-loupe,633,n03692522,"loupe, jeweler's loupe",711,"perfume, essence",0,0,0.9361383318901062,False
+val-0106-label921-book_jacket,921,n07248320,"book jacket, dust cover, dust jacket, dust wrapper",921,"book jacket, dust cover, dust jacket, dust wrapper",1,2,0.9999808073043823,False
+val-0107-label515-cowboy_hat,515,n03124170,"cowboy hat, ten-gallon hat",119,"rock crab, Cancer irroratus",0,0,0.7428008317947388,False
+val-0108-label970-alp,970,n09193705,alp,517,crane2,0,0,0.7898839116096497,False
+val-0109-label568-fur_coat,568,n03404251,fur coat,568,fur coat,1,2,0.9999906420707703,False
+val-0110-label597-holster,597,n03527444,holster,465,bulletproof vest,0,0,0.9202880263328552,False
+val-0111-label098-red-breasted_merganser,98,n01855032,"red-breasted merganser, Mergus serrator",98,"red-breasted merganser, Mergus serrator",1,7,0.9479517340660095,False
+val-0112-label062-rock_python,62,n01744401,"rock python, rock snake, Python sebae",62,"rock python, rock snake, Python sebae",1,5,0.9953807592391968,False
+val-0113-label910-wooden_spoon,910,n04597913,wooden spoon,910,wooden spoon,1,2,0.9999999403953552,False
+val-0114-label814-speedboat,814,n04273569,speedboat,814,speedboat,1,2,0.9996232986450195,False
+val-0115-label988-acorn,988,n12267677,acorn,988,acorn,1,6,0.9999821186065674,False
+val-0116-label155-Shih-Tzu,155,n02086240,Shih-Tzu,155,Shih-Tzu,1,3,0.9999404549598694,False
+val-0117-label614-kimono,614,n03617480,kimono,614,kimono,1,3,1.0,False
+val-0118-label561-forklift,561,n03384352,forklift,561,forklift,1,3,0.9999921321868896,False
+val-0119-label231-collie,231,n02106030,collie,231,collie,1,37,0.8844284415245056,False
+val-0120-label215-Brittany_spaniel,215,n02101388,Brittany spaniel,215,Brittany spaniel,1,9,0.931786835193634,False
+val-0121-label966-red_wine,966,n07892512,red wine,870,"tricycle, trike, velocipede",0,0,0.7022217512130737,False
+val-0122-label311-grasshopper,311,n02226429,"grasshopper, hopper",311,"grasshopper, hopper",1,17,0.9606654644012451,False
+val-0123-label326-lycaenid,326,n02281787,"lycaenid, lycaenid butterfly",326,"lycaenid, lycaenid butterfly",1,7,0.9908573627471924,False
+val-0124-label055-green_snake,55,n01729977,"green snake, grass snake",64,green mamba,0,0,0.9984951615333557,False
+val-0125-label364-three-toed_sloth,364,n02457408,"three-toed sloth, ai, Bradypus tridactylus",364,"three-toed sloth, ai, Bradypus tridactylus",1,3,1.0,False
+val-0126-label187-Yorkshire_terrier,187,n02094433,Yorkshire terrier,204,"Lhasa, Lhasa apso",0,0,0.8985373973846436,False
+val-0127-label571-gas_pump,571,n03425413,"gas pump, gasoline pump, petrol pump, island dispenser",571,"gas pump, gasoline pump, petrol pump, island dispenser",1,29,0.7911818027496338,False

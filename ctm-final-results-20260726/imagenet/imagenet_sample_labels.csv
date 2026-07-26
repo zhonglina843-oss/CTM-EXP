@@ -1,0 +1,21 @@
+sample_id,final_class,synset,imagenet_label,final_certainty,label_stable_tick,probability_js_tick
+ctm-input-17352,586,n03478589,"half track",1.000,3,7
+ctm-input-42416,275,n02116738,"African hunting dog, hyena dog, Cape hunting dog, Lycaon pictus",1.000,3,10
+ctm-input-12495,505,n03063689,"coffeepot",0.969,4,49
+ctm-input-23597,384,n02500267,"indri, indris, Indri indri, Indri brevicaudatus",1.000,4,5
+ctm-input-35303,180,n02093428,"American Staffordshire terrier, Staffordshire terrier, American pit bull terrier, pit bull terrier",0.999,4,37
+ctm-input-11037,969,n07932039,"eggnog",0.993,5,48
+ctm-input-30917,156,n02086646,"Blenheim spaniel",0.994,5,49
+ctm-input-49506,253,n02110806,"basenji",0.913,5,50
+ctm-input-14308,657,n03773504,"missile",0.997,6,41
+ctm-input-17558,188,n02095314,"wire-haired fox terrier",0.999,6,39
+ctm-input-2677,778,n04141975,"scale, weighing machine",1.000,6,14
+ctm-input-27230,940,n07716906,"spaghetti squash",0.959,24,49
+ctm-input-3415,250,n02110185,"Siberian husky",0.908,32,50
+ctm-input-13575,203,n02098286,"West Highland white terrier",0.734,41,50
+ctm-input-22403,804,n04254120,"soap dispenser",0.795,42,50
+ctm-input-43479,663,n03781244,"monastery",0.773,45,50
+ctm-input-7343,185,n02094114,"Norfolk terrier",0.818,45,50
+ctm-input-37164,683,n03838899,"oboe, hautboy, hautbois",0.761,48,50
+ctm-input-4225,730,n03967562,"plow, plough",0.860,48,50
+ctm-input-4014,779,n04146614,"school bus",0.967,49,50

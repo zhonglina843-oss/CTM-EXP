@@ -1,0 +1,6 @@
+task,samples,detailed_samples,primary_result,median_correct_or_stable_tick,median_S_action_tick,median_S_out_tick,median_S_full_tick,has_query
+imagenet,20,20,,label_stable_tick median=6,50,49,50,True
+parity,64,3,final_accuracy median=1; ,full_correct_sustained_tick median=67,61,75,73,True
+maze,32,3,final_navigation_solved median=0; final_step_accuracy median=1; ,navigation_solved_tick median=0,71,72,74,True
+qamnist,64,2,final_correct median=1; most_certain_correct median=1; ,answer_correct_sustained_tick median=122,126,130,129,True
+sorting,64,2,final_exact median=1; final_token_accuracy median=1; ,first_exact_sustained_tick median=47,,50,50,False

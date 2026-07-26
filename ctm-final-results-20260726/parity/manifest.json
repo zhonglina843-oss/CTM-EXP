@@ -1,0 +1,10 @@
+{
+  "task": "parity",
+  "checkpoint": "/root/autodl-tmp/parity-checkpoint/checkpoint_200000.pt",
+  "samples": 64,
+  "iterations": 75,
+  "sequence_length": 64,
+  "neuron_select_type": "random",
+  "S_full_definition": "unweighted cumulative post-activation Gram",
+  "query_definition": "q_proj(S_action) recomputed from tracked S_action with the trained query projection"
+}
