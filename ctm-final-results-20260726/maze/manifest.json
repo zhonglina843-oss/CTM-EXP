@@ -1,0 +1,11 @@
+{
+  "task": "maze-large",
+  "model_id": "SakanaAI/ctm-maze-large",
+  "dataset_id": "SakanaAI/mazes-large",
+  "samples": 32,
+  "iterations": 75,
+  "d_model": 2048,
+  "neuron_select_type": "first-last",
+  "S_full_definition": "unweighted cumulative post-activation Gram",
+  "query_definition": "q_proj(S_action) recomputed from tracked S_action with the trained query projection"
+}

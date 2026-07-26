@@ -1,0 +1,12 @@
+{
+  "task": "sorting",
+  "checkpoint": "/root/autodl-tmp/ctm-sort-repro-n30/checkpoint.pt",
+  "samples": 64,
+  "iterations": 50,
+  "N_to_sort": 30,
+  "d_model": 512,
+  "neuron_select_type": "random-pairing",
+  "S_action": "not present in ContinuousThoughtMachineSORT (q_proj=None, n_synch_action=0)",
+  "query": "not present in ContinuousThoughtMachineSORT",
+  "S_full_definition": "unweighted cumulative post-activation Gram"
+}

@@ -1,0 +1,15 @@
+{
+  "task": "qamnist",
+  "checkpoint": "/root/autodl-tmp/qamnist-checkpoint/checkpoint_300000.pt",
+  "samples": 64,
+  "ticks": 130,
+  "phase_boundaries": {
+    "digits_end_tick": 30,
+    "question_end_tick": 120,
+    "total_ticks": 130
+  },
+  "d_model": 1024,
+  "neuron_select_type": "random",
+  "S_full_definition": "unweighted cumulative post-activation Gram",
+  "query_definition": "q_proj(S_action) recomputed from tracked S_action; consumed by attention on digit-observation ticks"
+}

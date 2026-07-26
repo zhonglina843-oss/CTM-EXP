@@ -1,0 +1,238 @@
+nohup: ignoring input
+Using neuron select type: first-last
+Synch representation size action: 528
+Synch representation size out: 2080
+
+  0%|          | 0/75 [00:00<?, ?it/s][A
+Processing frames for maze plotting:   0%|          | 0/75 [00:00<?, ?it/s][A
+Processing frames for maze plotting:   1%|▏         | 1/75 [00:00<00:14,  5.05it/s][A
+Processing frames for maze plotting:   3%|▎         | 2/75 [00:00<00:11,  6.20it/s][A
+Processing frames for maze plotting:   4%|▍         | 3/75 [00:00<00:10,  6.72it/s][A
+Processing frames for maze plotting:   5%|▌         | 4/75 [00:00<00:10,  7.02it/s][A
+Processing frames for maze plotting:   7%|▋         | 5/75 [00:00<00:09,  7.19it/s][A
+Processing frames for maze plotting:   8%|▊         | 6/75 [00:01<00:20,  3.37it/s][A
+Processing frames for maze plotting:   9%|▉         | 7/75 [00:01<00:16,  4.11it/s][A
+Processing frames for maze plotting:  11%|█         | 8/75 [00:01<00:14,  4.76it/s][A
+Processing frames for maze plotting:  12%|█▏        | 9/75 [00:01<00:12,  5.35it/s][A
+Processing frames for maze plotting:  13%|█▎        | 10/75 [00:01<00:11,  5.80it/s][A
+Processing frames for maze plotting:  15%|█▍        | 11/75 [00:02<00:10,  6.19it/s][A
+Processing frames for maze plotting:  16%|█▌        | 12/75 [00:02<00:19,  3.27it/s][A
+Processing frames for maze plotting:  17%|█▋        | 13/75 [00:02<00:15,  3.92it/s][A
+Processing frames for maze plotting:  19%|█▊        | 14/75 [00:02<00:13,  4.54it/s][A
+Processing frames for maze plotting:  20%|██        | 15/75 [00:03<00:11,  5.11it/s][A
+Processing frames for maze plotting:  21%|██▏       | 16/75 [00:03<00:10,  5.58it/s][A
+Processing frames for maze plotting:  23%|██▎       | 17/75 [00:03<00:09,  5.98it/s][A
+Processing frames for maze plotting:  24%|██▍       | 18/75 [00:03<00:09,  6.29it/s][A
+Processing frames for maze plotting:  25%|██▌       | 19/75 [00:04<00:17,  3.20it/s][A
+Processing frames for maze plotting:  27%|██▋       | 20/75 [00:04<00:14,  3.83it/s][A
+Processing frames for maze plotting:  28%|██▊       | 21/75 [00:04<00:12,  4.45it/s][A
+Processing frames for maze plotting:  29%|██▉       | 22/75 [00:04<00:10,  4.99it/s][A
+Processing frames for maze plotting:  31%|███       | 23/75 [00:04<00:09,  5.45it/s][A
+Processing frames for maze plotting:  32%|███▏      | 24/75 [00:04<00:08,  5.84it/s][A
+Processing frames for maze plotting:  33%|███▎      | 25/75 [00:05<00:15,  3.18it/s][A
+Processing frames for maze plotting:  35%|███▍      | 26/75 [00:05<00:12,  3.78it/s][A
+Processing frames for maze plotting:  36%|███▌      | 27/75 [00:05<00:10,  4.38it/s][A
+Processing frames for maze plotting:  37%|███▋      | 28/75 [00:05<00:09,  4.90it/s][A
+Processing frames for maze plotting:  39%|███▊      | 29/75 [00:06<00:08,  5.35it/s][A
+Processing frames for maze plotting:  40%|████      | 30/75 [00:06<00:07,  5.67it/s][A
+Processing frames for maze plotting:  41%|████▏     | 31/75 [00:06<00:14,  3.09it/s][A
+Processing frames for maze plotting:  43%|████▎     | 32/75 [00:07<00:11,  3.69it/s][A
+Processing frames for maze plotting:  44%|████▍     | 33/75 [00:07<00:09,  4.26it/s][A
+Processing frames for maze plotting:  45%|████▌     | 34/75 [00:07<00:08,  4.77it/s][A
+Processing frames for maze plotting:  47%|████▋     | 35/75 [00:07<00:07,  5.23it/s][A
+Processing frames for maze plotting:  48%|████▊     | 36/75 [00:07<00:06,  5.60it/s][A
+Processing frames for maze plotting:  49%|████▉     | 37/75 [00:08<00:12,  3.00it/s][A
+Processing frames for maze plotting:  51%|█████     | 38/75 [00:08<00:10,  3.58it/s][A
+Processing frames for maze plotting:  52%|█████▏    | 39/75 [00:08<00:08,  4.12it/s][A
+Processing frames for maze plotting:  53%|█████▎    | 40/75 [00:08<00:07,  4.64it/s][A
+Processing frames for maze plotting:  55%|█████▍    | 41/75 [00:08<00:06,  5.03it/s][A
+Processing frames for maze plotting:  56%|█████▌    | 42/75 [00:09<00:06,  5.37it/s][A
+Processing frames for maze plotting:  57%|█████▋    | 43/75 [00:09<00:10,  3.06it/s][A
+Processing frames for maze plotting:  59%|█████▊    | 44/75 [00:09<00:08,  3.62it/s][A
+Processing frames for maze plotting:  60%|██████    | 45/75 [00:10<00:07,  4.18it/s][A
+Processing frames for maze plotting:  61%|██████▏   | 46/75 [00:10<00:06,  4.69it/s][A
+Processing frames for maze plotting:  63%|██████▎   | 47/75 [00:10<00:05,  5.12it/s][A
+Processing frames for maze plotting:  64%|██████▍   | 48/75 [00:10<00:04,  5.42it/s][A
+Processing frames for maze plotting:  65%|██████▌   | 49/75 [00:11<00:08,  3.01it/s][A
+Processing frames for maze plotting:  67%|██████▋   | 50/75 [00:11<00:06,  3.58it/s][A
+Processing frames for maze plotting:  68%|██████▊   | 51/75 [00:11<00:05,  4.12it/s][A
+Processing frames for maze plotting:  69%|██████▉   | 52/75 [00:11<00:05,  4.60it/s][A
+Processing frames for maze plotting:  71%|███████   | 53/75 [00:11<00:04,  5.00it/s][A
+Processing frames for maze plotting:  72%|███████▏  | 54/75 [00:12<00:03,  5.33it/s][A
+Processing frames for maze plotting:  73%|███████▎  | 55/75 [00:12<00:06,  2.99it/s][A
+Processing frames for maze plotting:  75%|███████▍  | 56/75 [00:12<00:05,  3.52it/s][A
+Processing frames for maze plotting:  76%|███████▌  | 57/75 [00:13<00:04,  4.03it/s][A
+Processing frames for maze plotting:  77%|███████▋  | 58/75 [00:13<00:03,  4.46it/s][A
+Processing frames for maze plotting:  79%|███████▊  | 59/75 [00:13<00:03,  4.85it/s][A
+Processing frames for maze plotting:  80%|████████  | 60/75 [00:13<00:02,  5.16it/s][A
+Processing frames for maze plotting:  81%|████████▏ | 61/75 [00:14<00:04,  3.03it/s][A
+Processing frames for maze plotting:  83%|████████▎ | 62/75 [00:14<00:03,  3.57it/s][A
+Processing frames for maze plotting:  84%|████████▍ | 63/75 [00:14<00:02,  4.09it/s][A
+Processing frames for maze plotting:  85%|████████▌ | 64/75 [00:14<00:02,  4.53it/s][A
+Processing frames for maze plotting:  87%|████████▋ | 65/75 [00:14<00:02,  4.90it/s][A
+Processing frames for maze plotting:  88%|████████▊ | 66/75 [00:15<00:03,  2.96it/s][A
+Processing frames for maze plotting:  89%|████████▉ | 67/75 [00:15<00:02,  3.50it/s][A
+Processing frames for maze plotting:  91%|█████████ | 68/75 [00:15<00:01,  4.00it/s][A
+Processing frames for maze plotting:  92%|█████████▏| 69/75 [00:16<00:01,  4.43it/s][A
+Processing frames for maze plotting:  93%|█████████▎| 70/75 [00:16<00:01,  4.81it/s][A
+Processing frames for maze plotting:  95%|█████████▍| 71/75 [00:16<00:00,  5.10it/s][A
+Processing frames for maze plotting:  96%|█████████▌| 72/75 [00:17<00:01,  2.90it/s][A
+Processing frames for maze plotting:  97%|█████████▋| 73/75 [00:17<00:00,  3.41it/s][A
+Processing frames for maze plotting:  99%|█████████▊| 74/75 [00:17<00:00,  3.90it/s][A
+Processing frames for maze plotting: 100%|██████████| 75/75 [00:17<00:00,  4.34it/s][AProcessing frames for maze plotting: 100%|██████████| 75/75 [00:17<00:00,  4.27it/s]
+
+  0%|          | 0/75 [00:00<?, ?it/s][A
+Processing frames for maze plotting:   0%|          | 0/75 [00:00<?, ?it/s][A
+Processing frames for maze plotting:   1%|▏         | 1/75 [00:00<00:10,  7.29it/s][A
+Processing frames for maze plotting:   3%|▎         | 2/75 [00:00<00:09,  7.35it/s][A
+Processing frames for maze plotting:   4%|▍         | 3/75 [00:00<00:26,  2.69it/s][A
+Processing frames for maze plotting:   5%|▌         | 4/75 [00:01<00:19,  3.60it/s][A
+Processing frames for maze plotting:   7%|▋         | 5/75 [00:01<00:15,  4.39it/s][A
+Processing frames for maze plotting:   8%|▊         | 6/75 [00:01<00:13,  5.09it/s][A
+Processing frames for maze plotting:   9%|▉         | 7/75 [00:01<00:12,  5.64it/s][A
+Processing frames for maze plotting:  11%|█         | 8/75 [00:01<00:11,  6.07it/s][A
+Processing frames for maze plotting:  12%|█▏        | 9/75 [00:01<00:10,  6.40it/s][A
+Processing frames for maze plotting:  13%|█▎        | 10/75 [00:02<00:19,  3.25it/s][A
+Processing frames for maze plotting:  15%|█▍        | 11/75 [00:02<00:16,  3.92it/s][A
+Processing frames for maze plotting:  16%|█▌        | 12/75 [00:02<00:14,  4.32it/s][A
+Processing frames for maze plotting:  17%|█▋        | 13/75 [00:02<00:12,  4.92it/s][A
+Processing frames for maze plotting:  19%|█▊        | 14/75 [00:02<00:11,  5.42it/s][A
+Processing frames for maze plotting:  20%|██        | 15/75 [00:03<00:10,  5.85it/s][A
+Processing frames for maze plotting:  21%|██▏       | 16/75 [00:03<00:19,  3.09it/s][A
+Processing frames for maze plotting:  23%|██▎       | 17/75 [00:03<00:15,  3.73it/s][A
+Processing frames for maze plotting:  24%|██▍       | 18/75 [00:04<00:13,  4.33it/s][A
+Processing frames for maze plotting:  25%|██▌       | 19/75 [00:04<00:11,  4.86it/s][A
+Processing frames for maze plotting:  27%|██▋       | 20/75 [00:04<00:10,  5.37it/s][A
+Processing frames for maze plotting:  28%|██▊       | 21/75 [00:04<00:09,  5.75it/s][A
+Processing frames for maze plotting:  29%|██▉       | 22/75 [00:04<00:08,  6.05it/s][A
+Processing frames for maze plotting:  31%|███       | 23/75 [00:05<00:17,  3.03it/s][A
+Processing frames for maze plotting:  32%|███▏      | 24/75 [00:05<00:14,  3.63it/s][A
+Processing frames for maze plotting:  33%|███▎      | 25/75 [00:05<00:11,  4.23it/s][A
+Processing frames for maze plotting:  35%|███▍      | 26/75 [00:05<00:10,  4.78it/s][A
+Processing frames for maze plotting:  36%|███▌      | 27/75 [00:05<00:09,  5.25it/s][A
+Processing frames for maze plotting:  37%|███▋      | 28/75 [00:06<00:08,  5.66it/s][A
+Processing frames for maze plotting:  39%|███▊      | 29/75 [00:06<00:14,  3.10it/s][A
+Processing frames for maze plotting:  40%|████      | 30/75 [00:06<00:12,  3.70it/s][A
+Processing frames for maze plotting:  41%|████▏     | 31/75 [00:07<00:10,  4.28it/s][A
+Processing frames for maze plotting:  43%|████▎     | 32/75 [00:07<00:08,  4.81it/s][A
+Processing frames for maze plotting:  44%|████▍     | 33/75 [00:07<00:07,  5.26it/s][A
+Processing frames for maze plotting:  45%|████▌     | 34/75 [00:07<00:07,  5.59it/s][A
+Processing frames for maze plotting:  47%|████▋     | 35/75 [00:07<00:06,  5.86it/s][A
+Processing frames for maze plotting:  48%|████▊     | 36/75 [00:08<00:12,  3.05it/s][A
+Processing frames for maze plotting:  49%|████▉     | 37/75 [00:08<00:10,  3.64it/s][A
+Processing frames for maze plotting:  51%|█████     | 38/75 [00:08<00:08,  4.17it/s][A
+Processing frames for maze plotting:  52%|█████▏    | 39/75 [00:08<00:07,  4.66it/s][A
+Processing frames for maze plotting:  53%|█████▎    | 40/75 [00:08<00:06,  5.09it/s][A
+Processing frames for maze plotting:  55%|█████▍    | 41/75 [00:09<00:06,  5.45it/s][A
+Processing frames for maze plotting:  56%|█████▌    | 42/75 [00:09<00:10,  3.01it/s][A
+Processing frames for maze plotting:  57%|█████▋    | 43/75 [00:09<00:08,  3.58it/s][A
+Processing frames for maze plotting:  59%|█████▊    | 44/75 [00:10<00:07,  4.15it/s][A
+Processing frames for maze plotting:  60%|██████    | 45/75 [00:10<00:06,  4.66it/s][A
+Processing frames for maze plotting:  61%|██████▏   | 46/75 [00:10<00:05,  5.09it/s][A
+Processing frames for maze plotting:  63%|██████▎   | 47/75 [00:10<00:05,  5.43it/s][A
+Processing frames for maze plotting:  64%|██████▍   | 48/75 [00:11<00:09,  2.98it/s][A
+Processing frames for maze plotting:  65%|██████▌   | 49/75 [00:11<00:07,  3.55it/s][A
+Processing frames for maze plotting:  67%|██████▋   | 50/75 [00:11<00:06,  4.10it/s][A
+Processing frames for maze plotting:  68%|██████▊   | 51/75 [00:11<00:05,  4.59it/s][A
+Processing frames for maze plotting:  69%|██████▉   | 52/75 [00:11<00:04,  5.02it/s][A
+Processing frames for maze plotting:  71%|███████   | 53/75 [00:12<00:04,  5.30it/s][A
+Processing frames for maze plotting:  72%|███████▏  | 54/75 [00:12<00:07,  2.91it/s][A
+Processing frames for maze plotting:  73%|███████▎  | 55/75 [00:12<00:05,  3.46it/s][A
+Processing frames for maze plotting:  75%|███████▍  | 56/75 [00:13<00:04,  4.00it/s][A
+Processing frames for maze plotting:  76%|███████▌  | 57/75 [00:13<00:04,  4.49it/s][A
+Processing frames for maze plotting:  77%|███████▋  | 58/75 [00:13<00:03,  4.89it/s][A
+Processing frames for maze plotting:  79%|███████▊  | 59/75 [00:13<00:03,  5.21it/s][A
+Processing frames for maze plotting:  80%|████████  | 60/75 [00:14<00:05,  2.89it/s][A
+Processing frames for maze plotting:  81%|████████▏ | 61/75 [00:14<00:04,  3.44it/s][A
+Processing frames for maze plotting:  83%|████████▎ | 62/75 [00:14<00:03,  3.95it/s][A
+Processing frames for maze plotting:  84%|████████▍ | 63/75 [00:14<00:02,  4.44it/s][A
+Processing frames for maze plotting:  85%|████████▌ | 64/75 [00:14<00:02,  4.82it/s][A
+Processing frames for maze plotting:  87%|████████▋ | 65/75 [00:15<00:01,  5.15it/s][A
+Processing frames for maze plotting:  88%|████████▊ | 66/75 [00:15<00:03,  2.63it/s][A
+Processing frames for maze plotting:  89%|████████▉ | 67/75 [00:16<00:02,  2.87it/s][A
+Processing frames for maze plotting:  91%|█████████ | 68/75 [00:16<00:02,  3.09it/s][A
+Processing frames for maze plotting:  92%|█████████▏| 69/75 [00:16<00:01,  3.26it/s][A
+Processing frames for maze plotting:  93%|█████████▎| 70/75 [00:16<00:01,  3.39it/s][A
+Processing frames for maze plotting:  95%|█████████▍| 71/75 [00:17<00:01,  3.49it/s][A
+Processing frames for maze plotting:  96%|█████████▌| 72/75 [00:18<00:01,  2.13it/s][A
+Processing frames for maze plotting:  97%|█████████▋| 73/75 [00:18<00:00,  2.44it/s][A
+Processing frames for maze plotting:  99%|█████████▊| 74/75 [00:18<00:00,  2.71it/s][A
+Processing frames for maze plotting: 100%|██████████| 75/75 [00:18<00:00,  2.94it/s][AProcessing frames for maze plotting: 100%|██████████| 75/75 [00:18<00:00,  3.96it/s]
+
+  0%|          | 0/75 [00:00<?, ?it/s][A
+Processing frames for maze plotting:   0%|          | 0/75 [00:00<?, ?it/s][A
+Processing frames for maze plotting:   1%|▏         | 1/75 [00:00<00:18,  4.05it/s][A
+Processing frames for maze plotting:   3%|▎         | 2/75 [00:00<00:17,  4.14it/s][A
+Processing frames for maze plotting:   4%|▍         | 3/75 [00:00<00:17,  4.14it/s][A
+Processing frames for maze plotting:   5%|▌         | 4/75 [00:00<00:16,  4.38it/s][A
+Processing frames for maze plotting:   7%|▋         | 5/75 [00:01<00:25,  2.72it/s][A
+Processing frames for maze plotting:   8%|▊         | 6/75 [00:01<00:19,  3.46it/s][A
+Processing frames for maze plotting:   9%|▉         | 7/75 [00:01<00:16,  4.17it/s][A
+Processing frames for maze plotting:  11%|█         | 8/75 [00:01<00:14,  4.78it/s][A
+Processing frames for maze plotting:  12%|█▏        | 9/75 [00:02<00:12,  5.33it/s][A
+Processing frames for maze plotting:  13%|█▎        | 10/75 [00:02<00:11,  5.79it/s][A
+Processing frames for maze plotting:  15%|█▍        | 11/75 [00:02<00:10,  6.18it/s][A
+Processing frames for maze plotting:  16%|█▌        | 12/75 [00:03<00:20,  3.07it/s][A
+Processing frames for maze plotting:  17%|█▋        | 13/75 [00:03<00:16,  3.72it/s][A
+Processing frames for maze plotting:  19%|█▊        | 14/75 [00:03<00:13,  4.36it/s][A
+Processing frames for maze plotting:  20%|██        | 15/75 [00:03<00:12,  4.94it/s][A
+Processing frames for maze plotting:  21%|██▏       | 16/75 [00:03<00:10,  5.44it/s][A
+Processing frames for maze plotting:  23%|██▎       | 17/75 [00:03<00:09,  5.84it/s][A
+Processing frames for maze plotting:  24%|██▍       | 18/75 [00:04<00:17,  3.20it/s][A
+Processing frames for maze plotting:  25%|██▌       | 19/75 [00:04<00:14,  3.81it/s][A
+Processing frames for maze plotting:  27%|██▋       | 20/75 [00:04<00:12,  4.41it/s][A
+Processing frames for maze plotting:  28%|██▊       | 21/75 [00:04<00:10,  4.97it/s][A
+Processing frames for maze plotting:  29%|██▉       | 22/75 [00:05<00:09,  5.42it/s][A
+Processing frames for maze plotting:  31%|███       | 23/75 [00:05<00:09,  5.77it/s][A
+Processing frames for maze plotting:  32%|███▏      | 24/75 [00:05<00:08,  6.07it/s][A
+Processing frames for maze plotting:  33%|███▎      | 25/75 [00:05<00:16,  3.09it/s][A
+Processing frames for maze plotting:  35%|███▍      | 26/75 [00:06<00:13,  3.70it/s][A
+Processing frames for maze plotting:  36%|███▌      | 27/75 [00:06<00:11,  4.28it/s][A
+Processing frames for maze plotting:  37%|███▋      | 28/75 [00:06<00:09,  4.82it/s][A
+Processing frames for maze plotting:  39%|███▊      | 29/75 [00:06<00:08,  5.30it/s][A
+Processing frames for maze plotting:  40%|████      | 30/75 [00:06<00:07,  5.71it/s][A
+Processing frames for maze plotting:  41%|████▏     | 31/75 [00:07<00:14,  3.05it/s][A
+Processing frames for maze plotting:  43%|████▎     | 32/75 [00:07<00:11,  3.65it/s][A
+Processing frames for maze plotting:  44%|████▍     | 33/75 [00:07<00:09,  4.24it/s][A
+Processing frames for maze plotting:  45%|████▌     | 34/75 [00:07<00:08,  4.77it/s][A
+Processing frames for maze plotting:  47%|████▋     | 35/75 [00:07<00:07,  5.25it/s][A
+Processing frames for maze plotting:  48%|████▊     | 36/75 [00:08<00:06,  5.64it/s][A
+Processing frames for maze plotting:  49%|████▉     | 37/75 [00:08<00:13,  2.78it/s][A
+Processing frames for maze plotting:  51%|█████     | 38/75 [00:09<00:12,  3.04it/s][A
+Processing frames for maze plotting:  52%|█████▏    | 39/75 [00:09<00:10,  3.28it/s][A
+Processing frames for maze plotting:  53%|█████▎    | 40/75 [00:09<00:10,  3.48it/s][A
+Processing frames for maze plotting:  55%|█████▍    | 41/75 [00:09<00:09,  3.64it/s][A
+Processing frames for maze plotting:  56%|█████▌    | 42/75 [00:10<00:08,  3.74it/s][A
+Processing frames for maze plotting:  57%|█████▋    | 43/75 [00:10<00:08,  3.81it/s][A
+Processing frames for maze plotting:  59%|█████▊    | 44/75 [00:11<00:16,  1.94it/s][A
+Processing frames for maze plotting:  60%|██████    | 45/75 [00:11<00:13,  2.29it/s][A
+Processing frames for maze plotting:  61%|██████▏   | 46/75 [00:12<00:11,  2.61it/s][A
+Processing frames for maze plotting:  63%|██████▎   | 47/75 [00:12<00:09,  2.88it/s][A
+Processing frames for maze plotting:  64%|██████▍   | 48/75 [00:12<00:08,  3.11it/s][A
+Processing frames for maze plotting:  65%|██████▌   | 49/75 [00:12<00:07,  3.30it/s][A
+Processing frames for maze plotting:  67%|██████▋   | 50/75 [00:13<00:12,  1.98it/s][A
+Processing frames for maze plotting:  68%|██████▊   | 51/75 [00:14<00:10,  2.32it/s][A
+Processing frames for maze plotting:  69%|██████▉   | 52/75 [00:14<00:08,  2.63it/s][A
+Processing frames for maze plotting:  71%|███████   | 53/75 [00:14<00:07,  2.91it/s][A
+Processing frames for maze plotting:  72%|███████▏  | 54/75 [00:14<00:06,  3.15it/s][A
+Processing frames for maze plotting:  73%|███████▎  | 55/75 [00:15<00:05,  3.35it/s][A
+Processing frames for maze plotting:  75%|███████▍  | 56/75 [00:15<00:09,  2.08it/s][A
+Processing frames for maze plotting:  76%|███████▌  | 57/75 [00:16<00:06,  2.59it/s][A
+Processing frames for maze plotting:  77%|███████▋  | 58/75 [00:16<00:05,  3.14it/s][A
+Processing frames for maze plotting:  79%|███████▊  | 59/75 [00:16<00:04,  3.70it/s][A
+Processing frames for maze plotting:  80%|████████  | 60/75 [00:16<00:03,  4.21it/s][A
+Processing frames for maze plotting:  81%|████████▏ | 61/75 [00:16<00:03,  4.64it/s][A
+Processing frames for maze plotting:  83%|████████▎ | 62/75 [00:17<00:04,  2.81it/s][A
+Processing frames for maze plotting:  84%|████████▍ | 63/75 [00:17<00:03,  3.36it/s][A
+Processing frames for maze plotting:  85%|████████▌ | 64/75 [00:17<00:02,  3.88it/s][A
+Processing frames for maze plotting:  87%|████████▋ | 65/75 [00:17<00:02,  4.36it/s][A
+Processing frames for maze plotting:  88%|████████▊ | 66/75 [00:18<00:01,  4.76it/s][A
+Processing frames for maze plotting:  89%|████████▉ | 67/75 [00:18<00:01,  5.10it/s][A
+Processing frames for maze plotting:  91%|█████████ | 68/75 [00:18<00:02,  2.91it/s][A
+Processing frames for maze plotting:  92%|█████████▏| 69/75 [00:19<00:01,  3.43it/s][A
+Processing frames for maze plotting:  93%|█████████▎| 70/75 [00:19<00:01,  3.89it/s][A
+Processing frames for maze plotting:  95%|█████████▍| 71/75 [00:19<00:00,  4.33it/s][A
+Processing frames for maze plotting:  96%|█████████▌| 72/75 [00:19<00:00,  4.72it/s][A
+Processing frames for maze plotting:  97%|█████████▋| 73/75 [00:19<00:00,  5.04it/s][A
+Processing frames for maze plotting:  99%|█████████▊| 74/75 [00:20<00:00,  2.76it/s][A
+Processing frames for maze plotting: 100%|██████████| 75/75 [00:20<00:00,  3.29it/s][AProcessing frames for maze plotting: 100%|██████████| 75/75 [00:20<00:00,  3.61it/s]
