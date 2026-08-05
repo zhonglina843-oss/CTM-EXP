@@ -1,0 +1,101 @@
+sample_id,label,label_name,n_edges,lcc_nodes,lcc_ratio,final_correct,final_pred_name,tick,density,layout
+class218-Welsh_springer_spaniel-sample00-src00003,218,Welsh springer spaniel,1308,334,0.65234375,1,Welsh springer spaniel,10,0.01,grid-fixed
+class218-Welsh_springer_spaniel-sample01-src01197,218,Welsh springer spaniel,1308,354,0.69140625,1,Welsh springer spaniel,10,0.01,grid-fixed
+class218-Welsh_springer_spaniel-sample02-src01317,218,Welsh springer spaniel,1308,378,0.73828125,1,Welsh springer spaniel,10,0.01,grid-fixed
+class218-Welsh_springer_spaniel-sample03-src01395,218,Welsh springer spaniel,1308,408,0.796875,1,Welsh springer spaniel,10,0.01,grid-fixed
+class218-Welsh_springer_spaniel-sample04-src02198,218,Welsh springer spaniel,1308,349,0.681640625,1,Welsh springer spaniel,10,0.01,grid-fixed
+class416-balance_beam-sample00-src00009,416,"balance beam, beam",1308,353,0.689453125,1,"balance beam, beam",10,0.01,grid-fixed
+class416-balance_beam-sample01-src00572,416,"balance beam, beam",1308,343,0.669921875,1,"balance beam, beam",10,0.01,grid-fixed
+class416-balance_beam-sample02-src02300,416,"balance beam, beam",1308,325,0.634765625,1,"balance beam, beam",10,0.01,grid-fixed
+class416-balance_beam-sample03-src02722,416,"balance beam, beam",1308,419,0.818359375,1,"balance beam, beam",10,0.01,grid-fixed
+class416-balance_beam-sample04-src03507,416,"balance beam, beam",1308,397,0.775390625,1,"balance beam, beam",10,0.01,grid-fixed
+class793-shower_cap-sample00-src00011,793,shower cap,1308,415,0.810546875,1,shower cap,10,0.01,grid-fixed
+class793-shower_cap-sample01-src02729,793,shower cap,1308,412,0.8046875,1,shower cap,10,0.01,grid-fixed
+class793-shower_cap-sample02-src04889,793,shower cap,1308,410,0.80078125,0,"bathing cap, swimming cap",10,0.01,grid-fixed
+class793-shower_cap-sample03-src05176,793,shower cap,1308,374,0.73046875,1,shower cap,10,0.01,grid-fixed
+class793-shower_cap-sample04-src06825,793,shower cap,1308,349,0.681640625,0,barber chair,10,0.01,grid-fixed
+class712-Petri_dish-sample00-src00012,712,Petri dish,1308,351,0.685546875,1,Petri dish,10,0.01,grid-fixed
+class712-Petri_dish-sample01-src01647,712,Petri dish,1308,326,0.63671875,1,Petri dish,10,0.01,grid-fixed
+class712-Petri_dish-sample02-src02202,712,Petri dish,1308,330,0.64453125,0,radiator,10,0.01,grid-fixed
+class712-Petri_dish-sample03-src02940,712,Petri dish,1308,360,0.703125,0,"hard disc, hard disk, fixed disk",10,0.01,grid-fixed
+class712-Petri_dish-sample04-src03684,712,Petri dish,1308,366,0.71484375,0,jellyfish,10,0.01,grid-fixed
+class116-chiton-sample00-src00018,116,"chiton, coat-of-mail shell, sea cradle, polyplacophore",1308,393,0.767578125,1,"chiton, coat-of-mail shell, sea cradle, polyplacophore",10,0.01,grid-fixed
+class116-chiton-sample01-src00328,116,"chiton, coat-of-mail shell, sea cradle, polyplacophore",1308,416,0.8125,1,"chiton, coat-of-mail shell, sea cradle, polyplacophore",10,0.01,grid-fixed
+class116-chiton-sample02-src01262,116,"chiton, coat-of-mail shell, sea cradle, polyplacophore",1308,348,0.6796875,1,"chiton, coat-of-mail shell, sea cradle, polyplacophore",10,0.01,grid-fixed
+class116-chiton-sample03-src01748,116,"chiton, coat-of-mail shell, sea cradle, polyplacophore",1308,375,0.732421875,0,snail,10,0.01,grid-fixed
+class116-chiton-sample04-src01819,116,"chiton, coat-of-mail shell, sea cradle, polyplacophore",1308,372,0.7265625,1,"chiton, coat-of-mail shell, sea cradle, polyplacophore",10,0.01,grid-fixed
+class218-Welsh_springer_spaniel-sample00-src00003,218,Welsh springer spaniel,1308,339,0.662109375,1,Welsh springer spaniel,20,0.01,grid-fixed
+class218-Welsh_springer_spaniel-sample01-src01197,218,Welsh springer spaniel,1308,336,0.65625,1,Welsh springer spaniel,20,0.01,grid-fixed
+class218-Welsh_springer_spaniel-sample02-src01317,218,Welsh springer spaniel,1308,363,0.708984375,1,Welsh springer spaniel,20,0.01,grid-fixed
+class218-Welsh_springer_spaniel-sample03-src01395,218,Welsh springer spaniel,1308,377,0.736328125,1,Welsh springer spaniel,20,0.01,grid-fixed
+class218-Welsh_springer_spaniel-sample04-src02198,218,Welsh springer spaniel,1308,369,0.720703125,1,Welsh springer spaniel,20,0.01,grid-fixed
+class416-balance_beam-sample00-src00009,416,"balance beam, beam",1308,335,0.654296875,1,"balance beam, beam",20,0.01,grid-fixed
+class416-balance_beam-sample01-src00572,416,"balance beam, beam",1308,359,0.701171875,1,"balance beam, beam",20,0.01,grid-fixed
+class416-balance_beam-sample02-src02300,416,"balance beam, beam",1308,359,0.701171875,1,"balance beam, beam",20,0.01,grid-fixed
+class416-balance_beam-sample03-src02722,416,"balance beam, beam",1308,403,0.787109375,1,"balance beam, beam",20,0.01,grid-fixed
+class416-balance_beam-sample04-src03507,416,"balance beam, beam",1308,392,0.765625,1,"balance beam, beam",20,0.01,grid-fixed
+class793-shower_cap-sample00-src00011,793,shower cap,1308,378,0.73828125,1,shower cap,20,0.01,grid-fixed
+class793-shower_cap-sample01-src02729,793,shower cap,1308,401,0.783203125,1,shower cap,20,0.01,grid-fixed
+class793-shower_cap-sample02-src04889,793,shower cap,1308,338,0.66015625,0,"bathing cap, swimming cap",20,0.01,grid-fixed
+class793-shower_cap-sample03-src05176,793,shower cap,1308,350,0.68359375,1,shower cap,20,0.01,grid-fixed
+class793-shower_cap-sample04-src06825,793,shower cap,1308,356,0.6953125,0,barber chair,20,0.01,grid-fixed
+class712-Petri_dish-sample00-src00012,712,Petri dish,1308,339,0.662109375,1,Petri dish,20,0.01,grid-fixed
+class712-Petri_dish-sample01-src01647,712,Petri dish,1308,306,0.59765625,1,Petri dish,20,0.01,grid-fixed
+class712-Petri_dish-sample02-src02202,712,Petri dish,1308,334,0.65234375,0,radiator,20,0.01,grid-fixed
+class712-Petri_dish-sample03-src02940,712,Petri dish,1308,364,0.7109375,0,"hard disc, hard disk, fixed disk",20,0.01,grid-fixed
+class712-Petri_dish-sample04-src03684,712,Petri dish,1308,353,0.689453125,0,jellyfish,20,0.01,grid-fixed
+class116-chiton-sample00-src00018,116,"chiton, coat-of-mail shell, sea cradle, polyplacophore",1308,390,0.76171875,1,"chiton, coat-of-mail shell, sea cradle, polyplacophore",20,0.01,grid-fixed
+class116-chiton-sample01-src00328,116,"chiton, coat-of-mail shell, sea cradle, polyplacophore",1308,392,0.765625,1,"chiton, coat-of-mail shell, sea cradle, polyplacophore",20,0.01,grid-fixed
+class116-chiton-sample02-src01262,116,"chiton, coat-of-mail shell, sea cradle, polyplacophore",1308,385,0.751953125,1,"chiton, coat-of-mail shell, sea cradle, polyplacophore",20,0.01,grid-fixed
+class116-chiton-sample03-src01748,116,"chiton, coat-of-mail shell, sea cradle, polyplacophore",1308,388,0.7578125,0,snail,20,0.01,grid-fixed
+class116-chiton-sample04-src01819,116,"chiton, coat-of-mail shell, sea cradle, polyplacophore",1308,329,0.642578125,1,"chiton, coat-of-mail shell, sea cradle, polyplacophore",20,0.01,grid-fixed
+class218-Welsh_springer_spaniel-sample00-src00003,218,Welsh springer spaniel,1308,329,0.642578125,1,Welsh springer spaniel,30,0.01,grid-fixed
+class218-Welsh_springer_spaniel-sample01-src01197,218,Welsh springer spaniel,1308,359,0.701171875,1,Welsh springer spaniel,30,0.01,grid-fixed
+class218-Welsh_springer_spaniel-sample02-src01317,218,Welsh springer spaniel,1308,355,0.693359375,1,Welsh springer spaniel,30,0.01,grid-fixed
+class218-Welsh_springer_spaniel-sample03-src01395,218,Welsh springer spaniel,1308,366,0.71484375,1,Welsh springer spaniel,30,0.01,grid-fixed
+class218-Welsh_springer_spaniel-sample04-src02198,218,Welsh springer spaniel,1308,359,0.701171875,1,Welsh springer spaniel,30,0.01,grid-fixed
+class416-balance_beam-sample00-src00009,416,"balance beam, beam",1308,327,0.638671875,1,"balance beam, beam",30,0.01,grid-fixed
+class416-balance_beam-sample01-src00572,416,"balance beam, beam",1308,350,0.68359375,1,"balance beam, beam",30,0.01,grid-fixed
+class416-balance_beam-sample02-src02300,416,"balance beam, beam",1308,357,0.697265625,1,"balance beam, beam",30,0.01,grid-fixed
+class416-balance_beam-sample03-src02722,416,"balance beam, beam",1308,381,0.744140625,1,"balance beam, beam",30,0.01,grid-fixed
+class416-balance_beam-sample04-src03507,416,"balance beam, beam",1308,367,0.716796875,1,"balance beam, beam",30,0.01,grid-fixed
+class793-shower_cap-sample00-src00011,793,shower cap,1308,367,0.716796875,1,shower cap,30,0.01,grid-fixed
+class793-shower_cap-sample01-src02729,793,shower cap,1308,387,0.755859375,1,shower cap,30,0.01,grid-fixed
+class793-shower_cap-sample02-src04889,793,shower cap,1308,352,0.6875,0,"bathing cap, swimming cap",30,0.01,grid-fixed
+class793-shower_cap-sample03-src05176,793,shower cap,1308,331,0.646484375,1,shower cap,30,0.01,grid-fixed
+class793-shower_cap-sample04-src06825,793,shower cap,1308,391,0.763671875,0,barber chair,30,0.01,grid-fixed
+class712-Petri_dish-sample00-src00012,712,Petri dish,1308,352,0.6875,1,Petri dish,30,0.01,grid-fixed
+class712-Petri_dish-sample01-src01647,712,Petri dish,1308,314,0.61328125,1,Petri dish,30,0.01,grid-fixed
+class712-Petri_dish-sample02-src02202,712,Petri dish,1308,366,0.71484375,0,radiator,30,0.01,grid-fixed
+class712-Petri_dish-sample03-src02940,712,Petri dish,1308,399,0.779296875,0,"hard disc, hard disk, fixed disk",30,0.01,grid-fixed
+class712-Petri_dish-sample04-src03684,712,Petri dish,1308,336,0.65625,0,jellyfish,30,0.01,grid-fixed
+class116-chiton-sample00-src00018,116,"chiton, coat-of-mail shell, sea cradle, polyplacophore",1308,360,0.703125,1,"chiton, coat-of-mail shell, sea cradle, polyplacophore",30,0.01,grid-fixed
+class116-chiton-sample01-src00328,116,"chiton, coat-of-mail shell, sea cradle, polyplacophore",1308,394,0.76953125,1,"chiton, coat-of-mail shell, sea cradle, polyplacophore",30,0.01,grid-fixed
+class116-chiton-sample02-src01262,116,"chiton, coat-of-mail shell, sea cradle, polyplacophore",1308,367,0.716796875,1,"chiton, coat-of-mail shell, sea cradle, polyplacophore",30,0.01,grid-fixed
+class116-chiton-sample03-src01748,116,"chiton, coat-of-mail shell, sea cradle, polyplacophore",1308,390,0.76171875,0,snail,30,0.01,grid-fixed
+class116-chiton-sample04-src01819,116,"chiton, coat-of-mail shell, sea cradle, polyplacophore",1308,341,0.666015625,1,"chiton, coat-of-mail shell, sea cradle, polyplacophore",30,0.01,grid-fixed
+class218-Welsh_springer_spaniel-sample00-src00003,218,Welsh springer spaniel,1308,344,0.671875,1,Welsh springer spaniel,50,0.01,grid-fixed
+class218-Welsh_springer_spaniel-sample01-src01197,218,Welsh springer spaniel,1308,342,0.66796875,1,Welsh springer spaniel,50,0.01,grid-fixed
+class218-Welsh_springer_spaniel-sample02-src01317,218,Welsh springer spaniel,1308,360,0.703125,1,Welsh springer spaniel,50,0.01,grid-fixed
+class218-Welsh_springer_spaniel-sample03-src01395,218,Welsh springer spaniel,1308,400,0.78125,1,Welsh springer spaniel,50,0.01,grid-fixed
+class218-Welsh_springer_spaniel-sample04-src02198,218,Welsh springer spaniel,1308,372,0.7265625,1,Welsh springer spaniel,50,0.01,grid-fixed
+class416-balance_beam-sample00-src00009,416,"balance beam, beam",1308,337,0.658203125,1,"balance beam, beam",50,0.01,grid-fixed
+class416-balance_beam-sample01-src00572,416,"balance beam, beam",1308,397,0.775390625,1,"balance beam, beam",50,0.01,grid-fixed
+class416-balance_beam-sample02-src02300,416,"balance beam, beam",1308,335,0.654296875,1,"balance beam, beam",50,0.01,grid-fixed
+class416-balance_beam-sample03-src02722,416,"balance beam, beam",1308,391,0.763671875,1,"balance beam, beam",50,0.01,grid-fixed
+class416-balance_beam-sample04-src03507,416,"balance beam, beam",1308,364,0.7109375,1,"balance beam, beam",50,0.01,grid-fixed
+class793-shower_cap-sample00-src00011,793,shower cap,1308,377,0.736328125,1,shower cap,50,0.01,grid-fixed
+class793-shower_cap-sample01-src02729,793,shower cap,1308,412,0.8046875,1,shower cap,50,0.01,grid-fixed
+class793-shower_cap-sample02-src04889,793,shower cap,1308,368,0.71875,0,"bathing cap, swimming cap",50,0.01,grid-fixed
+class793-shower_cap-sample03-src05176,793,shower cap,1308,349,0.681640625,1,shower cap,50,0.01,grid-fixed
+class793-shower_cap-sample04-src06825,793,shower cap,1308,389,0.759765625,0,barber chair,50,0.01,grid-fixed
+class712-Petri_dish-sample00-src00012,712,Petri dish,1308,376,0.734375,1,Petri dish,50,0.01,grid-fixed
+class712-Petri_dish-sample01-src01647,712,Petri dish,1308,338,0.66015625,1,Petri dish,50,0.01,grid-fixed
+class712-Petri_dish-sample02-src02202,712,Petri dish,1308,342,0.66796875,0,radiator,50,0.01,grid-fixed
+class712-Petri_dish-sample03-src02940,712,Petri dish,1308,405,0.791015625,0,"hard disc, hard disk, fixed disk",50,0.01,grid-fixed
+class712-Petri_dish-sample04-src03684,712,Petri dish,1308,376,0.734375,0,jellyfish,50,0.01,grid-fixed
+class116-chiton-sample00-src00018,116,"chiton, coat-of-mail shell, sea cradle, polyplacophore",1308,366,0.71484375,1,"chiton, coat-of-mail shell, sea cradle, polyplacophore",50,0.01,grid-fixed
+class116-chiton-sample01-src00328,116,"chiton, coat-of-mail shell, sea cradle, polyplacophore",1308,392,0.765625,1,"chiton, coat-of-mail shell, sea cradle, polyplacophore",50,0.01,grid-fixed
+class116-chiton-sample02-src01262,116,"chiton, coat-of-mail shell, sea cradle, polyplacophore",1308,376,0.734375,1,"chiton, coat-of-mail shell, sea cradle, polyplacophore",50,0.01,grid-fixed
+class116-chiton-sample03-src01748,116,"chiton, coat-of-mail shell, sea cradle, polyplacophore",1308,371,0.724609375,0,snail,50,0.01,grid-fixed
+class116-chiton-sample04-src01819,116,"chiton, coat-of-mail shell, sea cradle, polyplacophore",1308,373,0.728515625,1,"chiton, coat-of-mail shell, sea cradle, polyplacophore",50,0.01,grid-fixed

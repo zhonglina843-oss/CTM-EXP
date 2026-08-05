@@ -1,0 +1,30 @@
+
+libgomp: Invalid value for environment variable OMP_NUM_THREADS
+Using neuron select type: random-pairing
+Synch representation size action: 2048
+Synch representation size out: 8196
+[1/25] class089-sulphur-crested_cockatoo-sample00-src00010 detail=True
+[2/25] class332-Angora-sample00-src00014 detail=True
+[3/25] class575-golfcart-sample00-src00015 detail=True
+[4/25] class986-yellow_lady_s_slipper-sample00-src00016 detail=True
+[5/25] class867-trailer_truck-sample00-src00017 detail=True
+[6/25] class332-Angora-sample01-src00077 detail=True
+[7/25] class575-golfcart-sample01-src00109 detail=True
+[8/25] class575-golfcart-sample02-src00137 detail=True
+[9/25] class867-trailer_truck-sample01-src00731 detail=True
+[10/25] class867-trailer_truck-sample02-src00751 detail=True
+[11/25] class332-Angora-sample02-src01198 detail=True
+[12/25] class575-golfcart-sample03-src01670 detail=True
+[13/25] class575-golfcart-sample04-src01675 detail=True
+[14/25] class986-yellow_lady_s_slipper-sample01-src01753 detail=True
+[15/25] class986-yellow_lady_s_slipper-sample02-src01983 detail=True
+[16/25] class332-Angora-sample03-src02187 detail=True
+[17/25] class986-yellow_lady_s_slipper-sample03-src02195 detail=True
+[18/25] class986-yellow_lady_s_slipper-sample04-src02239 detail=True
+[19/25] class089-sulphur-crested_cockatoo-sample01-src02391 detail=True
+[20/25] class089-sulphur-crested_cockatoo-sample02-src02548 detail=True
+[21/25] class089-sulphur-crested_cockatoo-sample03-src02551 detail=True
+[22/25] class089-sulphur-crested_cockatoo-sample04-src02680 detail=True
+[23/25] class332-Angora-sample04-src03309 detail=True
+[24/25] class867-trailer_truck-sample03-src03460 detail=True
+[25/25] class867-trailer_truck-sample04-src03607 detail=True

@@ -1,0 +1,47 @@
+Mon Jul 27 15:46:54 CST 2026
+waiting for subset-e labels.csv
+Mon Jul 27 15:47:54 CST 2026
+waiting for subset-e labels.csv
+Mon Jul 27 15:48:54 CST 2026
+waiting for subset-e labels.csv
+Mon Jul 27 15:49:54 CST 2026
+waiting for subset-e labels.csv
+Mon Jul 27 15:50:54 CST 2026
+waiting for subset-e labels.csv
+Mon Jul 27 15:51:54 CST 2026
+waiting for subset-e labels.csv
+
+libgomp: Invalid value for environment variable OMP_NUM_THREADS
+Using neuron select type: random-pairing
+Synch representation size action: 2048
+Synch representation size out: 8196
+[1/25] class642-marimba-sample00-src00020 detail=True
+[2/25] class327-starfish-sample00-src00021 detail=True
+[3/25] class087-African_grey-sample00-src00023 detail=True
+[4/25] class965-burrito-sample00-src00024 detail=True
+[5/25] class267-standard_poodle-sample00-src00025 detail=True
+[6/25] class267-standard_poodle-sample01-src00309 detail=True
+[7/25] class965-burrito-sample01-src00318 detail=True
+[8/25] class087-African_grey-sample01-src00627 detail=True
+[9/25] class087-African_grey-sample02-src00714 detail=True
+[10/25] class965-burrito-sample02-src01161 detail=True
+[11/25] class087-African_grey-sample03-src02006 detail=True
+[12/25] class642-marimba-sample01-src02070 detail=True
+[13/25] class327-starfish-sample01-src02168 detail=True
+[14/25] class087-African_grey-sample04-src02414 detail=True
+[15/25] class965-burrito-sample03-src02588 detail=True
+[16/25] class642-marimba-sample02-src02784 detail=True
+[17/25] class327-starfish-sample02-src03019 detail=True
+[18/25] class327-starfish-sample03-src03084 detail=True
+[19/25] class327-starfish-sample04-src03299 detail=True
+[20/25] class642-marimba-sample03-src03751 detail=True
+[21/25] class642-marimba-sample04-src04604 detail=True
+[22/25] class267-standard_poodle-sample02-src06068 detail=True
+[23/25] class267-standard_poodle-sample03-src06156 detail=True
+[24/25] class965-burrito-sample04-src06960 detail=True
+[25/25] class267-standard_poodle-sample04-src08663 detail=True
+saved /root/autodl-tmp/ctm-results/imagenet-class-grid-5x5-paper-e/network_grid/class_sample_grid_tick-010_density-0.0100_positive_lcc.png
+saved /root/autodl-tmp/ctm-results/imagenet-class-grid-5x5-paper-e/network_grid/class_sample_grid_tick-020_density-0.0100_positive_lcc.png
+saved /root/autodl-tmp/ctm-results/imagenet-class-grid-5x5-paper-e/network_grid/class_sample_grid_tick-030_density-0.0100_positive_lcc.png
+saved /root/autodl-tmp/ctm-results/imagenet-class-grid-5x5-paper-e/network_grid/class_sample_grid_tick-050_density-0.0100_positive_lcc.png
+DONE grids=4 metrics=/root/autodl-tmp/ctm-results/imagenet-class-grid-5x5-paper-e/network_grid/class_sample_grid_metrics.csv
