@@ -1,0 +1,13 @@
+[grid-fixed] building union from 25 samples, ticks=[10, 20, 30, 50], densities=[0.01]
+[grid-fixed] processed 5/25 samples; union_nodes=1344 union_edges=9660
+[grid-fixed] processed 10/25 samples; union_nodes=1933 union_edges=15338
+[grid-fixed] processed 15/25 samples; union_nodes=2301 union_edges=20128
+[grid-fixed] processed 20/25 samples; union_nodes=2573 union_edges=23742
+[grid-fixed] processed 25/25 samples; union_nodes=2788 union_edges=27549
+[grid-fixed] layout start: nodes=2788 edges=27549 spring_iterations=20
+[grid-fixed] layout done
+saved /root/autodl-tmp/ctm-results/imagenet-class-grid-5x5-paper/grid_fixed_expanded_g035_preview/class_sample_grid_tick-010_density-0.0100_positive_lcc_grid-fixed_layout.png
+saved /root/autodl-tmp/ctm-results/imagenet-class-grid-5x5-paper/grid_fixed_expanded_g035_preview/class_sample_grid_tick-020_density-0.0100_positive_lcc_grid-fixed_layout.png
+saved /root/autodl-tmp/ctm-results/imagenet-class-grid-5x5-paper/grid_fixed_expanded_g035_preview/class_sample_grid_tick-030_density-0.0100_positive_lcc_grid-fixed_layout.png
+saved /root/autodl-tmp/ctm-results/imagenet-class-grid-5x5-paper/grid_fixed_expanded_g035_preview/class_sample_grid_tick-050_density-0.0100_positive_lcc_grid-fixed_layout.png
+DONE grids=4 metrics=/root/autodl-tmp/ctm-results/imagenet-class-grid-5x5-paper/grid_fixed_expanded_g035_preview/class_sample_grid_metrics.csv

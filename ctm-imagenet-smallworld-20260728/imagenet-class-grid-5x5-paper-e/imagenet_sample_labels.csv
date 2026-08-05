@@ -1,0 +1,26 @@
+sample_id,target_label,target_synset,target_name,final_pred_label,final_pred_name,final_correct,correct_sustained_tick,final_certainty,detail_candidate
+class642-marimba-sample00-src00020,642,n03721384,"marimba, xylophone",642,"marimba, xylophone",1,3,0.9999961256980896,True
+class327-starfish-sample00-src00021,327,n02317335,"starfish, sea star",327,"starfish, sea star",1,2,0.9999997019767761,True
+class087-African_grey-sample00-src00023,87,n01817953,"African grey, African gray, Psittacus erithacus",87,"African grey, African gray, Psittacus erithacus",1,5,1.0,True
+class965-burrito-sample00-src00024,965,n07880968,burrito,965,burrito,1,1,0.9999953508377075,True
+class267-standard_poodle-sample00-src00025,267,n02113799,standard poodle,267,standard poodle,1,6,0.8943479657173157,True
+class267-standard_poodle-sample01-src00309,267,n02113799,standard poodle,266,miniature poodle,0,0,0.9680753350257874,True
+class965-burrito-sample01-src00318,965,n07880968,burrito,965,burrito,1,3,0.9999938011169434,True
+class087-African_grey-sample01-src00627,87,n01817953,"African grey, African gray, Psittacus erithacus",87,"African grey, African gray, Psittacus erithacus",1,2,0.9999992847442627,True
+class087-African_grey-sample02-src00714,87,n01817953,"African grey, African gray, Psittacus erithacus",87,"African grey, African gray, Psittacus erithacus",1,2,1.0,True
+class965-burrito-sample02-src01161,965,n07880968,burrito,965,burrito,1,3,1.0,True
+class087-African_grey-sample03-src02006,87,n01817953,"African grey, African gray, Psittacus erithacus",87,"African grey, African gray, Psittacus erithacus",1,2,1.0,True
+class642-marimba-sample01-src02070,642,n03721384,"marimba, xylophone",683,"oboe, hautboy, hautbois",0,0,0.6742099523544312,True
+class327-starfish-sample01-src02168,327,n02317335,"starfish, sea star",121,"king crab, Alaska crab, Alaskan king crab, Alaska king crab, Paralithodes camtschatica",0,0,0.7109280228614807,True
+class087-African_grey-sample04-src02414,87,n01817953,"African grey, African gray, Psittacus erithacus",87,"African grey, African gray, Psittacus erithacus",1,2,1.0,True
+class965-burrito-sample03-src02588,965,n07880968,burrito,965,burrito,1,50,0.7561391592025757,True
+class642-marimba-sample02-src02784,642,n03721384,"marimba, xylophone",642,"marimba, xylophone",1,3,0.9999977350234985,True
+class327-starfish-sample02-src03019,327,n02317335,"starfish, sea star",327,"starfish, sea star",1,7,0.9991254210472107,True
+class327-starfish-sample03-src03084,327,n02317335,"starfish, sea star",327,"starfish, sea star",1,5,0.9998644590377808,True
+class327-starfish-sample04-src03299,327,n02317335,"starfish, sea star",327,"starfish, sea star",1,3,1.0,True
+class642-marimba-sample03-src03751,642,n03721384,"marimba, xylophone",642,"marimba, xylophone",1,2,0.9999999403953552,True
+class642-marimba-sample04-src04604,642,n03721384,"marimba, xylophone",642,"marimba, xylophone",1,4,0.9976679086685181,True
+class267-standard_poodle-sample02-src06068,267,n02113799,standard poodle,267,standard poodle,1,6,0.9991757869720459,True
+class267-standard_poodle-sample03-src06156,267,n02113799,standard poodle,182,Border terrier,0,0,0.6943210959434509,True
+class965-burrito-sample04-src06960,965,n07880968,burrito,924,guacamole,0,0,0.9977552890777588,True
+class267-standard_poodle-sample04-src08663,267,n02113799,standard poodle,267,standard poodle,1,3,0.9999437928199768,True

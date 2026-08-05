@@ -1,0 +1,101 @@
+sample_id,label,label_name,n_edges,lcc_nodes,lcc_ratio,final_correct,final_pred_name,tick,density,layout
+class091-coucal-sample00-src00000,91,coucal,1308,347,0.677734375,1,coucal,10,0.01,grid-fixed
+class091-coucal-sample01-src00316,91,coucal,1308,339,0.662109375,0,black grouse,10,0.01,grid-fixed
+class091-coucal-sample02-src01583,91,coucal,1308,341,0.666015625,0,jacamar,10,0.01,grid-fixed
+class091-coucal-sample03-src01629,91,coucal,1308,382,0.74609375,1,coucal,10,0.01,grid-fixed
+class091-coucal-sample04-src03448,91,coucal,1308,390,0.76171875,1,coucal,10,0.01,grid-fixed
+class171-Italian_greyhound-sample00-src00001,171,Italian greyhound,1308,367,0.716796875,1,Italian greyhound,10,0.01,grid-fixed
+class171-Italian_greyhound-sample01-src02164,171,Italian greyhound,1308,371,0.724609375,1,Italian greyhound,10,0.01,grid-fixed
+class171-Italian_greyhound-sample02-src02599,171,Italian greyhound,1308,422,0.82421875,1,Italian greyhound,10,0.01,grid-fixed
+class171-Italian_greyhound-sample03-src02775,171,Italian greyhound,1308,415,0.810546875,1,Italian greyhound,10,0.01,grid-fixed
+class171-Italian_greyhound-sample04-src03793,171,Italian greyhound,1308,337,0.658203125,0,Border collie,10,0.01,grid-fixed
+class980-volcano-sample00-src00002,980,volcano,1308,345,0.673828125,0,"lakeside, lakeshore",10,0.01,grid-fixed
+class980-volcano-sample01-src00863,980,volcano,1308,347,0.677734375,1,volcano,10,0.01,grid-fixed
+class980-volcano-sample02-src01265,980,volcano,1308,361,0.705078125,0,"passenger car, coach, carriage",10,0.01,grid-fixed
+class980-volcano-sample03-src01422,980,volcano,1308,390,0.76171875,1,volcano,10,0.01,grid-fixed
+class980-volcano-sample04-src01813,980,volcano,1308,371,0.724609375,0,alp,10,0.01,grid-fixed
+class505-coffeepot-sample00-src00013,505,coffeepot,1308,356,0.6953125,1,coffeepot,10,0.01,grid-fixed
+class505-coffeepot-sample01-src01487,505,coffeepot,1308,390,0.76171875,1,coffeepot,10,0.01,grid-fixed
+class505-coffeepot-sample02-src02782,505,coffeepot,1308,365,0.712890625,1,coffeepot,10,0.01,grid-fixed
+class505-coffeepot-sample03-src05563,505,coffeepot,1308,379,0.740234375,0,vase,10,0.01,grid-fixed
+class505-coffeepot-sample04-src05824,505,coffeepot,1308,352,0.6875,1,coffeepot,10,0.01,grid-fixed
+class817-sports_car-sample00-src00019,817,"sports car, sport car",1308,401,0.783203125,1,"sports car, sport car",10,0.01,grid-fixed
+class817-sports_car-sample01-src00787,817,"sports car, sport car",1308,306,0.59765625,0,holster,10,0.01,grid-fixed
+class817-sports_car-sample02-src02853,817,"sports car, sport car",1308,383,0.748046875,1,"sports car, sport car",10,0.01,grid-fixed
+class817-sports_car-sample03-src04513,817,"sports car, sport car",1308,423,0.826171875,0,convertible,10,0.01,grid-fixed
+class817-sports_car-sample04-src04549,817,"sports car, sport car",1308,316,0.6171875,1,"sports car, sport car",10,0.01,grid-fixed
+class091-coucal-sample00-src00000,91,coucal,1308,361,0.705078125,1,coucal,20,0.01,grid-fixed
+class091-coucal-sample01-src00316,91,coucal,1308,341,0.666015625,0,black grouse,20,0.01,grid-fixed
+class091-coucal-sample02-src01583,91,coucal,1308,309,0.603515625,0,jacamar,20,0.01,grid-fixed
+class091-coucal-sample03-src01629,91,coucal,1308,356,0.6953125,1,coucal,20,0.01,grid-fixed
+class091-coucal-sample04-src03448,91,coucal,1308,355,0.693359375,1,coucal,20,0.01,grid-fixed
+class171-Italian_greyhound-sample00-src00001,171,Italian greyhound,1308,365,0.712890625,1,Italian greyhound,20,0.01,grid-fixed
+class171-Italian_greyhound-sample01-src02164,171,Italian greyhound,1308,381,0.744140625,1,Italian greyhound,20,0.01,grid-fixed
+class171-Italian_greyhound-sample02-src02599,171,Italian greyhound,1308,423,0.826171875,1,Italian greyhound,20,0.01,grid-fixed
+class171-Italian_greyhound-sample03-src02775,171,Italian greyhound,1308,435,0.849609375,1,Italian greyhound,20,0.01,grid-fixed
+class171-Italian_greyhound-sample04-src03793,171,Italian greyhound,1308,332,0.6484375,0,Border collie,20,0.01,grid-fixed
+class980-volcano-sample00-src00002,980,volcano,1308,347,0.677734375,0,"lakeside, lakeshore",20,0.01,grid-fixed
+class980-volcano-sample01-src00863,980,volcano,1308,339,0.662109375,1,volcano,20,0.01,grid-fixed
+class980-volcano-sample02-src01265,980,volcano,1308,380,0.7421875,0,"passenger car, coach, carriage",20,0.01,grid-fixed
+class980-volcano-sample03-src01422,980,volcano,1308,344,0.671875,1,volcano,20,0.01,grid-fixed
+class980-volcano-sample04-src01813,980,volcano,1308,376,0.734375,0,alp,20,0.01,grid-fixed
+class505-coffeepot-sample00-src00013,505,coffeepot,1308,364,0.7109375,1,coffeepot,20,0.01,grid-fixed
+class505-coffeepot-sample01-src01487,505,coffeepot,1308,385,0.751953125,1,coffeepot,20,0.01,grid-fixed
+class505-coffeepot-sample02-src02782,505,coffeepot,1308,381,0.744140625,1,coffeepot,20,0.01,grid-fixed
+class505-coffeepot-sample03-src05563,505,coffeepot,1308,374,0.73046875,0,vase,20,0.01,grid-fixed
+class505-coffeepot-sample04-src05824,505,coffeepot,1308,373,0.728515625,1,coffeepot,20,0.01,grid-fixed
+class817-sports_car-sample00-src00019,817,"sports car, sport car",1308,402,0.78515625,1,"sports car, sport car",20,0.01,grid-fixed
+class817-sports_car-sample01-src00787,817,"sports car, sport car",1308,359,0.701171875,0,holster,20,0.01,grid-fixed
+class817-sports_car-sample02-src02853,817,"sports car, sport car",1308,398,0.77734375,1,"sports car, sport car",20,0.01,grid-fixed
+class817-sports_car-sample03-src04513,817,"sports car, sport car",1308,438,0.85546875,0,convertible,20,0.01,grid-fixed
+class817-sports_car-sample04-src04549,817,"sports car, sport car",1308,404,0.7890625,1,"sports car, sport car",20,0.01,grid-fixed
+class091-coucal-sample00-src00000,91,coucal,1308,356,0.6953125,1,coucal,30,0.01,grid-fixed
+class091-coucal-sample01-src00316,91,coucal,1308,336,0.65625,0,black grouse,30,0.01,grid-fixed
+class091-coucal-sample02-src01583,91,coucal,1308,353,0.689453125,0,jacamar,30,0.01,grid-fixed
+class091-coucal-sample03-src01629,91,coucal,1308,375,0.732421875,1,coucal,30,0.01,grid-fixed
+class091-coucal-sample04-src03448,91,coucal,1308,343,0.669921875,1,coucal,30,0.01,grid-fixed
+class171-Italian_greyhound-sample00-src00001,171,Italian greyhound,1308,353,0.689453125,1,Italian greyhound,30,0.01,grid-fixed
+class171-Italian_greyhound-sample01-src02164,171,Italian greyhound,1308,384,0.75,1,Italian greyhound,30,0.01,grid-fixed
+class171-Italian_greyhound-sample02-src02599,171,Italian greyhound,1308,384,0.75,1,Italian greyhound,30,0.01,grid-fixed
+class171-Italian_greyhound-sample03-src02775,171,Italian greyhound,1308,420,0.8203125,1,Italian greyhound,30,0.01,grid-fixed
+class171-Italian_greyhound-sample04-src03793,171,Italian greyhound,1308,319,0.623046875,0,Border collie,30,0.01,grid-fixed
+class980-volcano-sample00-src00002,980,volcano,1308,379,0.740234375,0,"lakeside, lakeshore",30,0.01,grid-fixed
+class980-volcano-sample01-src00863,980,volcano,1308,338,0.66015625,1,volcano,30,0.01,grid-fixed
+class980-volcano-sample02-src01265,980,volcano,1308,385,0.751953125,0,"passenger car, coach, carriage",30,0.01,grid-fixed
+class980-volcano-sample03-src01422,980,volcano,1308,344,0.671875,1,volcano,30,0.01,grid-fixed
+class980-volcano-sample04-src01813,980,volcano,1308,346,0.67578125,0,alp,30,0.01,grid-fixed
+class505-coffeepot-sample00-src00013,505,coffeepot,1308,357,0.697265625,1,coffeepot,30,0.01,grid-fixed
+class505-coffeepot-sample01-src01487,505,coffeepot,1308,394,0.76953125,1,coffeepot,30,0.01,grid-fixed
+class505-coffeepot-sample02-src02782,505,coffeepot,1308,366,0.71484375,1,coffeepot,30,0.01,grid-fixed
+class505-coffeepot-sample03-src05563,505,coffeepot,1308,374,0.73046875,0,vase,30,0.01,grid-fixed
+class505-coffeepot-sample04-src05824,505,coffeepot,1308,375,0.732421875,1,coffeepot,30,0.01,grid-fixed
+class817-sports_car-sample00-src00019,817,"sports car, sport car",1308,401,0.783203125,1,"sports car, sport car",30,0.01,grid-fixed
+class817-sports_car-sample01-src00787,817,"sports car, sport car",1308,336,0.65625,0,holster,30,0.01,grid-fixed
+class817-sports_car-sample02-src02853,817,"sports car, sport car",1308,409,0.798828125,1,"sports car, sport car",30,0.01,grid-fixed
+class817-sports_car-sample03-src04513,817,"sports car, sport car",1308,454,0.88671875,0,convertible,30,0.01,grid-fixed
+class817-sports_car-sample04-src04549,817,"sports car, sport car",1308,376,0.734375,1,"sports car, sport car",30,0.01,grid-fixed
+class091-coucal-sample00-src00000,91,coucal,1308,369,0.720703125,1,coucal,50,0.01,grid-fixed
+class091-coucal-sample01-src00316,91,coucal,1308,355,0.693359375,0,black grouse,50,0.01,grid-fixed
+class091-coucal-sample02-src01583,91,coucal,1308,389,0.759765625,0,jacamar,50,0.01,grid-fixed
+class091-coucal-sample03-src01629,91,coucal,1308,369,0.720703125,1,coucal,50,0.01,grid-fixed
+class091-coucal-sample04-src03448,91,coucal,1308,348,0.6796875,1,coucal,50,0.01,grid-fixed
+class171-Italian_greyhound-sample00-src00001,171,Italian greyhound,1308,366,0.71484375,1,Italian greyhound,50,0.01,grid-fixed
+class171-Italian_greyhound-sample01-src02164,171,Italian greyhound,1308,378,0.73828125,1,Italian greyhound,50,0.01,grid-fixed
+class171-Italian_greyhound-sample02-src02599,171,Italian greyhound,1308,367,0.716796875,1,Italian greyhound,50,0.01,grid-fixed
+class171-Italian_greyhound-sample03-src02775,171,Italian greyhound,1308,416,0.8125,1,Italian greyhound,50,0.01,grid-fixed
+class171-Italian_greyhound-sample04-src03793,171,Italian greyhound,1308,342,0.66796875,0,Border collie,50,0.01,grid-fixed
+class980-volcano-sample00-src00002,980,volcano,1308,376,0.734375,0,"lakeside, lakeshore",50,0.01,grid-fixed
+class980-volcano-sample01-src00863,980,volcano,1308,353,0.689453125,1,volcano,50,0.01,grid-fixed
+class980-volcano-sample02-src01265,980,volcano,1308,378,0.73828125,0,"passenger car, coach, carriage",50,0.01,grid-fixed
+class980-volcano-sample03-src01422,980,volcano,1308,347,0.677734375,1,volcano,50,0.01,grid-fixed
+class980-volcano-sample04-src01813,980,volcano,1308,312,0.609375,0,alp,50,0.01,grid-fixed
+class505-coffeepot-sample00-src00013,505,coffeepot,1308,366,0.71484375,1,coffeepot,50,0.01,grid-fixed
+class505-coffeepot-sample01-src01487,505,coffeepot,1308,382,0.74609375,1,coffeepot,50,0.01,grid-fixed
+class505-coffeepot-sample02-src02782,505,coffeepot,1308,396,0.7734375,1,coffeepot,50,0.01,grid-fixed
+class505-coffeepot-sample03-src05563,505,coffeepot,1308,373,0.728515625,0,vase,50,0.01,grid-fixed
+class505-coffeepot-sample04-src05824,505,coffeepot,1308,375,0.732421875,1,coffeepot,50,0.01,grid-fixed
+class817-sports_car-sample00-src00019,817,"sports car, sport car",1308,393,0.767578125,1,"sports car, sport car",50,0.01,grid-fixed
+class817-sports_car-sample01-src00787,817,"sports car, sport car",1308,382,0.74609375,0,holster,50,0.01,grid-fixed
+class817-sports_car-sample02-src02853,817,"sports car, sport car",1308,427,0.833984375,1,"sports car, sport car",50,0.01,grid-fixed
+class817-sports_car-sample03-src04513,817,"sports car, sport car",1308,458,0.89453125,0,convertible,50,0.01,grid-fixed
+class817-sports_car-sample04-src04549,817,"sports car, sport car",1308,408,0.796875,1,"sports car, sport car",50,0.01,grid-fixed

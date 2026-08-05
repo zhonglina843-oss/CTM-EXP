@@ -1,0 +1,101 @@
+sample_id,label,label_name,n_edges,lcc_nodes,lcc_ratio,final_correct,final_pred_name,tick,density,layout
+class019-chickadee-sample00-src00004,19,chickadee,1308,379,0.740234375,1,chickadee,10,0.01,grid-fixed
+class019-chickadee-sample01-src01375,19,chickadee,1308,357,0.697265625,1,chickadee,10,0.01,grid-fixed
+class019-chickadee-sample02-src05545,19,chickadee,1308,348,0.6796875,1,chickadee,10,0.01,grid-fixed
+class019-chickadee-sample03-src06318,19,chickadee,1308,367,0.716796875,1,chickadee,10,0.01,grid-fixed
+class019-chickadee-sample04-src08072,19,chickadee,1308,353,0.689453125,1,chickadee,10,0.01,grid-fixed
+class658-mitten-sample00-src00005,658,mitten,1308,364,0.7109375,0,window screen,10,0.01,grid-fixed
+class658-mitten-sample01-src03233,658,mitten,1308,339,0.662109375,1,mitten,10,0.01,grid-fixed
+class658-mitten-sample02-src04958,658,mitten,1308,329,0.642578125,1,mitten,10,0.01,grid-fixed
+class658-mitten-sample03-src06400,658,mitten,1308,350,0.68359375,0,pillow,10,0.01,grid-fixed
+class658-mitten-sample04-src06497,658,mitten,1308,310,0.60546875,1,mitten,10,0.01,grid-fixed
+class549-envelope-sample00-src00006,549,envelope,1308,393,0.767578125,0,pillow,10,0.01,grid-fixed
+class549-envelope-sample01-src00411,549,envelope,1308,327,0.638671875,1,envelope,10,0.01,grid-fixed
+class549-envelope-sample02-src00629,549,envelope,1308,362,0.70703125,0,combination lock,10,0.01,grid-fixed
+class549-envelope-sample03-src01464,549,envelope,1308,373,0.728515625,0,"wallet, billfold, notecase, pocketbook",10,0.01,grid-fixed
+class549-envelope-sample04-src01495,549,envelope,1308,371,0.724609375,0,packet,10,0.01,grid-fixed
+class808-sombrero-sample00-src00007,808,sombrero,1308,352,0.6875,1,sombrero,10,0.01,grid-fixed
+class808-sombrero-sample01-src00141,808,sombrero,1308,352,0.6875,1,sombrero,10,0.01,grid-fixed
+class808-sombrero-sample02-src00373,808,sombrero,1308,380,0.7421875,0,"bikini, two-piece",10,0.01,grid-fixed
+class808-sombrero-sample03-src00534,808,sombrero,1308,319,0.623046875,0,toucan,10,0.01,grid-fixed
+class808-sombrero-sample04-src02603,808,sombrero,1308,370,0.72265625,0,"bow tie, bow-tie, bowtie",10,0.01,grid-fixed
+class305-dung_beetle-sample00-src00008,305,dung beetle,1308,377,0.736328125,0,"black widow, Latrodectus mactans",10,0.01,grid-fixed
+class305-dung_beetle-sample01-src00725,305,dung beetle,1308,373,0.728515625,1,dung beetle,10,0.01,grid-fixed
+class305-dung_beetle-sample02-src01966,305,dung beetle,1308,372,0.7265625,1,dung beetle,10,0.01,grid-fixed
+class305-dung_beetle-sample03-src02931,305,dung beetle,1308,331,0.646484375,0,paintbrush,10,0.01,grid-fixed
+class305-dung_beetle-sample04-src05674,305,dung beetle,1308,377,0.736328125,1,dung beetle,10,0.01,grid-fixed
+class019-chickadee-sample00-src00004,19,chickadee,1308,354,0.69140625,1,chickadee,20,0.01,grid-fixed
+class019-chickadee-sample01-src01375,19,chickadee,1308,369,0.720703125,1,chickadee,20,0.01,grid-fixed
+class019-chickadee-sample02-src05545,19,chickadee,1308,373,0.728515625,1,chickadee,20,0.01,grid-fixed
+class019-chickadee-sample03-src06318,19,chickadee,1308,382,0.74609375,1,chickadee,20,0.01,grid-fixed
+class019-chickadee-sample04-src08072,19,chickadee,1308,387,0.755859375,1,chickadee,20,0.01,grid-fixed
+class658-mitten-sample00-src00005,658,mitten,1308,335,0.654296875,0,window screen,20,0.01,grid-fixed
+class658-mitten-sample01-src03233,658,mitten,1308,315,0.615234375,1,mitten,20,0.01,grid-fixed
+class658-mitten-sample02-src04958,658,mitten,1308,319,0.623046875,1,mitten,20,0.01,grid-fixed
+class658-mitten-sample03-src06400,658,mitten,1308,336,0.65625,0,pillow,20,0.01,grid-fixed
+class658-mitten-sample04-src06497,658,mitten,1308,310,0.60546875,1,mitten,20,0.01,grid-fixed
+class549-envelope-sample00-src00006,549,envelope,1308,377,0.736328125,0,pillow,20,0.01,grid-fixed
+class549-envelope-sample01-src00411,549,envelope,1308,391,0.763671875,1,envelope,20,0.01,grid-fixed
+class549-envelope-sample02-src00629,549,envelope,1308,400,0.78125,0,combination lock,20,0.01,grid-fixed
+class549-envelope-sample03-src01464,549,envelope,1308,394,0.76953125,0,"wallet, billfold, notecase, pocketbook",20,0.01,grid-fixed
+class549-envelope-sample04-src01495,549,envelope,1308,386,0.75390625,0,packet,20,0.01,grid-fixed
+class808-sombrero-sample00-src00007,808,sombrero,1308,348,0.6796875,1,sombrero,20,0.01,grid-fixed
+class808-sombrero-sample01-src00141,808,sombrero,1308,370,0.72265625,1,sombrero,20,0.01,grid-fixed
+class808-sombrero-sample02-src00373,808,sombrero,1308,375,0.732421875,0,"bikini, two-piece",20,0.01,grid-fixed
+class808-sombrero-sample03-src00534,808,sombrero,1308,370,0.72265625,0,toucan,20,0.01,grid-fixed
+class808-sombrero-sample04-src02603,808,sombrero,1308,356,0.6953125,0,"bow tie, bow-tie, bowtie",20,0.01,grid-fixed
+class305-dung_beetle-sample00-src00008,305,dung beetle,1308,348,0.6796875,0,"black widow, Latrodectus mactans",20,0.01,grid-fixed
+class305-dung_beetle-sample01-src00725,305,dung beetle,1308,388,0.7578125,1,dung beetle,20,0.01,grid-fixed
+class305-dung_beetle-sample02-src01966,305,dung beetle,1308,342,0.66796875,1,dung beetle,20,0.01,grid-fixed
+class305-dung_beetle-sample03-src02931,305,dung beetle,1308,316,0.6171875,0,paintbrush,20,0.01,grid-fixed
+class305-dung_beetle-sample04-src05674,305,dung beetle,1308,329,0.642578125,1,dung beetle,20,0.01,grid-fixed
+class019-chickadee-sample00-src00004,19,chickadee,1308,353,0.689453125,1,chickadee,30,0.01,grid-fixed
+class019-chickadee-sample01-src01375,19,chickadee,1308,340,0.6640625,1,chickadee,30,0.01,grid-fixed
+class019-chickadee-sample02-src05545,19,chickadee,1308,368,0.71875,1,chickadee,30,0.01,grid-fixed
+class019-chickadee-sample03-src06318,19,chickadee,1308,370,0.72265625,1,chickadee,30,0.01,grid-fixed
+class019-chickadee-sample04-src08072,19,chickadee,1308,384,0.75,1,chickadee,30,0.01,grid-fixed
+class658-mitten-sample00-src00005,658,mitten,1308,357,0.697265625,0,window screen,30,0.01,grid-fixed
+class658-mitten-sample01-src03233,658,mitten,1308,345,0.673828125,1,mitten,30,0.01,grid-fixed
+class658-mitten-sample02-src04958,658,mitten,1308,311,0.607421875,1,mitten,30,0.01,grid-fixed
+class658-mitten-sample03-src06400,658,mitten,1308,329,0.642578125,0,pillow,30,0.01,grid-fixed
+class658-mitten-sample04-src06497,658,mitten,1308,332,0.6484375,1,mitten,30,0.01,grid-fixed
+class549-envelope-sample00-src00006,549,envelope,1308,387,0.755859375,0,pillow,30,0.01,grid-fixed
+class549-envelope-sample01-src00411,549,envelope,1308,402,0.78515625,1,envelope,30,0.01,grid-fixed
+class549-envelope-sample02-src00629,549,envelope,1308,393,0.767578125,0,combination lock,30,0.01,grid-fixed
+class549-envelope-sample03-src01464,549,envelope,1308,401,0.783203125,0,"wallet, billfold, notecase, pocketbook",30,0.01,grid-fixed
+class549-envelope-sample04-src01495,549,envelope,1308,399,0.779296875,0,packet,30,0.01,grid-fixed
+class808-sombrero-sample00-src00007,808,sombrero,1308,344,0.671875,1,sombrero,30,0.01,grid-fixed
+class808-sombrero-sample01-src00141,808,sombrero,1308,360,0.703125,1,sombrero,30,0.01,grid-fixed
+class808-sombrero-sample02-src00373,808,sombrero,1308,392,0.765625,0,"bikini, two-piece",30,0.01,grid-fixed
+class808-sombrero-sample03-src00534,808,sombrero,1308,375,0.732421875,0,toucan,30,0.01,grid-fixed
+class808-sombrero-sample04-src02603,808,sombrero,1308,334,0.65234375,0,"bow tie, bow-tie, bowtie",30,0.01,grid-fixed
+class305-dung_beetle-sample00-src00008,305,dung beetle,1308,375,0.732421875,0,"black widow, Latrodectus mactans",30,0.01,grid-fixed
+class305-dung_beetle-sample01-src00725,305,dung beetle,1308,390,0.76171875,1,dung beetle,30,0.01,grid-fixed
+class305-dung_beetle-sample02-src01966,305,dung beetle,1308,361,0.705078125,1,dung beetle,30,0.01,grid-fixed
+class305-dung_beetle-sample03-src02931,305,dung beetle,1308,293,0.572265625,0,paintbrush,30,0.01,grid-fixed
+class305-dung_beetle-sample04-src05674,305,dung beetle,1308,330,0.64453125,1,dung beetle,30,0.01,grid-fixed
+class019-chickadee-sample00-src00004,19,chickadee,1308,386,0.75390625,1,chickadee,50,0.01,grid-fixed
+class019-chickadee-sample01-src01375,19,chickadee,1308,351,0.685546875,1,chickadee,50,0.01,grid-fixed
+class019-chickadee-sample02-src05545,19,chickadee,1308,388,0.7578125,1,chickadee,50,0.01,grid-fixed
+class019-chickadee-sample03-src06318,19,chickadee,1308,405,0.791015625,1,chickadee,50,0.01,grid-fixed
+class019-chickadee-sample04-src08072,19,chickadee,1308,402,0.78515625,1,chickadee,50,0.01,grid-fixed
+class658-mitten-sample00-src00005,658,mitten,1308,372,0.7265625,0,window screen,50,0.01,grid-fixed
+class658-mitten-sample01-src03233,658,mitten,1308,357,0.697265625,1,mitten,50,0.01,grid-fixed
+class658-mitten-sample02-src04958,658,mitten,1308,332,0.6484375,1,mitten,50,0.01,grid-fixed
+class658-mitten-sample03-src06400,658,mitten,1308,328,0.640625,0,pillow,50,0.01,grid-fixed
+class658-mitten-sample04-src06497,658,mitten,1308,359,0.701171875,1,mitten,50,0.01,grid-fixed
+class549-envelope-sample00-src00006,549,envelope,1308,395,0.771484375,0,pillow,50,0.01,grid-fixed
+class549-envelope-sample01-src00411,549,envelope,1308,388,0.7578125,1,envelope,50,0.01,grid-fixed
+class549-envelope-sample02-src00629,549,envelope,1308,420,0.8203125,0,combination lock,50,0.01,grid-fixed
+class549-envelope-sample03-src01464,549,envelope,1308,416,0.8125,0,"wallet, billfold, notecase, pocketbook",50,0.01,grid-fixed
+class549-envelope-sample04-src01495,549,envelope,1308,403,0.787109375,0,packet,50,0.01,grid-fixed
+class808-sombrero-sample00-src00007,808,sombrero,1308,387,0.755859375,1,sombrero,50,0.01,grid-fixed
+class808-sombrero-sample01-src00141,808,sombrero,1308,381,0.744140625,1,sombrero,50,0.01,grid-fixed
+class808-sombrero-sample02-src00373,808,sombrero,1308,381,0.744140625,0,"bikini, two-piece",50,0.01,grid-fixed
+class808-sombrero-sample03-src00534,808,sombrero,1308,386,0.75390625,0,toucan,50,0.01,grid-fixed
+class808-sombrero-sample04-src02603,808,sombrero,1308,368,0.71875,0,"bow tie, bow-tie, bowtie",50,0.01,grid-fixed
+class305-dung_beetle-sample00-src00008,305,dung beetle,1308,360,0.703125,0,"black widow, Latrodectus mactans",50,0.01,grid-fixed
+class305-dung_beetle-sample01-src00725,305,dung beetle,1308,401,0.783203125,1,dung beetle,50,0.01,grid-fixed
+class305-dung_beetle-sample02-src01966,305,dung beetle,1308,356,0.6953125,1,dung beetle,50,0.01,grid-fixed
+class305-dung_beetle-sample03-src02931,305,dung beetle,1308,312,0.609375,0,paintbrush,50,0.01,grid-fixed
+class305-dung_beetle-sample04-src05674,305,dung beetle,1308,337,0.658203125,1,dung beetle,50,0.01,grid-fixed

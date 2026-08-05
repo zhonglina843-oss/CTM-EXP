@@ -1,0 +1,32 @@
+Mon Jul 27 15:13:30 CST 2026
+waiting for subset-c2 labels.csv
+
+libgomp: Invalid value for environment variable OMP_NUM_THREADS
+Using neuron select type: random-pairing
+Synch representation size action: 2048
+Synch representation size out: 8196
+[1/25] class019-chickadee-sample00-src00004 detail=True
+[2/25] class658-mitten-sample00-src00005 detail=True
+[3/25] class549-envelope-sample00-src00006 detail=True
+[4/25] class808-sombrero-sample00-src00007 detail=True
+[5/25] class305-dung_beetle-sample00-src00008 detail=True
+[6/25] class808-sombrero-sample01-src00141 detail=True
+[7/25] class808-sombrero-sample02-src00373 detail=True
+[8/25] class549-envelope-sample01-src00411 detail=True
+[9/25] class808-sombrero-sample03-src00534 detail=True
+[10/25] class549-envelope-sample02-src00629 detail=True
+[11/25] class305-dung_beetle-sample01-src00725 detail=True
+[12/25] class019-chickadee-sample01-src01375 detail=True
+[13/25] class549-envelope-sample03-src01464 detail=True
+[14/25] class549-envelope-sample04-src01495 detail=True
+[15/25] class305-dung_beetle-sample02-src01966 detail=True
+[16/25] class808-sombrero-sample04-src02603 detail=True
+[17/25] class305-dung_beetle-sample03-src02931 detail=True
+[18/25] class658-mitten-sample01-src03233 detail=True
+[19/25] class658-mitten-sample02-src04958 detail=True
+[20/25] class019-chickadee-sample02-src05545 detail=True
+[21/25] class305-dung_beetle-sample04-src05674 detail=True
+[22/25] class019-chickadee-sample03-src06318 detail=True
+[23/25] class658-mitten-sample03-src06400 detail=True
+[24/25] class658-mitten-sample04-src06497 detail=True
+[25/25] class019-chickadee-sample04-src08072 detail=True

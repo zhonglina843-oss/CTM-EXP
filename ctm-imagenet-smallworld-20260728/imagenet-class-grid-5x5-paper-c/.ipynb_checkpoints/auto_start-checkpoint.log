@@ -1,0 +1,12 @@
+Mon Jul 27 15:13:30 CST 2026
+waiting for subset-c2 labels.csv
+
+libgomp: Invalid value for environment variable OMP_NUM_THREADS
+Using neuron select type: random-pairing
+Synch representation size action: 2048
+Synch representation size out: 8196
+[1/25] class019-chickadee-sample00-src00004 detail=True
+[2/25] class658-mitten-sample00-src00005 detail=True
+[3/25] class549-envelope-sample00-src00006 detail=True
+[4/25] class808-sombrero-sample00-src00007 detail=True
+[5/25] class305-dung_beetle-sample00-src00008 detail=True

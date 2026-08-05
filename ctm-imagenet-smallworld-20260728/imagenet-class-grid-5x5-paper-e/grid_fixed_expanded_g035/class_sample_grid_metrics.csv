@@ -1,0 +1,101 @@
+sample_id,label,label_name,n_edges,lcc_nodes,lcc_ratio,final_correct,final_pred_name,tick,density,layout
+class642-marimba-sample00-src00020,642,"marimba, xylophone",1308,354,0.69140625,1,"marimba, xylophone",10,0.01,grid-fixed
+class642-marimba-sample01-src02070,642,"marimba, xylophone",1308,326,0.63671875,0,"oboe, hautboy, hautbois",10,0.01,grid-fixed
+class642-marimba-sample02-src02784,642,"marimba, xylophone",1308,369,0.720703125,1,"marimba, xylophone",10,0.01,grid-fixed
+class642-marimba-sample03-src03751,642,"marimba, xylophone",1308,307,0.599609375,1,"marimba, xylophone",10,0.01,grid-fixed
+class642-marimba-sample04-src04604,642,"marimba, xylophone",1308,322,0.62890625,1,"marimba, xylophone",10,0.01,grid-fixed
+class327-starfish-sample00-src00021,327,"starfish, sea star",1308,365,0.712890625,1,"starfish, sea star",10,0.01,grid-fixed
+class327-starfish-sample01-src02168,327,"starfish, sea star",1308,366,0.71484375,0,"king crab, Alaska crab, Alaskan king crab, Alaska king crab, Paralithodes camtschatica",10,0.01,grid-fixed
+class327-starfish-sample02-src03019,327,"starfish, sea star",1308,322,0.62890625,1,"starfish, sea star",10,0.01,grid-fixed
+class327-starfish-sample03-src03084,327,"starfish, sea star",1308,375,0.732421875,1,"starfish, sea star",10,0.01,grid-fixed
+class327-starfish-sample04-src03299,327,"starfish, sea star",1308,333,0.650390625,1,"starfish, sea star",10,0.01,grid-fixed
+class087-African_grey-sample00-src00023,87,"African grey, African gray, Psittacus erithacus",1308,354,0.69140625,1,"African grey, African gray, Psittacus erithacus",10,0.01,grid-fixed
+class087-African_grey-sample01-src00627,87,"African grey, African gray, Psittacus erithacus",1308,344,0.671875,1,"African grey, African gray, Psittacus erithacus",10,0.01,grid-fixed
+class087-African_grey-sample02-src00714,87,"African grey, African gray, Psittacus erithacus",1308,345,0.673828125,1,"African grey, African gray, Psittacus erithacus",10,0.01,grid-fixed
+class087-African_grey-sample03-src02006,87,"African grey, African gray, Psittacus erithacus",1308,371,0.724609375,1,"African grey, African gray, Psittacus erithacus",10,0.01,grid-fixed
+class087-African_grey-sample04-src02414,87,"African grey, African gray, Psittacus erithacus",1308,354,0.69140625,1,"African grey, African gray, Psittacus erithacus",10,0.01,grid-fixed
+class965-burrito-sample00-src00024,965,burrito,1308,343,0.669921875,1,burrito,10,0.01,grid-fixed
+class965-burrito-sample01-src00318,965,burrito,1308,351,0.685546875,1,burrito,10,0.01,grid-fixed
+class965-burrito-sample02-src01161,965,burrito,1308,367,0.716796875,1,burrito,10,0.01,grid-fixed
+class965-burrito-sample03-src02588,965,burrito,1308,329,0.642578125,1,burrito,10,0.01,grid-fixed
+class965-burrito-sample04-src06960,965,burrito,1308,377,0.736328125,0,guacamole,10,0.01,grid-fixed
+class267-standard_poodle-sample00-src00025,267,standard poodle,1308,356,0.6953125,1,standard poodle,10,0.01,grid-fixed
+class267-standard_poodle-sample01-src00309,267,standard poodle,1308,364,0.7109375,0,miniature poodle,10,0.01,grid-fixed
+class267-standard_poodle-sample02-src06068,267,standard poodle,1308,318,0.62109375,1,standard poodle,10,0.01,grid-fixed
+class267-standard_poodle-sample03-src06156,267,standard poodle,1308,400,0.78125,0,Border terrier,10,0.01,grid-fixed
+class267-standard_poodle-sample04-src08663,267,standard poodle,1308,381,0.744140625,1,standard poodle,10,0.01,grid-fixed
+class642-marimba-sample00-src00020,642,"marimba, xylophone",1308,328,0.640625,1,"marimba, xylophone",20,0.01,grid-fixed
+class642-marimba-sample01-src02070,642,"marimba, xylophone",1308,328,0.640625,0,"oboe, hautboy, hautbois",20,0.01,grid-fixed
+class642-marimba-sample02-src02784,642,"marimba, xylophone",1308,374,0.73046875,1,"marimba, xylophone",20,0.01,grid-fixed
+class642-marimba-sample03-src03751,642,"marimba, xylophone",1308,348,0.6796875,1,"marimba, xylophone",20,0.01,grid-fixed
+class642-marimba-sample04-src04604,642,"marimba, xylophone",1308,367,0.716796875,1,"marimba, xylophone",20,0.01,grid-fixed
+class327-starfish-sample00-src00021,327,"starfish, sea star",1308,336,0.65625,1,"starfish, sea star",20,0.01,grid-fixed
+class327-starfish-sample01-src02168,327,"starfish, sea star",1308,379,0.740234375,0,"king crab, Alaska crab, Alaskan king crab, Alaska king crab, Paralithodes camtschatica",20,0.01,grid-fixed
+class327-starfish-sample02-src03019,327,"starfish, sea star",1308,330,0.64453125,1,"starfish, sea star",20,0.01,grid-fixed
+class327-starfish-sample03-src03084,327,"starfish, sea star",1308,368,0.71875,1,"starfish, sea star",20,0.01,grid-fixed
+class327-starfish-sample04-src03299,327,"starfish, sea star",1308,328,0.640625,1,"starfish, sea star",20,0.01,grid-fixed
+class087-African_grey-sample00-src00023,87,"African grey, African gray, Psittacus erithacus",1308,333,0.650390625,1,"African grey, African gray, Psittacus erithacus",20,0.01,grid-fixed
+class087-African_grey-sample01-src00627,87,"African grey, African gray, Psittacus erithacus",1308,331,0.646484375,1,"African grey, African gray, Psittacus erithacus",20,0.01,grid-fixed
+class087-African_grey-sample02-src00714,87,"African grey, African gray, Psittacus erithacus",1308,352,0.6875,1,"African grey, African gray, Psittacus erithacus",20,0.01,grid-fixed
+class087-African_grey-sample03-src02006,87,"African grey, African gray, Psittacus erithacus",1308,343,0.669921875,1,"African grey, African gray, Psittacus erithacus",20,0.01,grid-fixed
+class087-African_grey-sample04-src02414,87,"African grey, African gray, Psittacus erithacus",1308,346,0.67578125,1,"African grey, African gray, Psittacus erithacus",20,0.01,grid-fixed
+class965-burrito-sample00-src00024,965,burrito,1308,337,0.658203125,1,burrito,20,0.01,grid-fixed
+class965-burrito-sample01-src00318,965,burrito,1308,392,0.765625,1,burrito,20,0.01,grid-fixed
+class965-burrito-sample02-src01161,965,burrito,1308,392,0.765625,1,burrito,20,0.01,grid-fixed
+class965-burrito-sample03-src02588,965,burrito,1308,331,0.646484375,1,burrito,20,0.01,grid-fixed
+class965-burrito-sample04-src06960,965,burrito,1308,336,0.65625,0,guacamole,20,0.01,grid-fixed
+class267-standard_poodle-sample00-src00025,267,standard poodle,1308,389,0.759765625,1,standard poodle,20,0.01,grid-fixed
+class267-standard_poodle-sample01-src00309,267,standard poodle,1308,359,0.701171875,0,miniature poodle,20,0.01,grid-fixed
+class267-standard_poodle-sample02-src06068,267,standard poodle,1308,298,0.58203125,1,standard poodle,20,0.01,grid-fixed
+class267-standard_poodle-sample03-src06156,267,standard poodle,1308,411,0.802734375,0,Border terrier,20,0.01,grid-fixed
+class267-standard_poodle-sample04-src08663,267,standard poodle,1308,360,0.703125,1,standard poodle,20,0.01,grid-fixed
+class642-marimba-sample00-src00020,642,"marimba, xylophone",1308,345,0.673828125,1,"marimba, xylophone",30,0.01,grid-fixed
+class642-marimba-sample01-src02070,642,"marimba, xylophone",1308,344,0.671875,0,"oboe, hautboy, hautbois",30,0.01,grid-fixed
+class642-marimba-sample02-src02784,642,"marimba, xylophone",1308,396,0.7734375,1,"marimba, xylophone",30,0.01,grid-fixed
+class642-marimba-sample03-src03751,642,"marimba, xylophone",1308,325,0.634765625,1,"marimba, xylophone",30,0.01,grid-fixed
+class642-marimba-sample04-src04604,642,"marimba, xylophone",1308,363,0.708984375,1,"marimba, xylophone",30,0.01,grid-fixed
+class327-starfish-sample00-src00021,327,"starfish, sea star",1308,363,0.708984375,1,"starfish, sea star",30,0.01,grid-fixed
+class327-starfish-sample01-src02168,327,"starfish, sea star",1308,380,0.7421875,0,"king crab, Alaska crab, Alaskan king crab, Alaska king crab, Paralithodes camtschatica",30,0.01,grid-fixed
+class327-starfish-sample02-src03019,327,"starfish, sea star",1308,350,0.68359375,1,"starfish, sea star",30,0.01,grid-fixed
+class327-starfish-sample03-src03084,327,"starfish, sea star",1308,360,0.703125,1,"starfish, sea star",30,0.01,grid-fixed
+class327-starfish-sample04-src03299,327,"starfish, sea star",1308,344,0.671875,1,"starfish, sea star",30,0.01,grid-fixed
+class087-African_grey-sample00-src00023,87,"African grey, African gray, Psittacus erithacus",1308,330,0.64453125,1,"African grey, African gray, Psittacus erithacus",30,0.01,grid-fixed
+class087-African_grey-sample01-src00627,87,"African grey, African gray, Psittacus erithacus",1308,321,0.626953125,1,"African grey, African gray, Psittacus erithacus",30,0.01,grid-fixed
+class087-African_grey-sample02-src00714,87,"African grey, African gray, Psittacus erithacus",1308,351,0.685546875,1,"African grey, African gray, Psittacus erithacus",30,0.01,grid-fixed
+class087-African_grey-sample03-src02006,87,"African grey, African gray, Psittacus erithacus",1308,342,0.66796875,1,"African grey, African gray, Psittacus erithacus",30,0.01,grid-fixed
+class087-African_grey-sample04-src02414,87,"African grey, African gray, Psittacus erithacus",1308,368,0.71875,1,"African grey, African gray, Psittacus erithacus",30,0.01,grid-fixed
+class965-burrito-sample00-src00024,965,burrito,1308,326,0.63671875,1,burrito,30,0.01,grid-fixed
+class965-burrito-sample01-src00318,965,burrito,1308,375,0.732421875,1,burrito,30,0.01,grid-fixed
+class965-burrito-sample02-src01161,965,burrito,1308,384,0.75,1,burrito,30,0.01,grid-fixed
+class965-burrito-sample03-src02588,965,burrito,1308,320,0.625,1,burrito,30,0.01,grid-fixed
+class965-burrito-sample04-src06960,965,burrito,1308,326,0.63671875,0,guacamole,30,0.01,grid-fixed
+class267-standard_poodle-sample00-src00025,267,standard poodle,1308,382,0.74609375,1,standard poodle,30,0.01,grid-fixed
+class267-standard_poodle-sample01-src00309,267,standard poodle,1308,341,0.666015625,0,miniature poodle,30,0.01,grid-fixed
+class267-standard_poodle-sample02-src06068,267,standard poodle,1308,315,0.615234375,1,standard poodle,30,0.01,grid-fixed
+class267-standard_poodle-sample03-src06156,267,standard poodle,1308,392,0.765625,0,Border terrier,30,0.01,grid-fixed
+class267-standard_poodle-sample04-src08663,267,standard poodle,1308,366,0.71484375,1,standard poodle,30,0.01,grid-fixed
+class642-marimba-sample00-src00020,642,"marimba, xylophone",1308,385,0.751953125,1,"marimba, xylophone",50,0.01,grid-fixed
+class642-marimba-sample01-src02070,642,"marimba, xylophone",1308,357,0.697265625,0,"oboe, hautboy, hautbois",50,0.01,grid-fixed
+class642-marimba-sample02-src02784,642,"marimba, xylophone",1308,388,0.7578125,1,"marimba, xylophone",50,0.01,grid-fixed
+class642-marimba-sample03-src03751,642,"marimba, xylophone",1308,340,0.6640625,1,"marimba, xylophone",50,0.01,grid-fixed
+class642-marimba-sample04-src04604,642,"marimba, xylophone",1308,377,0.736328125,1,"marimba, xylophone",50,0.01,grid-fixed
+class327-starfish-sample00-src00021,327,"starfish, sea star",1308,375,0.732421875,1,"starfish, sea star",50,0.01,grid-fixed
+class327-starfish-sample01-src02168,327,"starfish, sea star",1308,364,0.7109375,0,"king crab, Alaska crab, Alaskan king crab, Alaska king crab, Paralithodes camtschatica",50,0.01,grid-fixed
+class327-starfish-sample02-src03019,327,"starfish, sea star",1308,394,0.76953125,1,"starfish, sea star",50,0.01,grid-fixed
+class327-starfish-sample03-src03084,327,"starfish, sea star",1308,369,0.720703125,1,"starfish, sea star",50,0.01,grid-fixed
+class327-starfish-sample04-src03299,327,"starfish, sea star",1308,358,0.69921875,1,"starfish, sea star",50,0.01,grid-fixed
+class087-African_grey-sample00-src00023,87,"African grey, African gray, Psittacus erithacus",1308,343,0.669921875,1,"African grey, African gray, Psittacus erithacus",50,0.01,grid-fixed
+class087-African_grey-sample01-src00627,87,"African grey, African gray, Psittacus erithacus",1308,337,0.658203125,1,"African grey, African gray, Psittacus erithacus",50,0.01,grid-fixed
+class087-African_grey-sample02-src00714,87,"African grey, African gray, Psittacus erithacus",1308,341,0.666015625,1,"African grey, African gray, Psittacus erithacus",50,0.01,grid-fixed
+class087-African_grey-sample03-src02006,87,"African grey, African gray, Psittacus erithacus",1308,354,0.69140625,1,"African grey, African gray, Psittacus erithacus",50,0.01,grid-fixed
+class087-African_grey-sample04-src02414,87,"African grey, African gray, Psittacus erithacus",1308,354,0.69140625,1,"African grey, African gray, Psittacus erithacus",50,0.01,grid-fixed
+class965-burrito-sample00-src00024,965,burrito,1308,341,0.666015625,1,burrito,50,0.01,grid-fixed
+class965-burrito-sample01-src00318,965,burrito,1308,411,0.802734375,1,burrito,50,0.01,grid-fixed
+class965-burrito-sample02-src01161,965,burrito,1308,402,0.78515625,1,burrito,50,0.01,grid-fixed
+class965-burrito-sample03-src02588,965,burrito,1308,321,0.626953125,1,burrito,50,0.01,grid-fixed
+class965-burrito-sample04-src06960,965,burrito,1308,309,0.603515625,0,guacamole,50,0.01,grid-fixed
+class267-standard_poodle-sample00-src00025,267,standard poodle,1308,389,0.759765625,1,standard poodle,50,0.01,grid-fixed
+class267-standard_poodle-sample01-src00309,267,standard poodle,1308,330,0.64453125,0,miniature poodle,50,0.01,grid-fixed
+class267-standard_poodle-sample02-src06068,267,standard poodle,1308,334,0.65234375,1,standard poodle,50,0.01,grid-fixed
+class267-standard_poodle-sample03-src06156,267,standard poodle,1308,408,0.796875,0,Border terrier,50,0.01,grid-fixed
+class267-standard_poodle-sample04-src08663,267,standard poodle,1308,376,0.734375,1,standard poodle,50,0.01,grid-fixed

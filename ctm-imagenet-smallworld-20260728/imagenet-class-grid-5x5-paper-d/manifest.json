@@ -1,0 +1,43 @@
+{
+  "checkpoint": "/root/autodl-tmp/continuous-thought-machines/checkpoints/imagenet/paper_zip_extracted/imagenet/ctm_imagenet_D=4096_T=50_M=25.pt",
+  "checkpoint_sha256": "a533ed9b2b76970581a2bb029d56edbb2110d3c209dcbbb07dbaf295b66d02e2",
+  "model_id": null,
+  "trained_iterations": 50,
+  "inference_iterations": 50,
+  "subset_dir": "/root/autodl-tmp/imagenet-class-grid-5x5-subset-d",
+  "matrix_ticks": [
+    1,
+    5,
+    10,
+    15,
+    20,
+    30,
+    40,
+    50
+  ],
+  "detail_samples": 25,
+  "active_neuron_selection": {
+    "score": "RMS post-activation over the complete observed tick trajectory",
+    "numeric_top_k": 512,
+    "gif_top_k": 128,
+    "fixed_across_ticks": true
+  },
+  "model": {
+    "iterations": 50,
+    "d_model": 4096,
+    "d_input": 1024,
+    "heads": 16,
+    "n_synch_out": 8196,
+    "n_synch_action": 2048,
+    "synapse_depth": 8,
+    "memory_length": 25,
+    "memory_hidden_dims": 64,
+    "neuron_select_type": "random-pairing",
+    "n_random_pairing_self": 32,
+    "backbone_type": "resnet152-4",
+    "out_dims": 1000,
+    "sync_representation_size_out": 8196,
+    "sync_representation_size_action": 2048
+  },
+  "input_note": "ImageNet validation images with ground-truth labels, saved from streaming ILSVRC/imagenet-1k."
+}
