@@ -1,0 +1,26 @@
+sample_id,target_label,target_synset,target_name,final_pred_label,final_pred_name,final_correct,correct_sustained_tick,final_certainty,detail_candidate
+class019-chickadee-sample00-src00004,19,n01592084,chickadee,19,chickadee,1,6,1.0,True
+class658-mitten-sample00-src00005,658,n03775071,mitten,904,window screen,0,0,0.8645930290222168,True
+class549-envelope-sample00-src00006,549,n03291819,envelope,721,pillow,0,0,0.8572157621383667,True
+class808-sombrero-sample00-src00007,808,n04259630,sombrero,808,sombrero,1,5,0.9999905228614807,True
+class305-dung_beetle-sample00-src00008,305,n02172182,dung beetle,75,"black widow, Latrodectus mactans",0,0,0.9525729417800903,True
+class808-sombrero-sample01-src00141,808,n04259630,sombrero,808,sombrero,1,5,0.9995356202125549,True
+class808-sombrero-sample02-src00373,808,n04259630,sombrero,445,"bikini, two-piece",0,0,0.6747457981109619,True
+class549-envelope-sample01-src00411,549,n03291819,envelope,549,envelope,1,2,0.9966461062431335,True
+class808-sombrero-sample03-src00534,808,n04259630,sombrero,96,toucan,0,0,0.8611770868301392,True
+class549-envelope-sample02-src00629,549,n03291819,envelope,507,combination lock,0,0,0.7887256145477295,True
+class305-dung_beetle-sample01-src00725,305,n02172182,dung beetle,305,dung beetle,1,17,0.9374502897262573,True
+class019-chickadee-sample01-src01375,19,n01592084,chickadee,19,chickadee,1,2,0.9999998807907104,True
+class549-envelope-sample03-src01464,549,n03291819,envelope,893,"wallet, billfold, notecase, pocketbook",0,0,0.8712252974510193,True
+class549-envelope-sample04-src01495,549,n03291819,envelope,692,packet,0,0,0.8766882419586182,True
+class305-dung_beetle-sample02-src01966,305,n02172182,dung beetle,305,dung beetle,1,41,0.9280176758766174,True
+class808-sombrero-sample04-src02603,808,n04259630,sombrero,457,"bow tie, bow-tie, bowtie",0,0,0.7226314544677734,True
+class305-dung_beetle-sample03-src02931,305,n02172182,dung beetle,696,paintbrush,0,0,0.9534290432929993,True
+class658-mitten-sample01-src03233,658,n03775071,mitten,658,mitten,1,5,0.9473175406455994,True
+class658-mitten-sample02-src04958,658,n03775071,mitten,658,mitten,1,24,0.9582043886184692,True
+class019-chickadee-sample02-src05545,19,n01592084,chickadee,19,chickadee,1,6,0.9988446235656738,True
+class305-dung_beetle-sample04-src05674,305,n02172182,dung beetle,305,dung beetle,1,3,0.9999934434890747,True
+class019-chickadee-sample03-src06318,19,n01592084,chickadee,19,chickadee,1,2,1.0,True
+class658-mitten-sample03-src06400,658,n03775071,mitten,721,pillow,0,0,0.6392974853515625,True
+class658-mitten-sample04-src06497,658,n03775071,mitten,658,mitten,1,3,0.9988511204719543,True
+class019-chickadee-sample04-src08072,19,n01592084,chickadee,19,chickadee,1,4,0.9994965195655823,True

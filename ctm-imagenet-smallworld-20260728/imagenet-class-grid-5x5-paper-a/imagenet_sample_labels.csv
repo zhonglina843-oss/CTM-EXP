@@ -1,0 +1,26 @@
+sample_id,target_label,target_synset,target_name,final_pred_label,final_pred_name,final_correct,correct_sustained_tick,final_certainty,detail_candidate
+class091-coucal-sample00-src00000,91,n01824575,coucal,91,coucal,1,4,0.9999966621398926,True
+class171-Italian_greyhound-sample00-src00001,171,n02091032,Italian greyhound,171,Italian greyhound,1,9,0.9438866376876831,True
+class980-volcano-sample00-src00002,980,n09472597,volcano,975,"lakeside, lakeshore",0,0,0.8582242727279663,True
+class505-coffeepot-sample00-src00013,505,n03063689,coffeepot,505,coffeepot,1,5,0.9849270582199097,True
+class817-sports_car-sample00-src00019,817,n04285008,"sports car, sport car",817,"sports car, sport car",1,46,0.8042460680007935,True
+class091-coucal-sample01-src00316,91,n01824575,coucal,80,black grouse,0,0,0.9516019225120544,True
+class817-sports_car-sample01-src00787,817,n04285008,"sports car, sport car",597,holster,0,0,0.7794907689094543,True
+class980-volcano-sample01-src00863,980,n09472597,volcano,980,volcano,1,3,0.9999963641166687,True
+class980-volcano-sample02-src01265,980,n09472597,volcano,705,"passenger car, coach, carriage",0,0,0.6652164459228516,True
+class980-volcano-sample03-src01422,980,n09472597,volcano,980,volcano,1,2,0.9999905824661255,True
+class505-coffeepot-sample01-src01487,505,n03063689,coffeepot,505,coffeepot,1,23,0.9262190461158752,True
+class091-coucal-sample02-src01583,91,n01824575,coucal,95,jacamar,0,0,0.9979052543640137,True
+class091-coucal-sample03-src01629,91,n01824575,coucal,91,coucal,1,5,0.9999968409538269,True
+class980-volcano-sample04-src01813,980,n09472597,volcano,970,alp,0,0,0.8358733057975769,True
+class171-Italian_greyhound-sample01-src02164,171,n02091032,Italian greyhound,171,Italian greyhound,1,4,0.9999849200248718,True
+class171-Italian_greyhound-sample02-src02599,171,n02091032,Italian greyhound,171,Italian greyhound,1,3,0.9993010759353638,True
+class171-Italian_greyhound-sample03-src02775,171,n02091032,Italian greyhound,171,Italian greyhound,1,3,0.9958142638206482,True
+class505-coffeepot-sample02-src02782,505,n03063689,coffeepot,505,coffeepot,1,25,0.8030825853347778,True
+class817-sports_car-sample02-src02853,817,n04285008,"sports car, sport car",817,"sports car, sport car",1,2,0.9974458813667297,True
+class091-coucal-sample04-src03448,91,n01824575,coucal,91,coucal,1,5,0.997251033782959,True
+class171-Italian_greyhound-sample04-src03793,171,n02091032,Italian greyhound,232,Border collie,0,0,0.6739335060119629,True
+class817-sports_car-sample03-src04513,817,n04285008,"sports car, sport car",511,convertible,0,0,0.9991903305053711,True
+class817-sports_car-sample04-src04549,817,n04285008,"sports car, sport car",817,"sports car, sport car",1,45,0.9016945958137512,True
+class505-coffeepot-sample03-src05563,505,n03063689,coffeepot,883,vase,0,0,0.7466052174568176,True
+class505-coffeepot-sample04-src05824,505,n03063689,coffeepot,505,coffeepot,1,2,0.9999504089355469,True

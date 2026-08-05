@@ -1,0 +1,26 @@
+sample_id,target_label,target_synset,target_name,final_pred_label,final_pred_name,final_correct,correct_sustained_tick,final_certainty,detail_candidate
+class089-sulphur-crested_cockatoo-sample00-src00010,89,n01819313,"sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita",89,"sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita",1,3,1.0,True
+class332-Angora-sample00-src00014,332,n02328150,"Angora, Angora rabbit",332,"Angora, Angora rabbit",1,4,0.9994050860404968,True
+class575-golfcart-sample00-src00015,575,n03445924,"golfcart, golf cart",575,"golfcart, golf cart",1,6,0.9556202292442322,True
+class986-yellow_lady_s_slipper-sample00-src00016,986,n12057211,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",986,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",1,3,1.0,True
+class867-trailer_truck-sample00-src00017,867,n04467665,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",867,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",1,44,0.9622650742530823,True
+class332-Angora-sample01-src00077,332,n02328150,"Angora, Angora rabbit",332,"Angora, Angora rabbit",1,3,1.0,True
+class575-golfcart-sample01-src00109,575,n03445924,"golfcart, golf cart",575,"golfcart, golf cart",1,3,0.999999463558197,True
+class575-golfcart-sample02-src00137,575,n03445924,"golfcart, golf cart",575,"golfcart, golf cart",1,6,0.9993737936019897,True
+class867-trailer_truck-sample01-src00731,867,n04467665,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",867,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",1,6,0.9726502895355225,True
+class867-trailer_truck-sample02-src00751,867,n04467665,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",867,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",1,3,0.9994407892227173,True
+class332-Angora-sample02-src01198,332,n02328150,"Angora, Angora rabbit",332,"Angora, Angora rabbit",1,5,0.9914253354072571,True
+class575-golfcart-sample03-src01670,575,n03445924,"golfcart, golf cart",575,"golfcart, golf cart",1,2,0.9926472306251526,True
+class575-golfcart-sample04-src01675,575,n03445924,"golfcart, golf cart",407,ambulance,0,0,0.9901191592216492,True
+class986-yellow_lady_s_slipper-sample01-src01753,986,n12057211,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",986,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",1,3,0.9999999403953552,True
+class986-yellow_lady_s_slipper-sample02-src01983,986,n12057211,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",986,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",1,3,1.0,True
+class332-Angora-sample03-src02187,332,n02328150,"Angora, Angora rabbit",332,"Angora, Angora rabbit",1,3,0.9999976754188538,True
+class986-yellow_lady_s_slipper-sample03-src02195,986,n12057211,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",986,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",1,2,1.0,True
+class986-yellow_lady_s_slipper-sample04-src02239,986,n12057211,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",986,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",1,2,1.0,True
+class089-sulphur-crested_cockatoo-sample01-src02391,89,n01819313,"sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita",89,"sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita",1,5,0.9928145408630371,True
+class089-sulphur-crested_cockatoo-sample02-src02548,89,n01819313,"sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita",89,"sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita",1,6,0.9853515625,True
+class089-sulphur-crested_cockatoo-sample03-src02551,89,n01819313,"sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita",649,"megalith, megalithic structure",0,0,0.5971375703811646,True
+class089-sulphur-crested_cockatoo-sample04-src02680,89,n01819313,"sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita",93,hornbill,0,0,0.8112888336181641,True
+class332-Angora-sample04-src03309,332,n02328150,"Angora, Angora rabbit",332,"Angora, Angora rabbit",1,2,1.0,True
+class867-trailer_truck-sample03-src03460,867,n04467665,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",867,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",1,4,0.9999911189079285,True
+class867-trailer_truck-sample04-src03607,867,n04467665,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",660,"mobile home, manufactured home",0,0,0.9145174622535706,True

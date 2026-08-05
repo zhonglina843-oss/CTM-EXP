@@ -1,0 +1,101 @@
+sample_id,label,label_name,n_edges,lcc_nodes,lcc_ratio,final_correct,final_pred_name,tick,density,layout
+class089-sulphur-crested_cockatoo-sample00-src00010,89,"sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita",1308,353,0.689453125,1,"sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita",10,0.01,grid-fixed
+class089-sulphur-crested_cockatoo-sample01-src02391,89,"sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita",1308,357,0.697265625,1,"sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita",10,0.01,grid-fixed
+class089-sulphur-crested_cockatoo-sample02-src02548,89,"sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita",1308,404,0.7890625,1,"sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita",10,0.01,grid-fixed
+class089-sulphur-crested_cockatoo-sample03-src02551,89,"sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita",1308,355,0.693359375,0,"megalith, megalithic structure",10,0.01,grid-fixed
+class089-sulphur-crested_cockatoo-sample04-src02680,89,"sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita",1308,390,0.76171875,0,hornbill,10,0.01,grid-fixed
+class332-Angora-sample00-src00014,332,"Angora, Angora rabbit",1308,378,0.73828125,1,"Angora, Angora rabbit",10,0.01,grid-fixed
+class332-Angora-sample01-src00077,332,"Angora, Angora rabbit",1308,406,0.79296875,1,"Angora, Angora rabbit",10,0.01,grid-fixed
+class332-Angora-sample02-src01198,332,"Angora, Angora rabbit",1308,339,0.662109375,1,"Angora, Angora rabbit",10,0.01,grid-fixed
+class332-Angora-sample03-src02187,332,"Angora, Angora rabbit",1308,320,0.625,1,"Angora, Angora rabbit",10,0.01,grid-fixed
+class332-Angora-sample04-src03309,332,"Angora, Angora rabbit",1308,362,0.70703125,1,"Angora, Angora rabbit",10,0.01,grid-fixed
+class575-golfcart-sample00-src00015,575,"golfcart, golf cart",1308,346,0.67578125,1,"golfcart, golf cart",10,0.01,grid-fixed
+class575-golfcart-sample01-src00109,575,"golfcart, golf cart",1308,385,0.751953125,1,"golfcart, golf cart",10,0.01,grid-fixed
+class575-golfcart-sample02-src00137,575,"golfcart, golf cart",1308,438,0.85546875,1,"golfcart, golf cart",10,0.01,grid-fixed
+class575-golfcart-sample03-src01670,575,"golfcart, golf cart",1308,321,0.626953125,1,"golfcart, golf cart",10,0.01,grid-fixed
+class575-golfcart-sample04-src01675,575,"golfcart, golf cart",1308,343,0.669921875,0,ambulance,10,0.01,grid-fixed
+class986-yellow_lady_s_slipper-sample00-src00016,986,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",1308,347,0.677734375,1,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",10,0.01,grid-fixed
+class986-yellow_lady_s_slipper-sample01-src01753,986,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",1308,352,0.6875,1,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",10,0.01,grid-fixed
+class986-yellow_lady_s_slipper-sample02-src01983,986,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",1308,295,0.576171875,1,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",10,0.01,grid-fixed
+class986-yellow_lady_s_slipper-sample03-src02195,986,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",1308,323,0.630859375,1,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",10,0.01,grid-fixed
+class986-yellow_lady_s_slipper-sample04-src02239,986,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",1308,376,0.734375,1,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",10,0.01,grid-fixed
+class867-trailer_truck-sample00-src00017,867,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",1308,364,0.7109375,1,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",10,0.01,grid-fixed
+class867-trailer_truck-sample01-src00731,867,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",1308,367,0.716796875,1,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",10,0.01,grid-fixed
+class867-trailer_truck-sample02-src00751,867,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",1308,384,0.75,1,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",10,0.01,grid-fixed
+class867-trailer_truck-sample03-src03460,867,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",1308,333,0.650390625,1,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",10,0.01,grid-fixed
+class867-trailer_truck-sample04-src03607,867,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",1308,345,0.673828125,0,"mobile home, manufactured home",10,0.01,grid-fixed
+class089-sulphur-crested_cockatoo-sample00-src00010,89,"sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita",1308,315,0.615234375,1,"sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita",20,0.01,grid-fixed
+class089-sulphur-crested_cockatoo-sample01-src02391,89,"sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita",1308,359,0.701171875,1,"sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita",20,0.01,grid-fixed
+class089-sulphur-crested_cockatoo-sample02-src02548,89,"sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita",1308,374,0.73046875,1,"sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita",20,0.01,grid-fixed
+class089-sulphur-crested_cockatoo-sample03-src02551,89,"sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita",1308,365,0.712890625,0,"megalith, megalithic structure",20,0.01,grid-fixed
+class089-sulphur-crested_cockatoo-sample04-src02680,89,"sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita",1308,341,0.666015625,0,hornbill,20,0.01,grid-fixed
+class332-Angora-sample00-src00014,332,"Angora, Angora rabbit",1308,348,0.6796875,1,"Angora, Angora rabbit",20,0.01,grid-fixed
+class332-Angora-sample01-src00077,332,"Angora, Angora rabbit",1308,418,0.81640625,1,"Angora, Angora rabbit",20,0.01,grid-fixed
+class332-Angora-sample02-src01198,332,"Angora, Angora rabbit",1308,349,0.681640625,1,"Angora, Angora rabbit",20,0.01,grid-fixed
+class332-Angora-sample03-src02187,332,"Angora, Angora rabbit",1308,337,0.658203125,1,"Angora, Angora rabbit",20,0.01,grid-fixed
+class332-Angora-sample04-src03309,332,"Angora, Angora rabbit",1308,371,0.724609375,1,"Angora, Angora rabbit",20,0.01,grid-fixed
+class575-golfcart-sample00-src00015,575,"golfcart, golf cart",1308,371,0.724609375,1,"golfcart, golf cart",20,0.01,grid-fixed
+class575-golfcart-sample01-src00109,575,"golfcart, golf cart",1308,406,0.79296875,1,"golfcart, golf cart",20,0.01,grid-fixed
+class575-golfcart-sample02-src00137,575,"golfcart, golf cart",1308,441,0.861328125,1,"golfcart, golf cart",20,0.01,grid-fixed
+class575-golfcart-sample03-src01670,575,"golfcart, golf cart",1308,331,0.646484375,1,"golfcart, golf cart",20,0.01,grid-fixed
+class575-golfcart-sample04-src01675,575,"golfcart, golf cart",1308,404,0.7890625,0,ambulance,20,0.01,grid-fixed
+class986-yellow_lady_s_slipper-sample00-src00016,986,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",1308,348,0.6796875,1,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",20,0.01,grid-fixed
+class986-yellow_lady_s_slipper-sample01-src01753,986,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",1308,329,0.642578125,1,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",20,0.01,grid-fixed
+class986-yellow_lady_s_slipper-sample02-src01983,986,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",1308,313,0.611328125,1,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",20,0.01,grid-fixed
+class986-yellow_lady_s_slipper-sample03-src02195,986,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",1308,337,0.658203125,1,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",20,0.01,grid-fixed
+class986-yellow_lady_s_slipper-sample04-src02239,986,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",1308,367,0.716796875,1,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",20,0.01,grid-fixed
+class867-trailer_truck-sample00-src00017,867,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",1308,395,0.771484375,1,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",20,0.01,grid-fixed
+class867-trailer_truck-sample01-src00731,867,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",1308,386,0.75390625,1,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",20,0.01,grid-fixed
+class867-trailer_truck-sample02-src00751,867,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",1308,418,0.81640625,1,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",20,0.01,grid-fixed
+class867-trailer_truck-sample03-src03460,867,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",1308,396,0.7734375,1,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",20,0.01,grid-fixed
+class867-trailer_truck-sample04-src03607,867,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",1308,371,0.724609375,0,"mobile home, manufactured home",20,0.01,grid-fixed
+class089-sulphur-crested_cockatoo-sample00-src00010,89,"sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita",1308,303,0.591796875,1,"sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita",30,0.01,grid-fixed
+class089-sulphur-crested_cockatoo-sample01-src02391,89,"sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita",1308,344,0.671875,1,"sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita",30,0.01,grid-fixed
+class089-sulphur-crested_cockatoo-sample02-src02548,89,"sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita",1308,348,0.6796875,1,"sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita",30,0.01,grid-fixed
+class089-sulphur-crested_cockatoo-sample03-src02551,89,"sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita",1308,359,0.701171875,0,"megalith, megalithic structure",30,0.01,grid-fixed
+class089-sulphur-crested_cockatoo-sample04-src02680,89,"sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita",1308,320,0.625,0,hornbill,30,0.01,grid-fixed
+class332-Angora-sample00-src00014,332,"Angora, Angora rabbit",1308,356,0.6953125,1,"Angora, Angora rabbit",30,0.01,grid-fixed
+class332-Angora-sample01-src00077,332,"Angora, Angora rabbit",1308,399,0.779296875,1,"Angora, Angora rabbit",30,0.01,grid-fixed
+class332-Angora-sample02-src01198,332,"Angora, Angora rabbit",1308,355,0.693359375,1,"Angora, Angora rabbit",30,0.01,grid-fixed
+class332-Angora-sample03-src02187,332,"Angora, Angora rabbit",1308,343,0.669921875,1,"Angora, Angora rabbit",30,0.01,grid-fixed
+class332-Angora-sample04-src03309,332,"Angora, Angora rabbit",1308,362,0.70703125,1,"Angora, Angora rabbit",30,0.01,grid-fixed
+class575-golfcart-sample00-src00015,575,"golfcart, golf cart",1308,374,0.73046875,1,"golfcart, golf cart",30,0.01,grid-fixed
+class575-golfcart-sample01-src00109,575,"golfcart, golf cart",1308,404,0.7890625,1,"golfcart, golf cart",30,0.01,grid-fixed
+class575-golfcart-sample02-src00137,575,"golfcart, golf cart",1308,451,0.880859375,1,"golfcart, golf cart",30,0.01,grid-fixed
+class575-golfcart-sample03-src01670,575,"golfcart, golf cart",1308,353,0.689453125,1,"golfcart, golf cart",30,0.01,grid-fixed
+class575-golfcart-sample04-src01675,575,"golfcart, golf cart",1308,400,0.78125,0,ambulance,30,0.01,grid-fixed
+class986-yellow_lady_s_slipper-sample00-src00016,986,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",1308,325,0.634765625,1,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",30,0.01,grid-fixed
+class986-yellow_lady_s_slipper-sample01-src01753,986,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",1308,349,0.681640625,1,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",30,0.01,grid-fixed
+class986-yellow_lady_s_slipper-sample02-src01983,986,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",1308,312,0.609375,1,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",30,0.01,grid-fixed
+class986-yellow_lady_s_slipper-sample03-src02195,986,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",1308,358,0.69921875,1,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",30,0.01,grid-fixed
+class986-yellow_lady_s_slipper-sample04-src02239,986,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",1308,348,0.6796875,1,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",30,0.01,grid-fixed
+class867-trailer_truck-sample00-src00017,867,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",1308,384,0.75,1,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",30,0.01,grid-fixed
+class867-trailer_truck-sample01-src00731,867,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",1308,355,0.693359375,1,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",30,0.01,grid-fixed
+class867-trailer_truck-sample02-src00751,867,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",1308,396,0.7734375,1,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",30,0.01,grid-fixed
+class867-trailer_truck-sample03-src03460,867,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",1308,392,0.765625,1,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",30,0.01,grid-fixed
+class867-trailer_truck-sample04-src03607,867,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",1308,357,0.697265625,0,"mobile home, manufactured home",30,0.01,grid-fixed
+class089-sulphur-crested_cockatoo-sample00-src00010,89,"sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita",1308,350,0.68359375,1,"sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita",50,0.01,grid-fixed
+class089-sulphur-crested_cockatoo-sample01-src02391,89,"sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita",1308,368,0.71875,1,"sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita",50,0.01,grid-fixed
+class089-sulphur-crested_cockatoo-sample02-src02548,89,"sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita",1308,385,0.751953125,1,"sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita",50,0.01,grid-fixed
+class089-sulphur-crested_cockatoo-sample03-src02551,89,"sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita",1308,336,0.65625,0,"megalith, megalithic structure",50,0.01,grid-fixed
+class089-sulphur-crested_cockatoo-sample04-src02680,89,"sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita",1308,321,0.626953125,0,hornbill,50,0.01,grid-fixed
+class332-Angora-sample00-src00014,332,"Angora, Angora rabbit",1308,366,0.71484375,1,"Angora, Angora rabbit",50,0.01,grid-fixed
+class332-Angora-sample01-src00077,332,"Angora, Angora rabbit",1308,390,0.76171875,1,"Angora, Angora rabbit",50,0.01,grid-fixed
+class332-Angora-sample02-src01198,332,"Angora, Angora rabbit",1308,350,0.68359375,1,"Angora, Angora rabbit",50,0.01,grid-fixed
+class332-Angora-sample03-src02187,332,"Angora, Angora rabbit",1308,366,0.71484375,1,"Angora, Angora rabbit",50,0.01,grid-fixed
+class332-Angora-sample04-src03309,332,"Angora, Angora rabbit",1308,385,0.751953125,1,"Angora, Angora rabbit",50,0.01,grid-fixed
+class575-golfcart-sample00-src00015,575,"golfcart, golf cart",1308,391,0.763671875,1,"golfcart, golf cart",50,0.01,grid-fixed
+class575-golfcart-sample01-src00109,575,"golfcart, golf cart",1308,414,0.80859375,1,"golfcart, golf cart",50,0.01,grid-fixed
+class575-golfcart-sample02-src00137,575,"golfcart, golf cart",1308,447,0.873046875,1,"golfcart, golf cart",50,0.01,grid-fixed
+class575-golfcart-sample03-src01670,575,"golfcart, golf cart",1308,357,0.697265625,1,"golfcart, golf cart",50,0.01,grid-fixed
+class575-golfcart-sample04-src01675,575,"golfcart, golf cart",1308,399,0.779296875,0,ambulance,50,0.01,grid-fixed
+class986-yellow_lady_s_slipper-sample00-src00016,986,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",1308,338,0.66015625,1,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",50,0.01,grid-fixed
+class986-yellow_lady_s_slipper-sample01-src01753,986,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",1308,402,0.78515625,1,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",50,0.01,grid-fixed
+class986-yellow_lady_s_slipper-sample02-src01983,986,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",1308,319,0.623046875,1,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",50,0.01,grid-fixed
+class986-yellow_lady_s_slipper-sample03-src02195,986,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",1308,374,0.73046875,1,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",50,0.01,grid-fixed
+class986-yellow_lady_s_slipper-sample04-src02239,986,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",1308,367,0.716796875,1,"yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum",50,0.01,grid-fixed
+class867-trailer_truck-sample00-src00017,867,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",1308,396,0.7734375,1,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",50,0.01,grid-fixed
+class867-trailer_truck-sample01-src00731,867,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",1308,379,0.740234375,1,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",50,0.01,grid-fixed
+class867-trailer_truck-sample02-src00751,867,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",1308,408,0.796875,1,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",50,0.01,grid-fixed
+class867-trailer_truck-sample03-src03460,867,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",1308,419,0.818359375,1,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",50,0.01,grid-fixed
+class867-trailer_truck-sample04-src03607,867,"trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi",1308,366,0.71484375,0,"mobile home, manufactured home",50,0.01,grid-fixed

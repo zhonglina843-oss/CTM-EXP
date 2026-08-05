@@ -1,0 +1,26 @@
+sample_id,target_label,target_synset,target_name,final_pred_label,final_pred_name,final_correct,correct_sustained_tick,final_certainty,detail_candidate
+class218-Welsh_springer_spaniel-sample00-src00003,218,n02102177,Welsh springer spaniel,218,Welsh springer spaniel,1,5,0.9905576109886169,True
+class416-balance_beam-sample00-src00009,416,n02777292,"balance beam, beam",416,"balance beam, beam",1,5,0.9940621852874756,True
+class793-shower_cap-sample00-src00011,793,n04209133,shower cap,793,shower cap,1,2,0.9999999403953552,True
+class712-Petri_dish-sample00-src00012,712,n03920288,Petri dish,712,Petri dish,1,17,0.8640002608299255,True
+class116-chiton-sample00-src00018,116,n01955084,"chiton, coat-of-mail shell, sea cradle, polyplacophore",116,"chiton, coat-of-mail shell, sea cradle, polyplacophore",1,4,0.9999966025352478,True
+class116-chiton-sample01-src00328,116,n01955084,"chiton, coat-of-mail shell, sea cradle, polyplacophore",116,"chiton, coat-of-mail shell, sea cradle, polyplacophore",1,8,0.9701816439628601,True
+class416-balance_beam-sample01-src00572,416,n02777292,"balance beam, beam",416,"balance beam, beam",1,2,0.99997878074646,True
+class218-Welsh_springer_spaniel-sample01-src01197,218,n02102177,Welsh springer spaniel,218,Welsh springer spaniel,1,48,0.8618344068527222,True
+class116-chiton-sample02-src01262,116,n01955084,"chiton, coat-of-mail shell, sea cradle, polyplacophore",116,"chiton, coat-of-mail shell, sea cradle, polyplacophore",1,4,0.9999938607215881,True
+class218-Welsh_springer_spaniel-sample02-src01317,218,n02102177,Welsh springer spaniel,218,Welsh springer spaniel,1,5,0.99419766664505,True
+class218-Welsh_springer_spaniel-sample03-src01395,218,n02102177,Welsh springer spaniel,218,Welsh springer spaniel,1,4,0.9993281960487366,True
+class712-Petri_dish-sample01-src01647,712,n03920288,Petri dish,712,Petri dish,1,2,0.9999999403953552,True
+class116-chiton-sample03-src01748,116,n01955084,"chiton, coat-of-mail shell, sea cradle, polyplacophore",113,snail,0,0,0.8551254868507385,True
+class116-chiton-sample04-src01819,116,n01955084,"chiton, coat-of-mail shell, sea cradle, polyplacophore",116,"chiton, coat-of-mail shell, sea cradle, polyplacophore",1,3,1.0,True
+class218-Welsh_springer_spaniel-sample04-src02198,218,n02102177,Welsh springer spaniel,218,Welsh springer spaniel,1,2,0.9999656677246094,True
+class712-Petri_dish-sample02-src02202,712,n03920288,Petri dish,753,radiator,0,0,0.7736191153526306,True
+class416-balance_beam-sample02-src02300,416,n02777292,"balance beam, beam",416,"balance beam, beam",1,5,0.9999310970306396,True
+class416-balance_beam-sample03-src02722,416,n02777292,"balance beam, beam",416,"balance beam, beam",1,4,0.999860942363739,True
+class793-shower_cap-sample01-src02729,793,n04209133,shower cap,793,shower cap,1,2,0.9999999403953552,True
+class712-Petri_dish-sample03-src02940,712,n03920288,Petri dish,592,"hard disc, hard disk, fixed disk",0,0,0.9310991168022156,True
+class416-balance_beam-sample04-src03507,416,n02777292,"balance beam, beam",416,"balance beam, beam",1,45,0.915340006351471,True
+class712-Petri_dish-sample04-src03684,712,n03920288,Petri dish,107,jellyfish,0,0,0.9416710734367371,True
+class793-shower_cap-sample02-src04889,793,n04209133,shower cap,433,"bathing cap, swimming cap",0,0,0.9999896287918091,True
+class793-shower_cap-sample03-src05176,793,n04209133,shower cap,793,shower cap,1,5,0.9999175071716309,True
+class793-shower_cap-sample04-src06825,793,n04209133,shower cap,423,barber chair,0,0,0.8414385914802551,True

@@ -1,0 +1,19 @@
+Mon Jul 27 15:46:54 CST 2026
+waiting for subset-e labels.csv
+Mon Jul 27 15:47:54 CST 2026
+waiting for subset-e labels.csv
+Mon Jul 27 15:48:54 CST 2026
+waiting for subset-e labels.csv
+Mon Jul 27 15:49:54 CST 2026
+waiting for subset-e labels.csv
+Mon Jul 27 15:50:54 CST 2026
+waiting for subset-e labels.csv
+Mon Jul 27 15:51:54 CST 2026
+waiting for subset-e labels.csv
+
+libgomp: Invalid value for environment variable OMP_NUM_THREADS
+Using neuron select type: random-pairing
+Synch representation size action: 2048
+Synch representation size out: 8196
+[1/25] class642-marimba-sample00-src00020 detail=True
+[2/25] class327-starfish-sample00-src00021 detail=True
