@@ -1,0 +1,30 @@
+
+libgomp: Invalid value for environment variable OMP_NUM_THREADS
+Using neuron select type: random-pairing
+Synch representation size action: 2048
+Synch representation size out: 8196
+[1/25] class091-coucal-sample00-src00000 detail=True
+[2/25] class171-Italian_greyhound-sample00-src00001 detail=True
+[3/25] class980-volcano-sample00-src00002 detail=True
+[4/25] class505-coffeepot-sample00-src00013 detail=True
+[5/25] class817-sports_car-sample00-src00019 detail=True
+[6/25] class091-coucal-sample01-src00316 detail=True
+[7/25] class817-sports_car-sample01-src00787 detail=True
+[8/25] class980-volcano-sample01-src00863 detail=True
+[9/25] class980-volcano-sample02-src01265 detail=True
+[10/25] class980-volcano-sample03-src01422 detail=True
+[11/25] class505-coffeepot-sample01-src01487 detail=True
+[12/25] class091-coucal-sample02-src01583 detail=True
+[13/25] class091-coucal-sample03-src01629 detail=True
+[14/25] class980-volcano-sample04-src01813 detail=True
+[15/25] class171-Italian_greyhound-sample01-src02164 detail=True
+[16/25] class171-Italian_greyhound-sample02-src02599 detail=True
+[17/25] class171-Italian_greyhound-sample03-src02775 detail=True
+[18/25] class505-coffeepot-sample02-src02782 detail=True
+[19/25] class817-sports_car-sample02-src02853 detail=True
+[20/25] class091-coucal-sample04-src03448 detail=True
+[21/25] class171-Italian_greyhound-sample04-src03793 detail=True
+[22/25] class817-sports_car-sample03-src04513 detail=True
+[23/25] class817-sports_car-sample04-src04549 detail=True
+[24/25] class505-coffeepot-sample03-src05563 detail=True
+[25/25] class505-coffeepot-sample04-src05824 detail=True

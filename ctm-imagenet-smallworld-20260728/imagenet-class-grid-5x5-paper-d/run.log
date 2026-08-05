@@ -1,0 +1,30 @@
+
+libgomp: Invalid value for environment variable OMP_NUM_THREADS
+Using neuron select type: random-pairing
+Synch representation size action: 2048
+Synch representation size out: 8196
+[1/25] class218-Welsh_springer_spaniel-sample00-src00003 detail=True
+[2/25] class416-balance_beam-sample00-src00009 detail=True
+[3/25] class793-shower_cap-sample00-src00011 detail=True
+[4/25] class712-Petri_dish-sample00-src00012 detail=True
+[5/25] class116-chiton-sample00-src00018 detail=True
+[6/25] class116-chiton-sample01-src00328 detail=True
+[7/25] class416-balance_beam-sample01-src00572 detail=True
+[8/25] class218-Welsh_springer_spaniel-sample01-src01197 detail=True
+[9/25] class116-chiton-sample02-src01262 detail=True
+[10/25] class218-Welsh_springer_spaniel-sample02-src01317 detail=True
+[11/25] class218-Welsh_springer_spaniel-sample03-src01395 detail=True
+[12/25] class712-Petri_dish-sample01-src01647 detail=True
+[13/25] class116-chiton-sample03-src01748 detail=True
+[14/25] class116-chiton-sample04-src01819 detail=True
+[15/25] class218-Welsh_springer_spaniel-sample04-src02198 detail=True
+[16/25] class712-Petri_dish-sample02-src02202 detail=True
+[17/25] class416-balance_beam-sample02-src02300 detail=True
+[18/25] class416-balance_beam-sample03-src02722 detail=True
+[19/25] class793-shower_cap-sample01-src02729 detail=True
+[20/25] class712-Petri_dish-sample03-src02940 detail=True
+[21/25] class416-balance_beam-sample04-src03507 detail=True
+[22/25] class712-Petri_dish-sample04-src03684 detail=True
+[23/25] class793-shower_cap-sample02-src04889 detail=True
+[24/25] class793-shower_cap-sample03-src05176 detail=True
+[25/25] class793-shower_cap-sample04-src06825 detail=True

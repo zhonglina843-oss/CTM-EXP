@@ -1,0 +1,2 @@
+[grid-fixed] building union from 25 samples, ticks=[10, 20, 30, 50], densities=[0.01]
+[grid-fixed] processed 5/25 samples; union_nodes=1325 union_edges=9118
