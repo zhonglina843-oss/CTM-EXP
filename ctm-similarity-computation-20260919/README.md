@@ -20,71 +20,48 @@
 
 **公式 1：Weighted-Jaccard**
 
-$$
-J_w(a,b)=\frac{\sum_e\min(w_{a,e},w_{b,e})}{\sum_e\max(w_{a,e},w_{b,e})}
-$$
+![Weighted-Jaccard formula](formula_assets/01_weighted_jaccard.svg)
 
 **公式 2：Edge cosine**
 
-$$
-\operatorname{cos}(a,b)=\frac{a^{\mathsf T}b}{\lVert a\rVert_2\lVert b\rVert_2}
-$$
+![Edge cosine formula](formula_assets/02_edge_cosine.svg)
+
 
 **公式 3：Degree-strength cosine**
 
-$$
-d_i=\sum_j w_{ij},\qquad \operatorname{cos}(d_a,d_b)=\frac{d_a^{\mathsf T}d_b}{\lVert d_a\rVert_2\lVert d_b\rVert_2}
-$$
+![Degree-strength cosine formula](formula_assets/03_degree_strength.svg)
 
 **公式 4：Spectral similarity**
 
-$$
-\lambda(A)=\operatorname{eigvalsh}(A),\qquad
-\operatorname{sim}(a,b)=\frac{1}{1+\lVert\lambda_a-\lambda_b\rVert_2/(\lVert\lambda_a\rVert_2+\lVert\lambda_b\rVert_2)}
-$$
+![Spectral similarity formula](formula_assets/04_spectral.svg)
 
 **公式 5：Community similarity**
 
-$$
-C(G)=\{C_1,\ldots,C_k\},\qquad \operatorname{sim}_{\mathrm{community}}=\operatorname{NMI}(C_a,C_b)\ \text{or}\ \operatorname{ARI}(C_a,C_b)
-$$
+![Community similarity formula](formula_assets/05_community.svg)
 
 **公式 6：DeltaCon**
 
-$$
-S=(I+\varepsilon D-\varepsilon A)^{-1},\qquad
-d(G_a,G_b)=\left[\sum_{i,j}\left(\sqrt{S_{ij}^{(a)}}-\sqrt{S_{ij}^{(b)}}\right)^2\right]^{1/2}
-$$
+![DeltaCon formula](formula_assets/06_deltacon.svg)
 
 **公式 7：DeltaCon-ATTR**
 
-$$
-\operatorname{impact}(v)=\left\lVert S_{v,:}^{(a)}-S_{v,:}^{(b)}\right\rVert_2^2
-$$
+![DeltaCon attribution formula](formula_assets/07_deltacon_attr.svg)
 
 **公式 8：Graph Edit Distance**
 
-$$
-\operatorname{GED}(G_a,G_b)=\min_{\mathcal E}\operatorname{cost}(\mathcal E)
-$$
+![Graph Edit Distance formula](formula_assets/08_graph_edit_distance.svg)
 
 **公式 9：Graph Kernel/WL**
 
-$$
-h_v^{(t+1)}=\operatorname{HASH}\!\left(h_v^{(t)},\operatorname{SORT}\{h_u^{(t)}:u\in N(v)\}\right)
-$$
+![Graph Kernel WL formula](formula_assets/09_graph_kernel_wl.svg)
 
 **公式 10：Gromov-Wasserstein**
 
-$$
-\operatorname{GW}(G_a,G_b)=\min_{\pi}\sum_{i,j,k,l}\left\lvert d_a(i,j)-d_b(k,l)\right\rvert^2\pi_{ik}\pi_{jl}
-$$
+![Gromov-Wasserstein formula](formula_assets/10_gromov_wasserstein.svg)
 
 **公式 11：Dynamic trajectory**
 
-$$
-\operatorname{TrajSim}=\frac{1}{T}\sum_{t=1}^{T}\operatorname{Sim}(G_{a,t},G_{b,t}),\qquad \Delta G_t=G_t-G_{t-1}
-$$
+![Dynamic trajectory formula](formula_assets/11_dynamic_trajectory.svg)
 
 ## 2. 首批实验方法
 
