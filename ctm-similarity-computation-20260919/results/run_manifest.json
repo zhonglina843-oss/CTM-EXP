@@ -1,0 +1,22 @@
+{
+  "methods": [
+    "weighted_jaccard",
+    "edge_cosine",
+    "degree_strength_cosine",
+    "spectral_similarity"
+  ],
+  "ticks": [
+    1,
+    5,
+    10,
+    15,
+    20,
+    30,
+    40,
+    50
+  ],
+  "density": 0.01,
+  "component": "lcc",
+  "samples_per_class": 5,
+  "similarity_definition": "pairwise same/different class; grid is mean similarity to the other four same-class samples"
+}

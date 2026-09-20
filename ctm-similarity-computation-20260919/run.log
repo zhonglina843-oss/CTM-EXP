@@ -1,0 +1,84 @@
+[2026-09-20T15:06:17+08:00] START
+[2026-09-20T15:06:17+08:00] GPU inference start
+Traceback (most recent call last):
+  File "/root/autodl-tmp/continuous-thought-machines/scripts/run_ctm_imagenet_labeled_analysis.py", line 16, in <module>
+    from ctm_analysis.convergence import compute_convergence_metrics, first_sustained
+ModuleNotFoundError: No module named 'ctm_analysis'
+[2026-09-20T15:06:23+08:00] GPU inference exit=1
+[2026-09-20T15:06:23+08:00] FAILED inference
+[2026-09-20T15:10:28+08:00] START
+[2026-09-20T15:10:28+08:00] GPU inference start
+Traceback (most recent call last):
+  File "/root/autodl-tmp/continuous-thought-machines/scripts/run_ctm_imagenet_labeled_analysis.py", line 433, in <module>
+    main()
+  File "/root/autodl-tmp/continuous-thought-machines/scripts/run_ctm_imagenet_labeled_analysis.py", line 226, in main
+    model, checkpoint_args = load_checkpoint_model(args.checkpoint, args.device)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/continuous-thought-machines/ctm_analysis/probe.py", line 41, in load_checkpoint_model
+    checkpoint = torch.load(checkpoint_path, map_location=device, weights_only=False)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/torch/serialization.py", line 1491, in load
+    with _open_zipfile_reader(opened_file) as opened_zipfile:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/torch/serialization.py", line 771, in __init__
+    super().__init__(torch._C.PyTorchFileReader(name_or_buffer))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Expected hasRecord("version") to be true, but got false.  (Could this error message be improved?  If so, please report an enhancement request to PyTorch.)
+[2026-09-20T15:10:37+08:00] GPU inference exit=1
+[2026-09-20T15:10:37+08:00] FAILED inference
+[2026-09-20T15:25:22+08:00] START
+[2026-09-20T15:25:22+08:00] GPU inference start
+Using neuron select type: random-pairing
+Synch representation size action: 2048
+Synch representation size out: 8196
+[1/25] class091-coucal-sample00-src00000 detail=True
+Traceback (most recent call last):
+  File "/root/autodl-tmp/continuous-thought-machines/scripts/run_ctm_imagenet_labeled_analysis.py", line 433, in <module>
+    main()
+  File "/root/autodl-tmp/continuous-thought-machines/scripts/run_ctm_imagenet_labeled_analysis.py", line 270, in main
+    pil_image = Image.open(image_path).convert("RGB")
+                ^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/PIL/Image.py", line 3513, in open
+    fp = builtins.open(filename, "rb")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/root/autodl-tmp/imagenet-class-grid-5x5-subset/images/class091-coucal-sample00-src00000.jpg'
+[2026-09-20T15:25:40+08:00] GPU inference exit=1
+[2026-09-20T15:25:40+08:00] FAILED inference
+[2026-09-20T15:28:02+08:00] START
+[2026-09-20T15:28:02+08:00] GPU inference start
+Using neuron select type: random-pairing
+Synch representation size action: 2048
+Synch representation size out: 8196
+[1/25] class091-coucal-sample00-src00000 detail=True
+[2/25] class171-Italian_greyhound-sample00-src00001 detail=True
+[3/25] class980-volcano-sample00-src00002 detail=True
+[4/25] class505-coffeepot-sample00-src00013 detail=True
+[5/25] class817-sports_car-sample00-src00019 detail=True
+[6/25] class091-coucal-sample01-src00316 detail=True
+[7/25] class817-sports_car-sample01-src00787 detail=True
+[8/25] class980-volcano-sample01-src00863 detail=True
+[9/25] class980-volcano-sample02-src01265 detail=True
+[10/25] class980-volcano-sample03-src01422 detail=True
+[11/25] class505-coffeepot-sample01-src01487 detail=True
+[12/25] class091-coucal-sample02-src01583 detail=True
+[13/25] class091-coucal-sample03-src01629 detail=True
+[14/25] class980-volcano-sample04-src01813 detail=True
+[15/25] class171-Italian_greyhound-sample01-src02164 detail=True
+[16/25] class171-Italian_greyhound-sample02-src02599 detail=True
+[17/25] class171-Italian_greyhound-sample03-src02775 detail=True
+[18/25] class505-coffeepot-sample02-src02782 detail=True
+[19/25] class817-sports_car-sample02-src02853 detail=True
+[20/25] class091-coucal-sample04-src03448 detail=True
+[21/25] class171-Italian_greyhound-sample04-src03793 detail=True
+[22/25] class817-sports_car-sample03-src04513 detail=True
+[23/25] class817-sports_car-sample04-src04549 detail=True
+[24/25] class505-coffeepot-sample03-src05563 detail=True
+[25/25] class505-coffeepot-sample04-src05824 detail=True
+[2026-09-20T15:41:54+08:00] GPU inference exit=0
+[2026-09-20T15:41:54+08:00] Similarity computation start
+DONE samples=25 ticks=8 methods=['weighted_jaccard', 'edge_cosine', 'degree_strength_cosine', 'spectral_similarity'] output=/root/autodl-tmp/ctm-similarity-computation-20260919/results
+[2026-09-20T15:42:51+08:00] Similarity exit=0
+/root/autodl-tmp/ctm-similarity-computation-20260919/run_experiment_server.sh: line 64: /root/autodl-tmp/imagenet-smallworld-data/imagenet-class-grid-5x5-subset-a: Is a directory
+/root/autodl-tmp/ctm-similarity-computation-20260919/run_experiment_server.sh: line 64: /root/autodl-tmp/ctm-similarity-inference-20260920: Is a directory
+[2026-09-20T15:42:51+08:00] GitHub compact-result sync start
+Cloning into '/root/autodl-tmp/CTM-EXP-similarity-push'...
