@@ -9,7 +9,10 @@ import json
 from pathlib import Path
 
 import numpy as np
-from sklearn.metrics import average_precision_score, roc_auc_score, roc_curve
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+from sklearn.metrics import average_precision_score, precision_recall_curve, roc_auc_score, roc_curve
 
 
 def parse_args():
@@ -86,13 +89,55 @@ def main():
         writer = csv.DictWriter(handle, fieldnames=list(rows_out[0]))
         writer.writeheader(); writer.writerows(rows_out)
     np.savez_compressed(args.output_dir / "tick_scores.npz", min_distance=min_dist, gap=gap, threshold=threshold)
-
     metrics = {}
     eval_splits = [x.strip() for x in args.eval_splits.split(",") if x.strip()]
     eval_mask = np.isin(splits, eval_splits)
     y = (splits[eval_mask] == "novel_test").astype(int)
     if np.unique(y).size < 2:
         raise ValueError("evaluation splits must contain both known_test and novel_test")
+
+    # Keep plots lightweight and deterministic so they can be inspected while the
+    # server job is running. The raw per-sample values remain in CSV/NPZ.
+    colors = {"known_train": "#287271", "known_test": "#4C78A8", "novel_test": "#D45087"}
+    fig, ax = plt.subplots(figsize=(8, 5))
+    for split in sorted(set(splits.tolist())):
+        mask = splits == split
+        mean = min_dist[mask].mean(axis=0)
+        sem = min_dist[mask].std(axis=0) / max(1, np.sqrt(mask.sum()))
+        ticks = np.arange(1, min_dist.shape[1] + 1)
+        ax.plot(ticks, mean, label=split, color=colors.get(split, "#555555"))
+        ax.fill_between(ticks, mean - sem, mean + sem, alpha=0.15, color=colors.get(split, "#555555"))
+    ax.set(xlabel="CTM tick", ylabel="Distance to nearest known prototype", title="Dynamic novelty trajectory")
+    ax.legend(frameon=False)
+    fig.tight_layout()
+    fig.savefig(args.output_dir / "trajectory_mean.png", dpi=160)
+    plt.close(fig)
+
+    fig, axes = plt.subplots(1, 2, figsize=(10, 4))
+    for name, score in {"mean": novelty, "late": late, "final": final}.items():
+        fpr, tpr, _ = roc_curve(y, score[eval_mask])
+        axes[0].plot(fpr, tpr, label=name)
+        precision, recall, _ = precision_recall_curve(y, score[eval_mask])
+        axes[1].plot(recall, precision, label=name)
+    axes[0].plot([0, 1], [0, 1], "--", color="#999999", linewidth=1)
+    axes[0].set(xlabel="False positive rate", ylabel="True positive rate", title="ROC")
+    axes[1].set(xlabel="Recall", ylabel="Precision", title="Precision-recall")
+    for ax in axes:
+        ax.legend(frameon=False)
+    fig.tight_layout()
+    fig.savefig(args.output_dir / "roc_pr.png", dpi=160)
+    plt.close(fig)
+
+    order = np.argsort((splits != "novel_test").astype(int))
+    fig, ax = plt.subplots(figsize=(10, 6))
+    image = ax.imshow(min_dist[order], aspect="auto", interpolation="nearest", cmap="magma")
+    ax.set(xlabel="CTM tick", ylabel="Samples sorted by split", title="Per-sample dynamic novelty heatmap")
+    ax.set_xticks(np.arange(0, min_dist.shape[1], max(1, min_dist.shape[1] // 10)))
+    fig.colorbar(image, ax=ax, label="Nearest-known distance")
+    fig.tight_layout()
+    fig.savefig(args.output_dir / "tick_heatmap.png", dpi=160)
+    plt.close(fig)
+
     for name, score in {"mean": novelty, "late": late, "final": final}.items():
         metrics[name] = {
             "auroc": float(roc_auc_score(y, score[eval_mask])),
