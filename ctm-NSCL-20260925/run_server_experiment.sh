@@ -5,7 +5,7 @@ PY=/root/miniconda3/bin/python
 CTM=/root/autodl-tmp/continuous-thought-machines
 EXP=/root/autodl-tmp/CTM-EXP/ctm-NSCL-20260925
 WORK=/root/autodl-tmp/ctm-nscl-20260925
-DATA=/root/autodl-tmp/ctm-dictionary-exp-20260816
+DATA=/root/autodl-tmp/ctm-dictionary-exp-20260816/self_fe_multik
 
 mkdir -p "$WORK/logs" "$WORK/features" "$WORK/traces" "$WORK/analysis"
 cd "$CTM"
