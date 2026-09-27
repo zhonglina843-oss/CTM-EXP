@@ -267,3 +267,40 @@ vector + graph (只做固定权重，不训练融合器)
 - trace 的 tick 数和模型 `iterations` 一致；
 - known/novel 类别没有数据泄漏。
 
+## 13. Uploaded scripts
+
+本目录包含三个脚本：
+
+```text
+export_dynamic_traces.py  # GPU/CPU: frozen CTM forward，导出每个 tick 的 post_state
+dynamic_novelty.py        # CPU: prototype distance、动态 novelty score 和指标
+run_dynamic_nscl.sh       # 服务器入口，串联上面两个脚本
+```
+
+`export_dynamic_traces.py` 使用缓存的 feature `.npz`，不重新计算 ResNet feature。输入 manifest 至少需要三列：
+
+```csv
+sample_id,label,split
+img_0001,0,known_train
+img_0002,0,known_test
+img_0003,10,novel_test
+```
+
+建议先在服务器上设置：
+
+```bash
+export CTM_REPO=/root/autodl-tmp/continuous-thought-machines
+export EXP_REPO=/root/autodl-tmp/CTM-EXP
+export FEATURES=/path/to/features.npz
+export MANIFEST=/path/to/manifest.csv
+export DEVICE=cuda:0
+bash "$EXP_REPO/ctm-NSCL-20260925/run_dynamic_nscl.sh"
+```
+
+如果已有 `traces.npz`，可以跳过导出阶段，直接运行：
+
+```bash
+python "$EXP_REPO/ctm-NSCL-20260925/dynamic_novelty.py" \
+  --trace-dir /path/to/traces \
+  --output-dir /path/to/analysis
+```
