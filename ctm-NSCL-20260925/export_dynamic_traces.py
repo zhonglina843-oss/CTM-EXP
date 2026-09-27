@@ -75,12 +75,16 @@ def load_model(args: argparse.Namespace, input_dim: int, device: torch.device):
     iterations = model_args.get("iterations")
     if iterations is None:
         iterations = getattr(checkpoint_args, "iterations", None)
-    out_dims = model_args.get("out_dims", getattr(checkpoint_args, "out_dims", None))
+    out_dims = model_args.get("out_dims")
+    # The stage-2 head is authoritative. The base ImageNet checkpoint can have
+    # a different number of classes (1000 here), while stage2 was trained for 10.
     if out_dims is None:
         for key, value in stage2["model_state_dict"].items():
             if key.endswith("output_projector.0.weight") or key.endswith("output_projector.weight"):
                 out_dims = int(value.shape[0])
                 break
+    if out_dims is None:
+        out_dims = getattr(checkpoint_args, "out_dims", None)
     overrides = {
         "out_dims": int(out_dims or 10),
         "prediction_reshaper": [-1],
