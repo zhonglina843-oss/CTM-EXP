@@ -53,7 +53,9 @@ def build_prototypes(post, labels, train_mask, classes, batch_size):
             for local in np.flatnonzero(mask):
                 ci = class_index[int(labels[start + local])]
                 sums[tick, ci] += s[local]
-        counts += mask.astype(np.int64)
+        batch_classes = [class_index[int(labels[start + local])] for local in np.flatnonzero(mask)]
+        if batch_classes:
+            counts += np.bincount(batch_classes, minlength=len(classes))
     prototypes = sums / np.maximum(counts[:, None, None, None], 1)
     norms = np.linalg.norm(prototypes.reshape(post.shape[1], len(classes), -1), axis=2)
     prototypes /= np.maximum(norms[:, :, None, None], 1e-8)
