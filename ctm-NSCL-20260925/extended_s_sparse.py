@@ -95,10 +95,12 @@ def main():
     ticks=[int(x) for x in a.ticks.split(",") if x]; pair_out=[]; tick_out=[]
     for tick in ticks:
         states=[]; started=time.time()
-        for row in rows:
+        for sample_number, row in enumerate(rows, 1):
             data=np.load(a.subset_dir/"samples"/row["sample_id"]/"S_full_active_all_ticks.npz",mmap_mode="r")["matrices"][ticks.index(tick)]
             active=np.load(a.subset_dir/"samples"/row["sample_id"]/"active_neuron_indices.npy")
             states.append(sparse_state(data,active,a.density))
+            if sample_number == 1 or sample_number % 5 == 0 or sample_number == len(rows):
+                print(f"[EXTENDED] tick={tick} state={sample_number}/{len(rows)}", flush=True)
         for method in methods:
             same=[]; different=[]
             for i in range(len(rows)):
