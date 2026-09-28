@@ -24,6 +24,8 @@ def args():
     p.add_argument("--batch-size", type=int, default=32)
     p.add_argument("--known-train-split", default="known_train")
     p.add_argument("--eval-splits", default="known_test,novel_test")
+    p.add_argument("--s-neurons", type=int, default=512,
+                   help="Use a fixed S submatrix of this many CTM neurons.")
     return p.parse_args()
 
 
@@ -68,7 +70,7 @@ def build_prototypes(post, labels, train_mask, classes, batch_size):
             rate = batch_number / max(elapsed, 1e-6)
             remaining = (total_batches - batch_number) / max(rate, 1e-6)
             print(f"[S-PROTOTYPES] batch={batch_number}/{total_batches} elapsed={elapsed:.1f}s eta={remaining:.1f}s", flush=True)
-    prototypes = sums / np.maximum(counts[:, None, None, None], 1)
+    prototypes = sums / np.maximum(counts[None, :, None, None], 1)
     norms = np.linalg.norm(prototypes.reshape(post.shape[1], len(classes), -1), axis=2)
     prototypes /= np.maximum(norms[:, :, None, None], 1e-8)
     return prototypes.astype(np.float32)
@@ -104,6 +106,12 @@ def main():
     print(f"[S-LOAD] trace_dir={a.trace_dir} output_dir={a.output_dir}", flush=True)
     data = np.load(a.trace_dir / "traces.npz", mmap_mode="r")
     post = data["post_state"].astype(np.float32)
+    if a.s_neurons < post.shape[-1]:
+        indices = np.linspace(0, post.shape[-1] - 1, a.s_neurons, dtype=np.int64)
+        post = post[:, :, indices]
+        print(f"[S-LOAD] using S subset neurons={a.s_neurons}/{data['post_state'].shape[-1]}", flush=True)
+    else:
+        print(f"[S-LOAD] using full S neurons={post.shape[-1]}", flush=True)
     metadata = rows(a.trace_dir / "manifest.csv")
     labels = np.asarray([int(r["label"]) for r in metadata])
     splits = np.asarray([r["split"] for r in metadata])
