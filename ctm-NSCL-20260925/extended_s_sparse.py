@@ -31,7 +31,7 @@ def sparse_state(matrix, active, density, row_block=256):
     for start in range(0,n,row_block):
         end=min(n,start+row_block); block=np.asarray(matrix[start:end,start:],dtype=np.float32)
         bi,bj=np.triu_indices(end-start,1); extra_i,extra_j=np.indices((end-start,n-end))
-        bi=np.r_[bi,extra_i.ravel()]; bj=np.r_[bj,extra_j.ravel()+(end-start)+(n-end)]
+        bi=np.r_[bi,extra_i.ravel()]; bj=np.r_[bj,extra_j.ravel()+(end-start)]
         weights=np.maximum(block[bi,bj],0); valid=np.isfinite(weights)&(weights>0); bi,bj,weights=bi[valid],bj[valid],weights[valid]
         if len(weights)>local_keep:
             chosen=np.argpartition(weights,-local_keep)[-local_keep:]; bi,bj,weights=bi[chosen],bj[chosen],weights[chosen]
