@@ -1,0 +1,7 @@
+{
+  "methods": ["community_nmi", "community_ari", "delta_con", "delta_con_attr", "ged_approx", "wl_kernel", "gw_approx", "dynamic_trajectory"],
+  "ticks": [1, 5, 10, 15, 20, 30, 40, 50],
+  "ged_definition": "weighted edge L1 edit-cost approximation",
+  "gw_definition": "degree plus sampled shortest-path histogram approximation",
+  "deltacon_definition": "sparse random-probe affinity approximation"
+}
