@@ -31,8 +31,8 @@ def rows(path):
         return list(csv.DictReader(handle))
 
 
-def normalized_s(post):
-    s = np.einsum("bth,btk->bhk", post, post) / post.shape[1]
+def normalized_s_from_cumulative(cumulative, count):
+    s = cumulative / float(count)
     s = (s + np.swapaxes(s, 1, 2)) * 0.5
     norm = np.linalg.norm(s.reshape(s.shape[0], -1), axis=1)[:, None, None]
     return (s / np.maximum(norm, 1e-8)).astype(np.float32)
@@ -40,7 +40,7 @@ def normalized_s(post):
 
 def build_prototypes(post, labels, train_mask, classes, batch_size):
     h = post.shape[-1]
-    sums = np.zeros((post.shape[1], len(classes), h, h), dtype=np.float64)
+    sums = np.zeros((post.shape[1], len(classes), h, h), dtype=np.float32)
     counts = np.zeros(len(classes), dtype=np.int64)
     class_index = {c: i for i, c in enumerate(classes)}
     for start in range(0, len(post), batch_size):
@@ -48,8 +48,11 @@ def build_prototypes(post, labels, train_mask, classes, batch_size):
         mask = train_mask[start:end]
         if not mask.any():
             continue
+        cumulative = np.zeros((end - start, h, h), dtype=np.float32)
         for tick in range(post.shape[1]):
-            s = normalized_s(post[start:end, :tick + 1])
+            x = post[start:end, tick]
+            cumulative += np.einsum("bi,bj->bij", x, x, optimize=True)
+            s = normalized_s_from_cumulative(cumulative, tick + 1)
             for local in np.flatnonzero(mask):
                 ci = class_index[int(labels[start + local])]
                 sums[tick, ci] += s[local]
@@ -65,10 +68,14 @@ def build_prototypes(post, labels, train_mask, classes, batch_size):
 def score_ticks(post, prototypes, batch_size):
     scores = np.empty((len(post), post.shape[1]), dtype=np.float32)
     flat_proto = prototypes.reshape(prototypes.shape[0], prototypes.shape[1], -1)
+    h = post.shape[-1]
     for start in range(0, len(post), batch_size):
         end = min(len(post), start + batch_size)
+        cumulative = np.zeros((end - start, h, h), dtype=np.float32)
         for tick in range(post.shape[1]):
-            s = normalized_s(post[start:end, :tick + 1])
+            x = post[start:end, tick]
+            cumulative += np.einsum("bi,bj->bij", x, x, optimize=True)
+            s = normalized_s_from_cumulative(cumulative, tick + 1)
             flat_s = s.reshape(len(s), -1)
             scores[start:end, tick] = 1.0 - (flat_s @ flat_proto[tick].T).max(axis=1)
     return scores
