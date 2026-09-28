@@ -19,10 +19,15 @@ def main():
     data=np.load(a.trace_dir/"traces.npz"); post=data["post_state"].astype(np.float32)
     with (a.trace_dir/"manifest.csv").open(newline="",encoding="utf-8") as f: rows=list(csv.DictReader(f))
     labels=np.array([int(r["label"]) for r in rows]); splits=np.array([r["split"] for r in rows]); known=splits=="known_train"; novel=splits=="novel_test"
-    # One final S embedding per sample: keep the strongest positive upper-triangle edges.
+    # One final S embedding per sample: fixed upper-triangle coordinates keep
+    # every sample in the same S feature space.
+    pairs = np.triu_indices(post.shape[-1], 1)
+    positions = np.linspace(0, len(pairs[0]) - 1, a.edge_k, dtype=np.int64)
+    fixed_i, fixed_j = pairs[0][positions], pairs[1][positions]
     x=[]
     for sample in post:
-        s=np.einsum("th,tk->hk",sample,sample)/sample.shape[0]; s=(s+s.T)*.5; ii,jj=np.triu_indices(s.shape[0],1); w=np.maximum(s[ii,jj],0); keep=np.argpartition(w,-min(a.edge_k,len(w)))[-min(a.edge_k,len(w)):]; vector=np.zeros(a.edge_k,np.float32); values=w[keep]; vector[:len(values)]=values/(np.linalg.norm(values)+1e-8); x.append(vector)
+        s=np.einsum("th,tk->hk",sample,sample)/sample.shape[0]; s=(s+s.T)*.5
+        vector=np.asarray(s[fixed_i, fixed_j], dtype=np.float32); vector /= np.linalg.norm(vector)+1e-8; x.append(vector)
     x=torch.tensor(np.asarray(x),device=device); known_idx=torch.tensor(known,device=device); train_novel=np.zeros(len(rows),bool); novel_positions=np.flatnonzero(novel); train_novel[novel_positions[::2]]=True; train_mask=torch.tensor(known|train_novel,device=device)
     labels_t=torch.tensor(labels,device=device); classes=sorted(set(labels[known])); known_labels=torch.tensor(classes,device=device)
     projection=nn.Sequential(nn.Linear(a.edge_k,256),nn.GELU(),nn.Linear(256,a.out_dim)).to(device); opt=torch.optim.AdamW(projection.parameters(),lr=2e-3)
@@ -39,7 +44,7 @@ def main():
     with torch.no_grad():
         z=projection(x).cpu().numpy(); train_z=z[known]; train_y=labels[known]; proto=np.stack([train_z[train_y==c].mean(0) for c in classes]); proto/=np.maximum(np.linalg.norm(proto,axis=1,keepdims=True),1e-8); novelty=1-(z@proto.T).max(1)
     np.savez_compressed(a.output_dir/"nscl_projection.npz",embedding=z,novelty=novelty)
-    (a.output_dir/"nscl_manifest.json").write_text(json.dumps({"embedding":"S_T top-positive-edge vector","edge_k":a.edge_k,"out_dim":a.out_dim,"epochs":a.epochs,"ctm_frozen":True,"transductive_novel_train":True},indent=2),encoding="utf-8")
+    (a.output_dir/"nscl_manifest.json").write_text(json.dumps({"embedding":"S_T fixed upper-triangle subset","edge_k":a.edge_k,"out_dim":a.out_dim,"epochs":a.epochs,"ctm_frozen":True,"transductive_novel_train":True},indent=2),encoding="utf-8")
     print(f"[NSCL] wrote {a.output_dir / 'nscl_projection.npz'}", flush=True)
 
 if __name__=="__main__": main()
