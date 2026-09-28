@@ -10,6 +10,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import time
 from pathlib import Path
 
 import numpy as np
@@ -43,7 +44,10 @@ def build_prototypes(post, labels, train_mask, classes, batch_size):
     sums = np.zeros((post.shape[1], len(classes), h, h), dtype=np.float32)
     counts = np.zeros(len(classes), dtype=np.int64)
     class_index = {c: i for i, c in enumerate(classes)}
-    for start in range(0, len(post), batch_size):
+    total_batches = (len(post) + batch_size - 1) // batch_size
+    print(f"[S-PROTOTYPES] start samples={len(post)} ticks={post.shape[1]} batches={total_batches}", flush=True)
+    started = time.time()
+    for batch_number, start in enumerate(range(0, len(post), batch_size), 1):
         end = min(len(post), start + batch_size)
         mask = train_mask[start:end]
         if not mask.any():
@@ -59,6 +63,11 @@ def build_prototypes(post, labels, train_mask, classes, batch_size):
         batch_classes = [class_index[int(labels[start + local])] for local in np.flatnonzero(mask)]
         if batch_classes:
             counts += np.bincount(batch_classes, minlength=len(classes))
+        if batch_number == 1 or batch_number % 50 == 0 or batch_number == total_batches:
+            elapsed = time.time() - started
+            rate = batch_number / max(elapsed, 1e-6)
+            remaining = (total_batches - batch_number) / max(rate, 1e-6)
+            print(f"[S-PROTOTYPES] batch={batch_number}/{total_batches} elapsed={elapsed:.1f}s eta={remaining:.1f}s", flush=True)
     prototypes = sums / np.maximum(counts[:, None, None, None], 1)
     norms = np.linalg.norm(prototypes.reshape(post.shape[1], len(classes), -1), axis=2)
     prototypes /= np.maximum(norms[:, :, None, None], 1e-8)
@@ -69,7 +78,10 @@ def score_ticks(post, prototypes, batch_size):
     scores = np.empty((len(post), post.shape[1]), dtype=np.float32)
     flat_proto = prototypes.reshape(prototypes.shape[0], prototypes.shape[1], -1)
     h = post.shape[-1]
-    for start in range(0, len(post), batch_size):
+    total_batches = (len(post) + batch_size - 1) // batch_size
+    started = time.time()
+    print(f"[S-SCORES] start samples={len(post)} ticks={post.shape[1]} batches={total_batches}", flush=True)
+    for batch_number, start in enumerate(range(0, len(post), batch_size), 1):
         end = min(len(post), start + batch_size)
         cumulative = np.zeros((end - start, h, h), dtype=np.float32)
         for tick in range(post.shape[1]):
@@ -78,11 +90,18 @@ def score_ticks(post, prototypes, batch_size):
             s = normalized_s_from_cumulative(cumulative, tick + 1)
             flat_s = s.reshape(len(s), -1)
             scores[start:end, tick] = 1.0 - (flat_s @ flat_proto[tick].T).max(axis=1)
+        if batch_number == 1 or batch_number % 50 == 0 or batch_number == total_batches:
+            elapsed = time.time() - started
+            rate = batch_number / max(elapsed, 1e-6)
+            remaining = (total_batches - batch_number) / max(rate, 1e-6)
+            print(f"[S-SCORES] batch={batch_number}/{total_batches} elapsed={elapsed:.1f}s eta={remaining:.1f}s", flush=True)
+    print(f"[S-SCORES] complete elapsed={time.time() - started:.1f}s", flush=True)
     return scores
 
 
 def main():
     a = args(); a.output_dir.mkdir(parents=True, exist_ok=True)
+    print(f"[S-LOAD] trace_dir={a.trace_dir} output_dir={a.output_dir}", flush=True)
     data = np.load(a.trace_dir / "traces.npz", mmap_mode="r")
     post = data["post_state"].astype(np.float32)
     metadata = rows(a.trace_dir / "manifest.csv")
@@ -91,6 +110,7 @@ def main():
     train = splits == a.known_train_split
     classes = sorted(set(labels[train].tolist()))
     prototypes = build_prototypes(post, labels, train, classes, a.batch_size)
+    print(f"[S-PROTOTYPES] complete classes={len(classes)}", flush=True)
     tick_scores = score_ticks(post, prototypes, a.batch_size)
     np.savez_compressed(a.output_dir / "S_tick_novelty.npz", novelty=tick_scores)
 
@@ -117,6 +137,7 @@ def main():
         for i, row in enumerate(metadata):
             writer.writerow({"sample_id": row["sample_id"], "label": row["label"], "split": row["split"], **{k: float(v[i]) for k, v in scores.items()}})
     (a.output_dir / "S_metrics.json").write_text(json.dumps(metrics, indent=2), encoding="utf-8")
+    print(f"[S-OUTPUT] wrote {a.output_dir / 'S_novelty_scores.csv'}", flush=True)
     print(json.dumps(metrics, indent=2), flush=True)
 
 
