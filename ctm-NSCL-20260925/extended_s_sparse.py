@@ -24,15 +24,21 @@ def read_rows(path):
     with path.open(newline="", encoding="utf-8") as f: return list(csv.DictReader(f))
 
 
-def sparse_state(matrix, active, density):
+def sparse_state(matrix, active, density, row_block=256):
     n = matrix.shape[0]
-    ii, jj = np.triu_indices(n, 1)
-    w = np.maximum(np.asarray(matrix[ii, jj], dtype=np.float32), 0)
-    valid = np.isfinite(w) & (w > 0)
-    ii, jj, w = ii[valid], jj[valid], w[valid]
-    k = min(max(1, int(round(n * (n - 1) / 2 * density))), len(w))
-    keep = np.argpartition(w, -k)[-k:] if k else np.empty(0, dtype=int)
-    ii, jj, w = ii[keep], jj[keep], w[keep]
+    k = min(max(1, int(round(n * (n - 1) / 2 * density))), n * (n - 1) // 2)
+    candidates=[]; local_keep=max(256, int(np.ceil(k/max(1,n/row_block)))*2)
+    for start in range(0,n,row_block):
+        end=min(n,start+row_block); block=np.asarray(matrix[start:end,start:],dtype=np.float32)
+        bi,bj=np.triu_indices(end-start,1); extra_i,extra_j=np.indices((end-start,n-end))
+        bi=np.r_[bi,extra_i.ravel()]; bj=np.r_[bj,extra_j.ravel()+(end-start)+(n-end)]
+        weights=np.maximum(block[bi,bj],0); valid=np.isfinite(weights)&(weights>0); bi,bj,weights=bi[valid],bj[valid],weights[valid]
+        if len(weights)>local_keep:
+            chosen=np.argpartition(weights,-local_keep)[-local_keep:]; bi,bj,weights=bi[chosen],bj[chosen],weights[chosen]
+        candidates.append((bi+start,bj+start,weights))
+    ii=np.concatenate([x[0] for x in candidates]); jj=np.concatenate([x[1] for x in candidates]); w=np.concatenate([x[2] for x in candidates])
+    if len(w)>k:
+        chosen=np.argpartition(w,-k)[-k:]; ii,jj,w=ii[chosen],jj[chosen],w[chosen]
     rows = np.r_[ii, jj]; cols = np.r_[jj, ii]; vals = np.r_[w, w]
     adjacency = sparse.csr_matrix((vals, (rows, cols)), shape=(n, n))
     degree = np.asarray(adjacency.sum(axis=1)).ravel().astype(np.float32)
@@ -65,10 +71,8 @@ def similarity(a, b, method):
     if method == "weighted_jaccard": return float(np.minimum(x, y).sum() / max(np.maximum(x, y).sum(), 1e-8))
     if method == "ged_approx": return float(1 - np.abs(x-y).sum() / (x.sum()+y.sum()+1e-8))
     if method == "spectral_similarity":
-        ka = min(32, max(1, a["n"]-2)); kb = min(32, max(1, b["n"]-2))
-        va = np.sort(eigsh(a["adj"], k=ka, which="LA", return_eigenvectors=False))
-        vb = np.sort(eigsh(b["adj"], k=kb, which="LA", return_eigenvectors=False))
-        size = min(len(va), len(vb)); d = np.linalg.norm(va[-size:] - vb[-size:]) / (np.linalg.norm(va[-size:])+np.linalg.norm(vb[-size:])+1e-8)
+        va, vb = a["spectrum"], b["spectrum"]
+        d=np.linalg.norm(va-vb)/(np.linalg.norm(va)+np.linalg.norm(vb)+1e-8)
         return float(1/(1+d))
     if method in ("community_nmi", "community_ari"):
         ca = {x:i for i,c in enumerate(nx.connected_components(nx.from_scipy_sparse_array(a["adj"]))) for x in c}
@@ -79,7 +83,7 @@ def similarity(a, b, method):
         da = Counter(dict(a["adj"].getnnz(axis=1)).values()); db = Counter(dict(b["adj"].getnnz(axis=1)).values())
         keys = set(da)|set(db); return cosine(np.array([da[k] for k in keys]), np.array([db[k] for k in keys]))
     if method == "gw_approx":
-        return similarity(a,b,"spectral_similarity")
+        return cosine(a["gw"],b["gw"])
     if method == "delta_con":
         return 1/(1+float(sparse.linalg.norm(a["adj"]-b["adj"])))
     if method == "delta_con_attr":
@@ -101,6 +105,10 @@ def main():
             states.append(sparse_state(data,active,a.density))
             if sample_number == 1 or sample_number % 5 == 0 or sample_number == len(rows):
                 print(f"[EXTENDED] tick={tick} state={sample_number}/{len(rows)}", flush=True)
+        for state in states:
+            state["spectrum"] = np.sort(eigsh(state["adj"], k=32, which="LA", return_eigenvectors=False))
+            state["wl"] = np.bincount(state["adj"].getnnz(axis=1), minlength=128)[:128].astype(float)
+            state["gw"] = np.concatenate([np.sort(state["degree"])[:64], np.sort(state["degree"])[-32:]])
         for method in methods:
             same=[]; different=[]
             for i in range(len(rows)):

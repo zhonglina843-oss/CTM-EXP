@@ -11,6 +11,7 @@ from pathlib import Path
 import numpy as np
 import torch
 from torch import nn
+from sklearn.metrics import average_precision_score, roc_auc_score
 
 
 def main():
@@ -39,12 +40,13 @@ def main():
             if i<j:
                 (pos if (known[i] and known[j] and labels[i]==labels[j]) else neg).append((i,j))
     for epoch in range(a.epochs):
-        z=nn.functional.normalize(projection(x), dim=1); gram=torch.matmul(z, z.T); pos_loss=-2*a.alpha*torch.stack([gram[i,j] for i,j in pos]).mean(); neg_loss=(torch.stack([gram[i,j]**2 for i,j in neg]).mean() if neg else torch.tensor(0.,device=device)); loss=pos_loss+neg_loss; opt.zero_grad(); loss.backward(); opt.step()
+        z=nn.functional.normalize(projection(x), dim=1); gram=torch.matmul(z,z.T); pos_loss=(1-torch.stack([gram[i,j] for i,j in pos]).mean())*a.alpha; neg_loss=(torch.stack([gram[i,j]**2 for i,j in neg]).mean() if neg else torch.tensor(0.,device=device))*a.beta; loss=pos_loss+neg_loss; opt.zero_grad(); loss.backward(); opt.step()
         if epoch%25==0 or epoch==a.epochs-1: print(f"[NSCL] epoch={epoch+1}/{a.epochs} loss={loss.item():.6f} pos={len(pos)} neg={len(neg)}",flush=True)
     with torch.no_grad():
         z=nn.functional.normalize(projection(x), dim=1).cpu().numpy(); train_z=z[known]; train_y=labels[known]; proto=np.stack([train_z[train_y==c].mean(0) for c in classes]); proto/=np.maximum(np.linalg.norm(proto,axis=1,keepdims=True),1e-8); novelty=1-(z@proto.T).max(1)
     np.savez_compressed(a.output_dir/"nscl_projection.npz",embedding=z,novelty=novelty)
-    (a.output_dir/"nscl_manifest.json").write_text(json.dumps({"embedding":"S_T fixed upper-triangle subset","edge_k":a.edge_k,"out_dim":a.out_dim,"epochs":a.epochs,"ctm_frozen":True,"transductive_novel_train":True},indent=2),encoding="utf-8")
+    eval_mask=(splits=="known_test")|(splits=="novel_test"); y=(splits[eval_mask]=="novel_test").astype(int); metrics={"auroc":float(roc_auc_score(y,novelty[eval_mask])),"aupr_novel":float(average_precision_score(y,novelty[eval_mask]))}; (a.output_dir/"nscl_metrics.json").write_text(json.dumps(metrics,indent=2),encoding="utf-8")
+    (a.output_dir/"nscl_manifest.json").write_text(json.dumps({"embedding":"S_T fixed upper-triangle subset","edge_k":a.edge_k,"out_dim":a.out_dim,"epochs":a.epochs,"ctm_frozen":True,"transductive_novel_train":True,"loss":"normalized NSCL-inspired pairwise objective; not full Eq.4 augmentation term"},indent=2),encoding="utf-8")
     print(f"[NSCL] wrote {a.output_dir / 'nscl_projection.npz'}", flush=True)
 
 if __name__=="__main__": main()
