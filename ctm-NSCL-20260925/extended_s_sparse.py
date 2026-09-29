@@ -80,8 +80,9 @@ def similarity(a, b, method):
         vals = [(ca.get(i,-1), cb.get(i,-1)) for i in range(a["n"]) if i in ca or i in cb]
         return float(sum(x==y for x,y in vals)/max(1,len(vals)))
     if method == "wl_kernel":
-        da = Counter(dict(a["adj"].getnnz(axis=1)).values()); db = Counter(dict(b["adj"].getnnz(axis=1)).values())
-        keys = set(da)|set(db); return cosine(np.array([da[k] for k in keys]), np.array([db[k] for k in keys]))
+        da = np.bincount(a["adj"].getnnz(axis=1), minlength=128)[:128].astype(float)
+        db = np.bincount(b["adj"].getnnz(axis=1), minlength=128)[:128].astype(float)
+        return cosine(da, db)
     if method == "gw_approx":
         return cosine(a["gw"],b["gw"])
     if method == "delta_con":
