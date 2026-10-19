@@ -1,0 +1,42 @@
+{
+  "upstream_commit": "4a6c9c3a7fb5dc4bca6381cc7883a3b9252c6466",
+  "seed": 7,
+  "input_shape": [
+    2,
+    8,
+    1,
+    1
+  ],
+  "tick_ids_1_based": [
+    1,
+    2,
+    4,
+    8,
+    12,
+    16,
+    20
+  ],
+  "z_history_shape": [
+    7,
+    2,
+    8
+  ],
+  "sync_out_shape": [
+    7,
+    2,
+    10
+  ],
+  "sync_action_shape": [
+    7,
+    2,
+    10
+  ],
+  "post_state_shape": [
+    2,
+    8
+  ],
+  "sync_note": "first-last gives a flattened upper-triangle vector (10 values here), not a square matrix",
+  "repeated_trace_exactly_equal": true,
+  "model_state_dict_unchanged": true,
+  "wrapper_return_trace_path": true
+}

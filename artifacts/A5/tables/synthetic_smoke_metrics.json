@@ -1,0 +1,82 @@
+{
+  "route": "ae",
+  "seed": 0,
+  "baseline_checkpoint": "000",
+  "checkpoint": "001",
+  "probe_count": 6,
+  "tick_ids": [
+    1,
+    2,
+    4,
+    8,
+    12,
+    16,
+    20
+  ],
+  "sync_representation": "vector",
+  "feature_drift_mean": 0.012691398905252116,
+  "feature_drift_per_sample": [
+    0.021705416356535112,
+    0.019295983719708865,
+    0.014865170399422478,
+    0.013192909768485417,
+    0.0027155910667931993,
+    0.004373322120567624
+  ],
+  "similarity_triangle_mae": 0.05507734824004325,
+  "similarity_triangle_correlation": 0.99439911976897,
+  "knn_k": 2,
+  "knn_overlap_mean": 0.9166666666666666,
+  "knn_overlap_per_sample": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.5
+  ],
+  "trajectory_drift_primary_mean": 0.011605273074667632,
+  "trajectory_drift_sensitivity_mean": 0.011605273074667674,
+  "trajectory_drift_per_tick": [
+    0.013341379671492015,
+    0.005895443319113958,
+    0.005753952895464469,
+    0.015059976225435442,
+    0.010513771799510185,
+    0.013282254853071107,
+    0.017390132758586547
+  ],
+  "synchronization_drift_mean": 0.013495028135651746,
+  "synchronization_drift_per_tick": [
+    0.034552209886941264,
+    0.0063341883981865394,
+    0.022646571955178035,
+    0.007068782812569878,
+    0.009026250927272958,
+    0.0061902171914419895,
+    0.008646975777971558
+  ],
+  "synchronization_metric": "same-tick cosine distance; vector [T,B,D]",
+  "synchronization_shape": [
+    7,
+    6,
+    3
+  ],
+  "action_representation": "vector",
+  "action_drift_mean": 0.017612548130079314,
+  "action_drift_per_tick": [
+    0.014672339082750674,
+    0.04632024077224265,
+    0.000721807159198451,
+    0.01006136674767529,
+    0.029817506098590647,
+    0.018598799026036523,
+    0.0030957780240609503
+  ],
+  "action_metric": "same-tick cosine distance; vector [T,B,D]",
+  "action_shape": [
+    7,
+    6,
+    2
+  ]
+}

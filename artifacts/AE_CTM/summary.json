@@ -1,0 +1,66 @@
+{
+  "kind": "engineering smoke only; CTM is random frozen probe",
+  "seed": 1,
+  "checkpoints": [
+    {
+      "checkpoint": "012_initial",
+      "record": "artifacts/AE_CTM/records/ae/seed_1/checkpoint_000",
+      "mean_reconstruction_mse": 0.19313998520374298,
+      "ctm_z_shape": [
+        7,
+        30,
+        128
+      ],
+      "sync_out_shape": [
+        7,
+        30,
+        528
+      ],
+      "sync_action_shape": [
+        7,
+        30,
+        528
+      ]
+    },
+    {
+      "checkpoint": "3_update",
+      "record": "artifacts/AE_CTM/records/ae/seed_1/checkpoint_001",
+      "mean_reconstruction_mse": 0.15925972163677216,
+      "ctm_z_shape": [
+        7,
+        30,
+        128
+      ],
+      "sync_out_shape": [
+        7,
+        30,
+        528
+      ],
+      "sync_action_shape": [
+        7,
+        30,
+        528
+      ]
+    },
+    {
+      "checkpoint": "4_update",
+      "record": "artifacts/AE_CTM/records/ae/seed_1/checkpoint_002",
+      "mean_reconstruction_mse": 0.12307066470384598,
+      "ctm_z_shape": [
+        7,
+        30,
+        128
+      ],
+      "sync_out_shape": [
+        7,
+        30,
+        528
+      ],
+      "sync_action_shape": [
+        7,
+        30,
+        528
+      ]
+    }
+  ]
+}

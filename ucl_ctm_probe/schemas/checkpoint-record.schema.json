@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ctm-exp.invalid/schemas/checkpoint-record.schema.json",
+  "title": "UCL x CTM checkpoint manifest",
+  "description": "Manifest for one fixed-probe checkpoint. Array contents and cross-file shapes are validated by ucl_ctm_probe.schemas.records.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "route",
+    "seed",
+    "checkpoint_id",
+    "tick_ids",
+    "sync_representation",
+    "action_representation",
+    "sync_sources",
+    "array_shapes"
+  ],
+  "properties": {
+    "schema_version": { "const": "1.0.0" },
+    "route": { "type": "string", "minLength": 1 },
+    "seed": { "type": "integer", "minimum": 0 },
+    "checkpoint_id": {
+      "oneOf": [
+        { "type": "string", "minLength": 1 },
+        { "type": "integer", "minimum": 0 }
+      ]
+    },
+    "tick_ids": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "integer", "minimum": 1 },
+      "uniqueItems": true
+    },
+    "sync_representation": { "enum": ["vector", "matrix", "tensor"] },
+    "action_representation": { "enum": ["vector", "matrix", "tensor"] },
+    "sync_sources": {
+      "type": "object",
+      "properties": {
+        "sync_history": { "const": "out" },
+        "action_history": { "const": "action" }
+      },
+      "required": ["sync_history", "action_history"],
+      "additionalProperties": false
+    },
+    "array_shapes": {
+      "type": "object",
+      "required": ["probe_ids", "features", "tick_ids", "z_history", "sync_history", "action_history", "post_state"],
+      "properties": {
+        "probe_ids": { "$ref": "#/$defs/shape1" },
+        "features": { "$ref": "#/$defs/shape2" },
+        "tick_ids": { "$ref": "#/$defs/shape1" },
+        "z_history": { "$ref": "#/$defs/shape3" },
+        "sync_history": {
+          "type": "array",
+          "items": { "type": "integer", "minimum": 1 },
+          "minItems": 3
+        },
+        "action_history": { "type": "array", "minItems": 3, "items": { "type": "integer", "minimum": 1 } },
+        "post_state": { "$ref": "#/$defs/shape2" }
+      },
+      "additionalProperties": false
+    },
+    "source": { "type": "object" },
+    "probe": { "type": "object" },
+    "preprocessing": { "type": "object" },
+    "checkpoint_cadence": { "type": ["string", "integer", "object"] }
+  },
+  "$defs": {
+    "positiveDim": { "type": "integer", "minimum": 1 },
+    "shape1": { "type": "array", "minItems": 1, "maxItems": 1, "items": { "$ref": "#/$defs/positiveDim" } },
+    "shape2": { "type": "array", "minItems": 2, "maxItems": 2, "items": { "$ref": "#/$defs/positiveDim" } },
+    "shape3": { "type": "array", "minItems": 3, "maxItems": 3, "items": { "$ref": "#/$defs/positiveDim" } }
+  },
+  "additionalProperties": true
+}

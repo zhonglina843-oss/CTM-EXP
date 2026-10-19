@@ -1,0 +1,28 @@
+metric,synthetic_value,definition
+feature_drift_mean,0.012691398905252116,mean per-sample 1-cosine
+similarity_triangle_mae,0.05507734824004325,upper-triangle mean absolute change
+knn_overlap_mean,0.9166666666666666,mean overlap; higher is more stable
+trajectory_drift_primary_mean,0.011605273074667632,unit-normalized ticks concatenated
+synchronization_drift_mean,0.013495028135651746,"same-tick cosine distance; vector [T,B,D]"
+action_drift_mean,0.017612548130079314,"same-tick cosine distance; vector [T,B,D]"
+trajectory_drift_tick_1,0.013341379671492015,same-tick mean 1-cosine
+trajectory_drift_tick_2,0.005895443319113958,same-tick mean 1-cosine
+trajectory_drift_tick_4,0.005753952895464469,same-tick mean 1-cosine
+trajectory_drift_tick_8,0.015059976225435442,same-tick mean 1-cosine
+trajectory_drift_tick_12,0.010513771799510185,same-tick mean 1-cosine
+trajectory_drift_tick_16,0.013282254853071107,same-tick mean 1-cosine
+trajectory_drift_tick_20,0.017390132758586547,same-tick mean 1-cosine
+synchronization_drift_tick_1,0.034552209886941264,"same-tick cosine distance; vector [T,B,D]"
+synchronization_drift_tick_2,0.0063341883981865394,"same-tick cosine distance; vector [T,B,D]"
+synchronization_drift_tick_4,0.022646571955178035,"same-tick cosine distance; vector [T,B,D]"
+synchronization_drift_tick_8,0.007068782812569878,"same-tick cosine distance; vector [T,B,D]"
+synchronization_drift_tick_12,0.009026250927272958,"same-tick cosine distance; vector [T,B,D]"
+synchronization_drift_tick_16,0.0061902171914419895,"same-tick cosine distance; vector [T,B,D]"
+synchronization_drift_tick_20,0.008646975777971558,"same-tick cosine distance; vector [T,B,D]"
+action_drift_tick_1,0.014672339082750674,"same-tick cosine distance; vector [T,B,D]"
+action_drift_tick_2,0.04632024077224265,"same-tick cosine distance; vector [T,B,D]"
+action_drift_tick_4,0.000721807159198451,"same-tick cosine distance; vector [T,B,D]"
+action_drift_tick_8,0.01006136674767529,"same-tick cosine distance; vector [T,B,D]"
+action_drift_tick_12,0.029817506098590647,"same-tick cosine distance; vector [T,B,D]"
+action_drift_tick_16,0.018598799026036523,"same-tick cosine distance; vector [T,B,D]"
+action_drift_tick_20,0.0030957780240609503,"same-tick cosine distance; vector [T,B,D]"

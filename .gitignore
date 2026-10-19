@@ -1,0 +1,38 @@
+# OS and editor metadata
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Local environments and secrets
+.venv/
+venv/
+env/
+.env
+.env.*
+*.pem
+*.key
+id_*
+!*.md
+
+# Re-creatable data, checkpoints, and full-resolution traces
+data/
+datasets/
+checkpoints/
+records/
+raw_results/
+wandb/
+tensorboard/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.npy
+*.npz
+
+# Keep reproducible compact deliverables in artifacts/ versioned.
+# Ignore only raw/temporary subdirectories when they are created.
+artifacts/**/raw/
+artifacts/**/tmp/
+artifacts/**/records/
