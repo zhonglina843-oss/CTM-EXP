@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="470" viewBox="0 0 1000 470" role="img" aria-labelledby="title desc">
+  <title id="title">CURL local runtime readiness</title>
+  <desc id="desc">Official source is pinned and syntax checked. MNIST exists only as Keras NPZ; required TFDS stack and Sonnet are missing. Original entry fails immediately on missing Sonnet, so training is blocked.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#4b5d75"/></marker>
+    <style>
+      text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#152238}.title{font-size:23px;font-weight:700}.sub{font-size:13px;fill:#53647b}.box{stroke-width:2;rx:12;ry:12}.ok{fill:#e6f6f1;stroke:#25866d}.warn{fill:#fff3df;stroke:#bd8122}.bad{fill:#fff0ee;stroke:#c45a51}.label{font-size:16px;font-weight:650}.small{font-size:12px;fill:#485a72}.arrow{stroke:#4b5d75;stroke-width:2.2;fill:none;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1000" height="470" fill="#fbfcfe"/>
+  <text class="title" x="36" y="43">CURL runtime readiness · local check</text>
+  <text class="sub" x="36" y="67">Read-only · official HEAD f5de0ede8430809180254ee957abf36ed62579ef · Python 3.9.6</text>
+
+  <rect class="box ok" x="36" y="112" width="208" height="92"/>
+  <text class="label" x="140" y="144" text-anchor="middle">Source acquired</text><text class="small" x="140" y="167" text-anchor="middle">curl/ exported from locked HEAD</text><text class="small" x="140" y="185" text-anchor="middle">subtree diff clean · 8 files parse</text>
+  <path class="arrow" d="M244 158 H286"/>
+  <rect class="box warn" x="292" y="112" width="230" height="92"/>
+  <text class="label" x="407" y="144" text-anchor="middle">Runtime mismatch</text><text class="small" x="407" y="167" text-anchor="middle">TF 2.20 / NumPy 2.0 installed</text><text class="small" x="407" y="185" text-anchor="middle">Sonnet, TFP, TFDS missing</text>
+  <path class="arrow" d="M522 158 H564"/>
+  <rect class="box bad" x="570" y="112" width="188" height="92"/>
+  <text class="label" x="664" y="144" text-anchor="middle">Entry blocked</text><text class="small" x="664" y="167" text-anchor="middle">--helpshort exits before flags</text><text class="small" x="664" y="185" text-anchor="middle">ModuleNotFoundError: sonnet</text>
+  <path class="arrow" d="M758 158 H800"/>
+  <rect class="box bad" x="806" y="112" width="158" height="92"/>
+  <text class="label" x="885" y="144" text-anchor="middle">No training</text><text class="small" x="885" y="167" text-anchor="middle">no compatible TFDS</text><text class="small" x="885" y="185" text-anchor="middle">no run attempted</text>
+
+  <rect class="box warn" x="36" y="270" width="290" height="98"/>
+  <text class="label" x="181" y="302" text-anchor="middle">MNIST artifact found</text><text class="small" x="181" y="326" text-anchor="middle">~/.keras/datasets/mnist.npz</text><text class="small" x="181" y="346" text-anchor="middle">not the upstream tfds.load cache</text>
+  <rect class="box ok" x="355" y="270" width="290" height="98"/>
+  <text class="label" x="500" y="302" text-anchor="middle">Safe next action</text><text class="small" x="500" y="326" text-anchor="middle">isolated legacy-compatible env</text><text class="small" x="500" y="346" text-anchor="middle">install pinned requirements + TFDS data</text>
+  <rect class="box warn" x="674" y="270" width="290" height="98"/>
+  <text class="label" x="819" y="302" text-anchor="middle">Then verify</text><text class="small" x="819" y="326" text-anchor="middle">--helpshort → unit tests → official run</text><text class="small" x="819" y="346" text-anchor="middle">keep commit and environment manifest</text>
+</svg>

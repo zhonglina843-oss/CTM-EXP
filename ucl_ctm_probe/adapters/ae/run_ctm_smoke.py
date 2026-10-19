@@ -24,7 +24,8 @@ from ucl_ctm_probe.evaluation.metrics import compare_checkpoints  # noqa: E402
 from ucl_ctm_probe.evaluation.records import load_records  # noqa: E402
 from ucl_ctm_probe.probe.ctm_trace import (  # noqa: E402
     DEFAULT_TICK_IDS,
-    initialize_frozen_feature_ctm,
+    calibrate_ctm_reconstructor,
+    initialize_feature_ctm,
     trace_ctm,
 )
 
@@ -97,6 +98,8 @@ def main() -> None:
     parser.add_argument("--old-probe-size", type=int, default=30)
     parser.add_argument("--initial-epochs", type=int, default=1)
     parser.add_argument("--update-epochs", type=int, default=1)
+    parser.add_argument("--device", default="cpu")
+    parser.add_argument("--probe-calibration-epochs", type=int, default=5)
     args = parser.parse_args()
 
     torch.use_deterministic_algorithms(True)
@@ -122,14 +125,14 @@ def main() -> None:
     ]).astype(np.int64)
     old_images = test.data[torch.from_numpy(probe_ids)]
 
-    ae = AEAdapter(seed=args.seed)
-    fixed_adapter, ctm = initialize_frozen_feature_ctm(seed=args.seed)
-    ctm_hash = hashlib.sha256(b"".join(
-        tensor.detach().cpu().numpy().tobytes() for tensor in ctm.state_dict().values()
-    )).hexdigest()
+    device = torch.device(args.device)
+    ae = AEAdapter(seed=args.seed, device=str(device))
+    fixed_adapter, ctm = initialize_feature_ctm(seed=args.seed, device=device)
     adapter_hash = hashlib.sha256(b"".join(
         tensor.detach().cpu().numpy().tobytes() for tensor in fixed_adapter.state_dict().values()
     )).hexdigest()
+    ctm_hash = None
+    calibration_losses = []
 
     checkpoints = []
     stages = [
@@ -141,10 +144,23 @@ def main() -> None:
         ids = np.concatenate([stream_ids[label] for label in labels])
         images = train.data[torch.from_numpy(ids)].reshape(-1, 784).float().div(255.0)
         ae.train_stream_batch(images, epochs=epochs, stage_seed=stage_idx * 100)
+        if stage_idx == 0:
+            initial_features = ae.encode(images)
+            calibration_losses = calibrate_ctm_reconstructor(
+                ctm,
+                fixed_adapter,
+                initial_features,
+                epochs=args.probe_calibration_epochs,
+                batch_size=64,
+                seed=args.seed,
+            )
+            ctm_hash = hashlib.sha256(b"".join(
+                tensor.detach().cpu().numpy().tobytes() for tensor in ctm.state_dict().values()
+            )).hexdigest()
         native = ae.native_metrics(old_images)
         features = native["latent"]
         with torch.inference_mode():
-            probe_input = fixed_adapter(torch.from_numpy(features).float()).reshape(-1, 64, 1, 1)
+            probe_input = fixed_adapter(torch.from_numpy(features).float().to(device)).reshape(-1, 64, 1, 1)
         trace = trace_ctm(ctm, probe_input, DEFAULT_TICK_IDS)
         record = args.output_dir / "records" / "ae" / f"seed_{args.seed}" / f"checkpoint_{stage_idx:03d}"
         write_checkpoint(record, name, probe_ids, features, native, trace, args.seed, ctm_hash, adapter_hash)
@@ -157,9 +173,13 @@ def main() -> None:
             "sync_action_shape": list(trace["sync_history"]["action"].shape),
         })
 
-    (args.output_dir / "summary.json").write_text(json.dumps({
-        "kind": "engineering smoke only; CTM is random frozen probe",
+    run_key = f"seed{args.seed:02d}"
+    (args.output_dir / f"summary_{run_key}.json").write_text(json.dumps({
+        "kind": "engineering smoke only; CTM calibrated on initial unlabelled AE train features then frozen",
         "seed": args.seed,
+        "probe_calibration_epochs": args.probe_calibration_epochs,
+        "probe_calibration_mse": calibration_losses,
+        "probe_frozen_after_initial_stage": True,
         "checkpoints": checkpoints,
     }, indent=2) + "\n")
 
@@ -177,10 +197,14 @@ def main() -> None:
             "sync_action_drift_mean": comparison["action_drift_mean"],
             "reconstruction_mse": float(record.native_metrics["mean_reconstruction_mse"]),
         })
-    (args.output_dir / "drift_summary.json").write_text(
-        json.dumps({"kind": "engineering smoke only", "comparisons": comparisons}, indent=2) + "\n"
+    (args.output_dir / f"drift_summary_{run_key}.json").write_text(
+        json.dumps({
+            "kind": "engineering smoke only; calibrated frozen CTM",
+            "calibration_mse": calibration_losses,
+            "comparisons": comparisons,
+        }, indent=2) + "\n"
     )
-    with (args.output_dir / "drift_summary.csv").open("w", newline="", encoding="utf-8") as stream:
+    with (args.output_dir / f"drift_summary_{run_key}.csv").open("w", newline="", encoding="utf-8") as stream:
         writer = csv.DictWriter(stream, fieldnames=list(rows[0]))
         writer.writeheader()
         writer.writerows(rows)
@@ -228,7 +252,7 @@ def main() -> None:
                 draw.ellipse((x - 5, y - 5, x + 5, y + 5), fill=line_colour)
             if label:
                 draw.text((right - 120, top - 30 + (0 if label == "out" else 18)), label, fill=line_colour)
-    draw.text((315, 595), "ONE-SEED ENGINEERING SMOKE | RANDOM FROZEN CTM | NOT SCIENTIFIC EVIDENCE", fill="#9B2226")
+    draw.text((300, 595), "ONE-SEED ENGINEERING SMOKE | INITIAL-FEATURE CALIBRATED CTM | NOT FINAL EVIDENCE", fill="#9B2226")
     image.save(figure_dir / f"ae_ctm_seed{args.seed:02d}_checkpoint_panel.png")
     print(json.dumps(checkpoints, indent=2))
 

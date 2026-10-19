@@ -1,0 +1,71 @@
+{
+  "kind": "engineering smoke only; CTM calibrated on initial unlabelled AE train features then frozen",
+  "seed": 1,
+  "probe_calibration_epochs": 1,
+  "probe_calibration_mse": [
+    0.015028025023639202
+  ],
+  "probe_frozen_after_initial_stage": true,
+  "checkpoints": [
+    {
+      "checkpoint": "012_initial",
+      "record": "artifacts/AE_CTM_calibration_cpu/records/ae/seed_1/checkpoint_000",
+      "mean_reconstruction_mse": 0.22954605519771576,
+      "ctm_z_shape": [
+        7,
+        6,
+        128
+      ],
+      "sync_out_shape": [
+        7,
+        6,
+        528
+      ],
+      "sync_action_shape": [
+        7,
+        6,
+        528
+      ]
+    },
+    {
+      "checkpoint": "3_update",
+      "record": "artifacts/AE_CTM_calibration_cpu/records/ae/seed_1/checkpoint_001",
+      "mean_reconstruction_mse": 0.2268221527338028,
+      "ctm_z_shape": [
+        7,
+        6,
+        128
+      ],
+      "sync_out_shape": [
+        7,
+        6,
+        528
+      ],
+      "sync_action_shape": [
+        7,
+        6,
+        528
+      ]
+    },
+    {
+      "checkpoint": "4_update",
+      "record": "artifacts/AE_CTM_calibration_cpu/records/ae/seed_1/checkpoint_002",
+      "mean_reconstruction_mse": 0.22291429340839386,
+      "ctm_z_shape": [
+        7,
+        6,
+        128
+      ],
+      "sync_out_shape": [
+        7,
+        6,
+        528
+      ],
+      "sync_action_shape": [
+        7,
+        6,
+        528
+      ]
+    }
+  ]
+}
