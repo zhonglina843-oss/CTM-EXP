@@ -15,9 +15,9 @@ import torch
 from torchvision.datasets import MNIST
 
 ROOT = Path(__file__).resolve().parents[3]
-CTM_REPO = ROOT.parent / "ctm-official"
+DEFAULT_CTM_REPO = ROOT.parent / "ctm-official"
 sys.path.insert(0, str(ROOT))
-sys.path.insert(0, str(CTM_REPO))
+sys.path.insert(0, str(DEFAULT_CTM_REPO))
 
 from ucl_ctm_probe.adapters.ae.adapter import AEAdapter  # noqa: E402
 from ucl_ctm_probe.evaluation.metrics import compare_checkpoints  # noqa: E402
@@ -40,6 +40,7 @@ def write_checkpoint(
     seed: int,
     ctm_hash: str,
     adapter_hash: str,
+    ctm_repo: Path,
 ) -> None:
     output.mkdir(parents=True, exist_ok=True)
     np.save(output / "probe_ids.npy", probe_ids)
@@ -75,9 +76,9 @@ def write_checkpoint(
             **{name: list(value.shape) for name, value in arrays.items()},
         },
         "source": {
-            "ctm_repo": str(CTM_REPO),
+            "ctm_repo": str(ctm_repo),
             "ctm_commit": subprocess.check_output(
-                ["git", "-C", str(CTM_REPO), "rev-parse", "HEAD"], text=True
+                ["git", "-C", str(ctm_repo), "rev-parse", "HEAD"], text=True
             ).strip(),
             "ctm_checkpoint_sha256": ctm_hash,
             "adapter_sha256": adapter_hash,
@@ -100,7 +101,12 @@ def main() -> None:
     parser.add_argument("--update-epochs", type=int, default=1)
     parser.add_argument("--device", default="cpu")
     parser.add_argument("--probe-calibration-epochs", type=int, default=5)
+    parser.add_argument("--ctm-repo", type=Path, default=DEFAULT_CTM_REPO)
     args = parser.parse_args()
+    ctm_repo = args.ctm_repo.resolve()
+    if not (ctm_repo / ".git").exists():
+        parser.error(f"CTM repo must be a Git checkout: {ctm_repo}")
+    sys.path.insert(0, str(ctm_repo))
 
     torch.use_deterministic_algorithms(True)
     torch.set_num_threads(1)
@@ -163,7 +169,7 @@ def main() -> None:
             probe_input = fixed_adapter(torch.from_numpy(features).float().to(device)).reshape(-1, 64, 1, 1)
         trace = trace_ctm(ctm, probe_input, DEFAULT_TICK_IDS)
         record = args.output_dir / "records" / "ae" / f"seed_{args.seed}" / f"checkpoint_{stage_idx:03d}"
-        write_checkpoint(record, name, probe_ids, features, native, trace, args.seed, ctm_hash, adapter_hash)
+        write_checkpoint(record, name, probe_ids, features, native, trace, args.seed, ctm_hash, adapter_hash, ctm_repo)
         checkpoints.append({
             "checkpoint": name,
             "record": str(record),
