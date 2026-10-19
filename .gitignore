@@ -37,3 +37,6 @@ tensorboard/
 artifacts/**/raw/
 artifacts/**/tmp/
 artifacts/**/records/
+artifacts/AE_CTM_GPU_*/summary_seed*.json
+artifacts/AE_CTM_GPU_*/drift_summary_seed*.csv
+artifacts/AE_CTM_GPU_*/figures/
