@@ -82,7 +82,7 @@ def write_checkpoint(
             ).strip(),
             "ctm_checkpoint_sha256": ctm_hash,
             "adapter_sha256": adapter_hash,
-            "probe_type": "randomly initialized frozen CTM; engineering smoke only",
+            "probe_type": "calibrated on initial unlabelled AE train features, then frozen; feasibility run",
         },
         "probe": {"input_dim": int(features.shape[1]), "tick_ids": arrays["tick_ids"].astype(int).tolist()},
         "preprocessing": {"ae_input": "flattened MNIST image scaled to [0,1]", "probe_ids_fixed": True},
