@@ -14,7 +14,7 @@
 | 设计基线分支 | `ctm-ucl-probe-plan` |
 | GitHub remote | `origin` -> `https://github.com/zhonglina843-oss/CTM-EXP.git` |
 | 最新本地/GitHub 提交 | 见 `git log --oneline -1`；提交后同步状态以 `git status --short --branch` 为准 |
-| 服务器 checkout | `/root/CTM-EXP`，同名分支；代码同步到 `86ad11b`，最终结果报告提交待同步 |
+| 服务器 checkout | `/root/CTM-EXP`，同名分支；已同步至 `0ab62fd` |
 
 ## 已完成
 
@@ -40,7 +40,6 @@
 ## 当前未完成
 
 - [ ] A0 冻结 phase-1 manifest/schema
-- [ ] 将三 seed 汇总报告同步到 GitHub/服务器
 - [ ] 评审 feasibility 后决定是否扩大 MNIST 样本量/训练轮数
 - [ ] CURL 固定源码已完成；建立隔离 TF1/Sonnet 环境并验证官方 MNIST loader
 - [ ] InfoUCL 固定源码已完成；配置 server CIFAR-10 smoke 与 checkpoint feature hook
