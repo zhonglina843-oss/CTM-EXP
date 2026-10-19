@@ -4,7 +4,7 @@
 
 ## 当前阶段
 
-设计与多 Agent 协作规范已建立；CTM trace、AE 原生路线和 AE+CTM 记录管线已完成工程 smoke。正式多 seed/校准 probe 实验尚未开始。
+服务器已完成三 seed AE+校准 CTM feasibility run。汇总表、图和短 handoff 已生成；旧样本重构误差随新类别更新上升，CTM drift 也上升且 seed 间差异明显。本结果仅验证协议和可观测性。
 
 ## Git 状态
 
@@ -14,7 +14,7 @@
 | 设计基线分支 | `ctm-ucl-probe-plan` |
 | GitHub remote | `origin` -> `https://github.com/zhonglina843-oss/CTM-EXP.git` |
 | 最新本地/GitHub 提交 | 见 `git log --oneline -1`；提交后同步状态以 `git status --short --branch` 为准 |
-| 服务器 checkout | `/root/CTM-EXP`，同名分支；本轮本地改动待推送后同步 |
+| 服务器 checkout | `/root/CTM-EXP`，同名分支；已同步至 `0ab62fd` |
 
 ## 已完成
 
@@ -29,13 +29,20 @@
 - [x] AE-only MNIST 单 seed smoke
 - [x] AE+随机冻结 CTM 的三 checkpoint 记录管线，A5 schema 验证通过
 - [x] CURL、InfoUCL 上游只读 readiness 审计和图表
+- [x] 服务器 RTX 4080 SUPER / CUDA 12.1 / PyTorch 2.3 环境核查
+- [x] MNIST 原始压缩文件同步至 ignored `data/mnist/`
+- [x] CTM 官方源码固定到 `4a6c9c3` 的服务器隔离目录
+- [x] A3 CURL 源码锁定审计；当前 base 环境缺 Sonnet/TFDS，不能直接复现
+- [x] A4 InfoUCL 源码锁定审计；确认 512-D pooled backbone tap、`lambda_info` 开关
+- [x] AE+CTM 初始无标签 feature 重构校准代码及 CPU smoke
+- [x] RTX 4080 服务器三 seed AE+校准 CTM feasibility run；汇总图表已生成
 
 ## 当前未完成
 
 - [ ] A0 冻结 phase-1 manifest/schema
-- [ ] 选择/训练 phase-1 CTM probe 校准方式，并做多 seed AE+CTM 验证
-- [ ] CURL 锁定上游 commit、建立兼容环境、复现官方 MNIST 入口
-- [ ] InfoUCL 锁定上游 commit、核实 feature tap/InfoDrop 开关并复现基线
+- [ ] 评审 feasibility 后决定是否扩大 MNIST 样本量/训练轮数
+- [ ] CURL 固定源码已完成；建立隔离 TF1/Sonnet 环境并验证官方 MNIST loader
+- [ ] InfoUCL 固定源码已完成；配置 server CIFAR-10 smoke 与 checkpoint feature hook
 - [ ] A6 独立审查和最终汇报包
 
 ## 同步规则

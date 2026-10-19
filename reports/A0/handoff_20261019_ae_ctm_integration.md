@@ -12,7 +12,7 @@ The small local MNIST stream now records AE-native features and a frozen CTM tra
 
 ## Implementation
 
-- `ucl_ctm_probe/probe/ctm_trace.py`: added `initialize_frozen_feature_ctm()`, a small random CTM plus a frozen orthogonal 64-D adapter. It is explicitly an engineering probe, not a trained/calibrated scientific model.
+- `ucl_ctm_probe/probe/ctm_trace.py`: adds `initialize_feature_ctm()` and `calibrate_ctm_reconstructor()`. CTM is trained only to reconstruct initial-stage unlabelled AE features, then frozen with its orthogonal 64-D adapter.
 - `ucl_ctm_probe/adapters/ae/run_ctm_smoke.py`: runs MNIST `0/1/2 -> 3 -> 4`, writes the A5 record contract, validates and compares checkpoints, and emits CSV/JSON plus a PNG panel.
 - `.gitignore`: ignores raw CTM record arrays under `artifacts/**/records/`.
 
@@ -58,7 +58,9 @@ The random frozen probe's dynamics changed as its AE input changed. Since AE rec
 
 ## Limits and next step
 
-- This is CPU, one seed, 128 training examples per stream class, 30 old probes, one epoch per stage, and an untrained random CTM.
-- The next meaningful run needs a preregistered probe calibration/checkpoint and multiple seeds. The GPU server can run that after the commit is synced; this smoke did not use the server.
-- Before calling it an experiment, compare a random frozen probe with an initial-feature-calibrated frozen probe under the same AE stream and report stability against native retention.
+- The table above is from the earlier CPU run with an untrained random CTM: one seed, 128 training examples per stream class, 30 old probes, and one epoch per stage.
+- The runner now supports CUDA and initial-feature calibration. A six-probe CPU calibration smoke passed after materializing lazy CTM parameters under `no_grad`, keeping them trainable during calibration.
+- CPU calibration-smoke evidence: `artifacts/AE_CTM_calibration_cpu/summary_seed01.json`, `drift_summary_seed01.csv`, and `figures/ae_ctm_seed01_checkpoint_panel.png`. It used 16 samples/class, 6 old probes, and one calibration epoch; this validates the code path only.
+- Planned GPU feasibility run: seeds 1-3, 512 examples per stream class, 600 fixed old probes (200 each from classes 0/1/2), 2 initial epochs, 1 update epoch for classes 3 and 4, and 5 CTM calibration epochs. Review runtime and stability before expanding.
+- These runs validate feasibility and measurement behavior; a later scientific study should compare calibration choices and relate CTM changes to native retention across independent streams.
 - CURL/InfoUCL remain source-readiness audits; their upstream code/versions and runnable configurations still need to be locked before adapter work.

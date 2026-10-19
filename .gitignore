@@ -4,6 +4,7 @@ __pycache__/
 *.py[cod]
 .pytest_cache/
 .mypy_cache/
+.ipynb_checkpoints/
 
 # Local environments and secrets
 .venv/
@@ -36,3 +37,8 @@ tensorboard/
 artifacts/**/raw/
 artifacts/**/tmp/
 artifacts/**/records/
+artifacts/AE_CTM_GPU_*/summary_seed*.json
+artifacts/AE_CTM_GPU_*/drift_summary_seed*.csv
+artifacts/AE_CTM_GPU_*/drift_summary_seed*.json
+artifacts/AE_CTM_GPU_*/figures/
+artifacts/AE_CTM_GPU_smoke/

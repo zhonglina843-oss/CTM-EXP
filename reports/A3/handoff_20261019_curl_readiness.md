@@ -48,6 +48,16 @@ The CTM should consume a fixed-dimensional continuous representation, not `q(y|x
 - Retrieved source run record: browser-open official directory and README; official `raw.githubusercontent.com` endpoints for `model.py`, `training.py`, `train_main.py`; GitHub-rendered `requirements.txt` and root license; official NeurIPS paper PDF. All were accessed 2026-10-19 Asia/Hong_Kong. Local inventory command: `find . -maxdepth 3 -type f`; no CURL source tree present.
 - Execution status: no commands that run CURL; no numerical results, seeds, checkpoint tables, or experiment figures. This handoff's required visual is the structural flow diagram in `artifacts/A3/figures/curl_observation_flow.svg`.
 
+## Follow-up: local startup readiness check (2026-10-19)
+
+- Isolated source acquisition: shallow official repository clone at `/private/tmp/curl-a3-audit.kFswUA/deepmind-research`; `git rev-parse HEAD` = `f5de0ede8430809180254ee957abf36ed62579ef`. The full checkout exposed upstream case-colliding paths on the case-insensitive macOS filesystem; those affected only unrelated `satore/` files. `git diff --quiet HEAD -- curl LICENSE` passed. To avoid using that checkout as a working tree, the exact committed `curl/` and `LICENSE` were exported with `git archive` into `/private/tmp/curl-a3-audit.kFswUA/source/`. No project/upstream files were edited.
+- Local interpreter: Python 3.9.6; installed TensorFlow 2.20.0, NumPy 2.0.2, scikit-learn 1.6.1, absl-py 2.3.1. `sonnet`, `tensorflow_probability`, and `tensorflow_datasets` are not installed. Official pinned requirements are TensorFlow 1.14.0, TensorFlow Probability 0.7.0, Sonnet 1.35, NumPy 1.16.4, TFDS 1.2.0, plus supporting pins; the existing runtime is not a compatible reproduction environment.
+- Data inventory: `/Users/lina/.keras/datasets/mnist.npz` exists. No `tensorflow_datasets` package or local TFDS MNIST cache directory was found, so this file does not satisfy the unmodified upstream `tfds.load` entry point.
+- Syntax check: in-memory `compile()` over 8 upstream `.py` files passed (no `.pyc` generated).
+- Startup check (no training): `PYTHONPATH=/private/tmp/curl-a3-audit.kFswUA/source python3 /private/tmp/curl-a3-audit.kFswUA/source/curl/train_main.py --helpshort` exited 1 before flag parsing with `ModuleNotFoundError: No module named 'sonnet'` (import chain: `train_main.py` -> `curl.training` -> `import sonnet as snt`).
+- No dependencies installed, no MNIST download attempted, no training run, server untouched, no commit/push. Environment/status diagram: `artifacts/A3/figures/curl_runtime_readiness.svg`.
+- Next step required: create a dedicated legacy-compatible environment (or a deliberately validated compatibility port, which must not be called exact reproduction), install the exact pinned stack in isolation, provide/cache MNIST in TFDS 1.2 format, then rerun `--helpshort`, unit tests, and the unmodified official MNIST command. Pin the resolved commit in the experiment manifest.
+
 ## Limitations and unresolved issues
 
 - `master` is mutable; exact source commit/tree hash and current branch status must be pinned.

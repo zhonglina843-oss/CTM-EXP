@@ -40,16 +40,17 @@ class AEAdapter:
 
     name = "ae_fc_784_256_64_256_784"
 
-    def __init__(self, seed: int = 1, learning_rate: float = 1e-3) -> None:
+    def __init__(self, seed: int = 1, learning_rate: float = 1e-3, device: str = "cpu") -> None:
         torch.manual_seed(seed)
         self.seed = seed
-        self.model = FullyConnectedAE()
+        self.device = torch.device(device)
+        self.model = FullyConnectedAE().to(self.device)
         self.optimizer = torch.optim.Adam(self.model.parameters(), lr=learning_rate)
         self.learning_rate = learning_rate
 
     def train_stream_batch(self, x_unlabelled: torch.Tensor | np.ndarray, *, epochs: int = 1, batch_size: int = 64, stage_seed: int = 0) -> list[dict[str, Any]]:
         """Update on pixel tensors only and return compact optimizer history."""
-        x_stage = _flat_float(x_unlabelled)
+        x_stage = _flat_float(x_unlabelled).to(self.device)
         history = []
         for epoch in range(epochs):
             self.model.train()
@@ -74,12 +75,12 @@ class AEAdapter:
     def encode(self, x: torch.Tensor | np.ndarray) -> torch.Tensor:
         self.model.eval()
         with torch.inference_mode():
-            return self.model.encode(_flat_float(x))
+            return self.model.encode(_flat_float(x).to(self.device))
 
     def native_metrics(self, x_old: torch.Tensor | np.ndarray, labels_for_eval: Any = None, baseline_latent: np.ndarray | None = None) -> dict[str, np.ndarray | float]:
         """Return AE-native metrics; ``labels_for_eval`` is never used for inference."""
         del labels_for_eval
-        x = _flat_float(x_old)
+        x = _flat_float(x_old).to(self.device)
         self.model.eval()
         with torch.inference_mode():
             latent = self.model.encode(x)

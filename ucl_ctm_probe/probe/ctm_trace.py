@@ -117,13 +117,14 @@ def trace_ctm(
             module.training = was_training
 
 
-def initialize_frozen_feature_ctm(
+def initialize_feature_ctm(
     input_dim: int = 64,
     d_model: int = 128,
     n_synch: int = 32,
     seed: int = 1,
+    device: str | torch.device = "cpu",
 ) -> tuple[torch.nn.Module, torch.nn.Module]:
-    """Create an untrained frozen CTM probe and fixed input adapter.
+    """Create a small CTM probe and fixed input adapter for calibration.
 
     This is an engineering smoke configuration. It deliberately does not load
     a research checkpoint or claim a calibrated representation.
@@ -141,7 +142,7 @@ def initialize_frozen_feature_ctm(
     adapter = torch.nn.Linear(input_dim, input_dim, bias=False)
     with torch.no_grad():
         torch.nn.init.orthogonal_(adapter.weight)
-    adapter.eval()
+    adapter = adapter.to(device).eval()
     for parameter in adapter.parameters():
         parameter.requires_grad_(False)
 
@@ -165,11 +166,55 @@ def initialize_frozen_feature_ctm(
         dropout_nlm=0,
         neuron_select_type="first-last",
     )
-    model.eval()
-    dummy = torch.zeros(2, input_dim, 1, 1)
-    with torch.inference_mode():
+    model = model.to(device).eval()
+    dummy = torch.zeros(2, input_dim, 1, 1, device=device)
+    # Lazy modules must be materialized outside inference_mode so their
+    # parameters remain trainable during the initial calibration stage.
+    with torch.no_grad():
         model(dummy, track=False)
+    model.eval()
+    return adapter, model
+
+
+def calibrate_ctm_reconstructor(
+    model: torch.nn.Module,
+    adapter: torch.nn.Module,
+    features: torch.Tensor,
+    *,
+    epochs: int = 5,
+    batch_size: int = 64,
+    learning_rate: float = 1e-3,
+    seed: int = 1,
+) -> list[float]:
+    """Unsupervisedly calibrate CTM to reconstruct initial-stage features, then freeze it."""
+    if features.ndim != 2 or features.shape[0] == 0 or features.shape[1] != model.d_input:
+        raise ValueError(f"features must be non-empty [N,{model.d_input}], got {tuple(features.shape)}")
+    if epochs < 1 or batch_size < 1 or learning_rate <= 0:
+        raise ValueError("epochs, batch_size, and learning_rate must be positive")
+    device = next(model.parameters()).device
+    # AEAdapter.encode runs under inference_mode; clone here to create ordinary
+    # tensors that autograd can safely save while learning the CTM probe.
+    x_all = features.detach().to(device=device, dtype=torch.float32).clone()
+    optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
+    generator = torch.Generator().manual_seed(seed)
+    losses: list[float] = []
+
+    model.train()
+    for _ in range(epochs):
+        permutation = torch.randperm(len(x_all), generator=generator)
+        epoch_losses = []
+        for start in range(0, len(permutation), batch_size):
+            x = adapter(x_all[permutation[start : start + batch_size]])
+            image_like = x.reshape(-1, model.d_input, 1, 1)
+            prediction, _, _ = model(image_like, track=False)
+            loss = torch.nn.functional.mse_loss(prediction[:, :, -1], x)
+            optimizer.zero_grad(set_to_none=True)
+            loss.backward()
+            optimizer.step()
+            epoch_losses.append(float(loss.detach()))
+        losses.append(float(np.mean(epoch_losses)))
+
     model.eval()
     for parameter in model.parameters():
         parameter.requires_grad_(False)
-    return adapter, model
+    return losses
