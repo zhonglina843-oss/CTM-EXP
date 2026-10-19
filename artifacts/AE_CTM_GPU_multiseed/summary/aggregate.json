@@ -1,0 +1,81 @@
+{
+  "kind": "three-seed AE+CTM feasibility run; not a final scientific result",
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "calibration_loss_by_seed": {
+    "1": [
+      12.241282284259796,
+      3.4088741739590964,
+      1.4962074905633926,
+      1.0852122977375984,
+      0.9199438417951266
+    ],
+    "2": [
+      11.729780475298563,
+      3.6542950868606567,
+      2.0574916948874793,
+      1.1647034883499146,
+      0.9795364861687025
+    ],
+    "3": [
+      8.965406815210978,
+      2.083528454105059,
+      1.1759116897980373,
+      0.8069126854340235,
+      0.7629781241218249
+    ]
+  },
+  "aggregate": [
+    {
+      "checkpoint": "012_initial",
+      "n_seeds": 3,
+      "reconstruction_mse_mean": 0.06294489031036694,
+      "reconstruction_mse_sd": 0.0019808071950022073,
+      "feature_drift_mean_mean": 0.0,
+      "feature_drift_mean_sd": 0.0,
+      "similarity_triangle_mae_mean": 0.0,
+      "similarity_triangle_mae_sd": 0.0,
+      "trajectory_drift_mean_mean": 0.0,
+      "trajectory_drift_mean_sd": 0.0,
+      "sync_out_drift_mean_mean": 0.0,
+      "sync_out_drift_mean_sd": 0.0,
+      "sync_action_drift_mean_mean": 0.0,
+      "sync_action_drift_mean_sd": 0.0
+    },
+    {
+      "checkpoint": "3_update",
+      "n_seeds": 3,
+      "reconstruction_mse_mean": 0.08322367817163467,
+      "reconstruction_mse_sd": 0.0010560971404864558,
+      "feature_drift_mean_mean": 0.0037672906128827606,
+      "feature_drift_mean_sd": 0.0023686284083359976,
+      "similarity_triangle_mae_mean": 0.028426180154557446,
+      "similarity_triangle_mae_sd": 0.013208612791865334,
+      "trajectory_drift_mean_mean": 0.016531437405180392,
+      "trajectory_drift_mean_sd": 0.01443250077183782,
+      "sync_out_drift_mean_mean": 0.014383325736219841,
+      "sync_out_drift_mean_sd": 0.01105607068681662,
+      "sync_action_drift_mean_mean": 0.018877200421736042,
+      "sync_action_drift_mean_sd": 0.013450758398865904
+    },
+    {
+      "checkpoint": "4_update",
+      "n_seeds": 3,
+      "reconstruction_mse_mean": 0.0890258401632309,
+      "reconstruction_mse_sd": 0.000978552748686899,
+      "feature_drift_mean_mean": 0.01873076515421841,
+      "feature_drift_mean_sd": 0.0077822241675826916,
+      "similarity_triangle_mae_mean": 0.07274729001076768,
+      "similarity_triangle_mae_sd": 0.030200260738488617,
+      "trajectory_drift_mean_mean": 0.08341601939045971,
+      "trajectory_drift_mean_sd": 0.0702878144950327,
+      "sync_out_drift_mean_mean": 0.08174126293356317,
+      "sync_out_drift_mean_sd": 0.07664965082554154,
+      "sync_action_drift_mean_mean": 0.08194032339014344,
+      "sync_action_drift_mean_sd": 0.03809059259671394
+    }
+  ]
+}
