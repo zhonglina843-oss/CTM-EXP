@@ -35,3 +35,4 @@ tensorboard/
 # Ignore only raw/temporary subdirectories when they are created.
 artifacts/**/raw/
 artifacts/**/tmp/
+artifacts/**/records/

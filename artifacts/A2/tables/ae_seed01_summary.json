@@ -1,0 +1,47 @@
+{
+  "route": "ae_fc_784_256_64_256_784",
+  "ctm_attached": false,
+  "seed": 1,
+  "stream": [
+    "0/1/2 initial",
+    "3 update",
+    "4 update"
+  ],
+  "checkpoints": [
+    {
+      "checkpoint": "012_initial",
+      "stream_samples_seen": 768,
+      "optimizer_steps_total": 24,
+      "mean_reconstruction_mse": 0.0763043761253357,
+      "std_reconstruction_mse": 0.023962335661053658,
+      "mean_latent_drift_1_minus_cosine": -3.5762786065873797e-09,
+      "std_latent_drift_1_minus_cosine": 7.093704113003696e-08,
+      "mean_latent_l2_drift": 0.0
+    },
+    {
+      "checkpoint": "3_update",
+      "stream_samples_seen": 1024,
+      "optimizer_steps_total": 28,
+      "mean_reconstruction_mse": 0.08643794804811478,
+      "std_reconstruction_mse": 0.032654762268066406,
+      "mean_latent_drift_1_minus_cosine": 0.00031448842491954565,
+      "std_latent_drift_1_minus_cosine": 4.936801997246221e-05,
+      "mean_latent_l2_drift": 2.332209587097168
+    },
+    {
+      "checkpoint": "4_update",
+      "stream_samples_seen": 1280,
+      "optimizer_steps_total": 32,
+      "mean_reconstruction_mse": 0.09509957581758499,
+      "std_reconstruction_mse": 0.04090619459748268,
+      "mean_latent_drift_1_minus_cosine": 0.0012357699451968074,
+      "std_latent_drift_1_minus_cosine": 0.00024248198315035552,
+      "mean_latent_l2_drift": 2.447650194168091
+    }
+  ],
+  "determinism": {
+    "final_checkpoint": "4_update",
+    "max_abs_latent_difference": 0.0,
+    "max_abs_reconstruction_difference": 0.0
+  }
+}
